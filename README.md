@@ -11,6 +11,12 @@
 
 ---
 
+## 最近更新
+- **2026-02-03**: 
+  - `bookmark-organizer-extension`: 修复 XSS 漏洞，发布 v0.3.1。
+  - `email-ad-cleaner.user.js`: 引入配置缓存机制，显著减少 IPC 调用，发布 v2.1.1。
+  - `ai-editor-comparison`: 增强 URL 安全验证。
+
 ## 项目概览
 
 ### 1. AI 书签整理助手 (Bookmark Organizer Extension)

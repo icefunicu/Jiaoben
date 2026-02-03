@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         邮件广告清理助手
 // @namespace    https://github.com/email-ad-cleaner
-// @version      2.1.0
+// @version      2.1.1
 // @description  智能识别并清理邮箱广告邮件 | AI+规则双引擎 | 支持Gmail/Outlook/QQ邮箱/163/126
 // @author       EmailAdCleaner
 // @match        https://mail.google.com/*
@@ -136,98 +136,138 @@
     // ============================================
     // 存储管理
     // ============================================
-    const Storage = {
-        get(key, defaultValue) {
-            try {
-                const value = GM_getValue(key, null);
-                return value !== null ? JSON.parse(value) : defaultValue;
-            } catch {
-                return defaultValue;
+    // ============================
+    // 存储管理 (带缓存优化)
+    // ============================
+    const ConfigCache = {
+        data: null,
+        isDirty: false,
+
+        // 默认配置
+        defaults: {
+            whitelist: [],
+            blacklist: [],
+            customKeywords: { high: [], medium: [], low: [] },
+            settings: {
+                threshold: CONFIG.threshold,
+                darkMode: 'auto',
+                previewMode: false,
+                autoScan: false,
+                scanPages: 1
+            },
+            stats: { totalCleaned: 0, lastCleanDate: null, topSenders: {} },
+            aiSettings: {
+                enabled: false,
+                apiKey: '',
+                mode: 'hybrid' // 'ai_only' | 'hybrid' | 'rules_only'
             }
         },
-        set(key, value) {
-            GM_setValue(key, JSON.stringify(value));
+
+        init() {
+            if (this.data) return;
+            this.data = {};
+            // 批量加载所有配置
+            for (const key of Object.keys(this.defaults)) {
+                try {
+                    const value = GM_getValue(key, null);
+                    this.data[key] = value !== null ? JSON.parse(value) : JSON.parse(JSON.stringify(this.defaults[key]));
+                } catch {
+                    this.data[key] = JSON.parse(JSON.stringify(this.defaults[key]));
+                }
+            }
+            console.log('[配置缓存] 初始化完成');
         },
+
+        get(key) {
+            if (!this.data) this.init();
+            return this.data[key];
+        },
+
+        set(key, value) {
+            if (!this.data) this.init();
+            this.data[key] = value;
+            // 异步保存到 GM_setValue，避免阻塞
+            Promise.resolve().then(() => {
+                GM_setValue(key, JSON.stringify(value));
+            });
+        }
+    };
+
+    const Storage = {
         // 白名单管理
         getWhitelist() {
-            return this.get('whitelist', []);
+            return ConfigCache.get('whitelist');
         },
         addToWhitelist(email) {
-            const list = this.getWhitelist();
+            const list = [...this.getWhitelist()];
             const normalized = email.toLowerCase().trim();
             if (!list.includes(normalized)) {
                 list.push(normalized);
-                this.set('whitelist', list);
+                ConfigCache.set('whitelist', list);
                 return true;
             }
             return false;
         },
         removeFromWhitelist(email) {
             const list = this.getWhitelist().filter(e => e !== email.toLowerCase());
-            this.set('whitelist', list);
+            ConfigCache.set('whitelist', list);
         },
         // 黑名单管理
         getBlacklist() {
-            return this.get('blacklist', []);
+            return ConfigCache.get('blacklist');
         },
         addToBlacklist(email) {
-            const list = this.getBlacklist();
+            const list = [...this.getBlacklist()];
             const normalized = email.toLowerCase().trim();
             if (!list.includes(normalized)) {
                 list.push(normalized);
-                this.set('blacklist', list);
+                ConfigCache.set('blacklist', list);
                 return true;
             }
             return false;
         },
         removeFromBlacklist(email) {
             const list = this.getBlacklist().filter(e => e !== email.toLowerCase());
-            this.set('blacklist', list);
+            ConfigCache.set('blacklist', list);
         },
         // 自定义关键词管理
         getCustomKeywords() {
-            return this.get('customKeywords', { high: [], medium: [], low: [] });
+            return ConfigCache.get('customKeywords');
         },
         addCustomKeyword(keyword, weight = 'medium') {
-            const keywords = this.getCustomKeywords();
+            const keywords = JSON.parse(JSON.stringify(this.getCustomKeywords())); // Deep copy
             if (!keywords[weight].includes(keyword)) {
                 keywords[weight].push(keyword);
-                this.set('customKeywords', keywords);
+                ConfigCache.set('customKeywords', keywords);
                 return true;
             }
             return false;
         },
         removeCustomKeyword(keyword, weight) {
-            const keywords = this.getCustomKeywords();
+            const keywords = JSON.parse(JSON.stringify(this.getCustomKeywords()));
             keywords[weight] = keywords[weight].filter(k => k !== keyword);
-            this.set('customKeywords', keywords);
+            ConfigCache.set('customKeywords', keywords);
         },
         // 设置管理
         getSettings() {
-            return this.get('settings', {
-                threshold: CONFIG.threshold,
-                darkMode: 'auto',
-                previewMode: false,
-                autoScan: false,
-                scanPages: 1
-            });
+            return ConfigCache.get('settings');
         },
         saveSettings(settings) {
-            this.set('settings', settings);
+            ConfigCache.set('settings', settings);
         },
         // 统计数据
         getStats() {
-            return this.get('stats', { totalCleaned: 0, lastCleanDate: null, topSenders: {} });
+            return ConfigCache.get('stats');
         },
         updateStats(count, senders) {
-            const stats = this.getStats();
+            const stats = JSON.parse(JSON.stringify(this.getStats()));
             stats.totalCleaned += count;
             stats.lastCleanDate = new Date().toISOString();
             senders.forEach(s => {
                 const sender = s.toLowerCase();
                 stats.topSenders[sender] = (stats.topSenders[sender] || 0) + 1;
             });
-            this.set('stats', stats);
+            ConfigCache.set('stats', stats);
         },
         // 导入导出
         exportConfig() {
@@ -241,10 +281,11 @@
         importConfig(jsonStr) {
             try {
                 const data = JSON.parse(jsonStr);
-                if (data.whitelist) this.set('whitelist', data.whitelist);
-                if (data.blacklist) this.set('blacklist', data.blacklist);
-                if (data.customKeywords) this.set('customKeywords', data.customKeywords);
-                if (data.settings) this.set('settings', data.settings);
+                // 验证并导入
+                if (data.whitelist) ConfigCache.set('whitelist', data.whitelist);
+                if (data.blacklist) ConfigCache.set('blacklist', data.blacklist);
+                if (data.customKeywords) ConfigCache.set('customKeywords', data.customKeywords);
+                if (data.settings) ConfigCache.set('settings', data.settings);
                 return true;
             } catch {
                 return false;
@@ -252,22 +293,19 @@
         },
         // 重置所有数据
         resetAll() {
-            this.set('whitelist', []);
-            this.set('blacklist', []);
-            this.set('customKeywords', { high: [], medium: [], low: [] });
-            this.set('settings', { threshold: CONFIG.threshold, darkMode: 'auto', previewMode: false, scanPages: 1 });
-            this.set('stats', { totalCleaned: 0, lastCleanDate: null, topSenders: {} });
+            const defaults = ConfigCache.defaults;
+            ConfigCache.set('whitelist', defaults.whitelist);
+            ConfigCache.set('blacklist', defaults.blacklist);
+            ConfigCache.set('customKeywords', defaults.customKeywords);
+            ConfigCache.set('settings', defaults.settings);
+            ConfigCache.set('stats', defaults.stats);
         },
         // AI 设置管理
         getAISettings() {
-            return this.get('aiSettings', {
-                enabled: false,
-                apiKey: '',
-                mode: 'hybrid' // 'ai_only' | 'hybrid' | 'rules_only'
-            });
+            return ConfigCache.get('aiSettings');
         },
         saveAISettings(settings) {
-            this.set('aiSettings', settings);
+            ConfigCache.set('aiSettings', settings);
         }
     };
 
@@ -279,16 +317,9 @@
 
         // 生成 JWT Token (智谱 API 需要)
         generateToken(apiKey) {
-            const [id, secret] = apiKey.split('.');
-            if (!id || !secret) return null;
+            // 智谱 API 支持直接使用 API Key (格式 id.secret)
+            // 如果需要 JWT 签名，需引入额外的 crypto 库，此处为保持轻量直接透传
 
-            const header = btoa(JSON.stringify({ alg: 'HS256', sign_type: 'SIGN' }));
-            const now = Date.now();
-            const payload = btoa(JSON.stringify({
-                api_key: id,
-                exp: now + 3600000,
-                timestamp: now
-            }));
 
             // 简化签名 (实际生产应使用 HMAC-SHA256)
             // 智谱 API 也支持直接使用 API Key
@@ -399,13 +430,18 @@ ${mailsText}
     // 广告识别引擎
     // ============================================
     const AdDetector = {
-        // 通配符匹配 (支持 * 匹配任意字符)
+        regexCache: new Map(),
+
+        // 通配符匹配 (支持 * 匹配任意字符) - 带缓存优化
         wildcardMatch(pattern, str) {
-            const regexPattern = pattern
-                .replace(/[.+^${}()|[\]\\]/g, '\\$&')
-                .replace(/\*/g, '.*')
-                .replace(/\?/g, '.');
-            return new RegExp(`^${regexPattern}$`, 'i').test(str);
+            if (!this.regexCache.has(pattern)) {
+                const regexPattern = pattern
+                    .replace(/[.+^${}()|[\]\\]/g, '\\$&')
+                    .replace(/\*/g, '.*')
+                    .replace(/\?/g, '.');
+                this.regexCache.set(pattern, new RegExp(`^${regexPattern}$`, 'i'));
+            }
+            return this.regexCache.get(pattern).test(str);
         },
 
         // 检查邮箱是否匹配列表（支持通配符）

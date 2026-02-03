@@ -3,7 +3,9 @@ import {
   generateColor,
   truncateText,
   formatDate,
-  debounce
+  formatDate,
+  debounce,
+  escapeHtml
 } from './shared.js';
 
 // ============================
@@ -319,9 +321,9 @@ function renderPreviewList(items, filterText = "") {
         </div>
         <div class="preview-group-items">
           ${bookmarks.map(b => `
-            <div class="preview-item" draggable="true" data-id="${b.id}" title="${b.url}">
-              <span class="preview-title">${truncateText(b.title, 35)}</span>
-              ${b.matchedKeyword ? `<span class="preview-keyword ${b.matchType === 'ai-cached' ? 'ai-cached' : ''}">${b.matchedKeyword}</span>` : ""}
+            <div class="preview-item" draggable="true" data-id="${b.id}" title="${escapeHtml(b.url)}">
+              <span class="preview-title">${escapeHtml(truncateText(b.title, 35))}</span>
+              ${b.matchedKeyword ? `<span class="preview-keyword ${b.matchType === 'ai-cached' ? 'ai-cached' : ''}">${escapeHtml(b.matchedKeyword)}</span>` : ""}
             </div>
           `).join("")}
         </div>
@@ -339,8 +341,8 @@ function renderPreviewList(items, filterText = "") {
         </div>
         <div class="preview-group-items">
           ${aiPendingItems.slice(0, 20).map(b => `
-            <div class="preview-item" data-id="${b.id}" title="${b.url}">
-              <span class="preview-title">${truncateText(b.title, 35)}</span>
+            <div class="preview-item" data-id="${b.id}" title="${escapeHtml(b.url)}">
+              <span class="preview-title">${escapeHtml(truncateText(b.title, 35))}</span>
             </div>
           `).join("")}
           ${aiPendingItems.length > 20 ? `<p class="preview-more">还有 ${aiPendingItems.length - 20} 个待处理...</p>` : ""}
@@ -359,8 +361,8 @@ function renderPreviewList(items, filterText = "") {
         </div>
         <div class="preview-group-items">
           ${unmathedItems.slice(0, 20).map(b => `
-            <div class="preview-item" data-id="${b.id}" title="${b.url}">
-              <span class="preview-title">${truncateText(b.title, 35)}</span>
+            <div class="preview-item" data-id="${b.id}" title="${escapeHtml(b.url)}">
+              <span class="preview-title">${escapeHtml(truncateText(b.title, 35))}</span>
             </div>
           `).join("")}
           ${unmathedItems.length > 20 ? `<p class="preview-more">还有 ${unmathedItems.length - 20} 个未显示...</p>` : ""}
@@ -545,11 +547,11 @@ async function findDuplicates() {
 
       duplicatesList.innerHTML = duplicates.slice(0, 10).map(dup => `
         <div class="duplicate-group">
-          <div class="duplicate-url">${truncateText(dup.url, 50)}</div>
+          <div class="duplicate-url">${escapeHtml(truncateText(dup.url, 50))}</div>
           <div class="duplicate-items">
             ${dup.bookmarks.map((b, i) => `
               <div class="duplicate-item ${i === 0 ? 'keep' : 'remove'}">
-                <span class="duplicate-title">${truncateText(b.title, 30)}</span>
+                <span class="duplicate-title">${escapeHtml(truncateText(b.title, 30))}</span>
                 <span class="duplicate-badge">${i === 0 ? '保留' : '删除'}</span>
               </div>
             `).join("")}
@@ -713,7 +715,7 @@ async function scanDeadLinks() {
 
       deadLinksList.innerHTML = deadLinks.slice(0, 20).map(link => `
         <div class="duplicate-item remove">
-          <span class="duplicate-title" title="${link.url}">${truncateText(link.title, 30)} (${truncateText(link.url, 40)})</span>
+          <span class="duplicate-title" title="${escapeHtml(link.url)}">${escapeHtml(truncateText(link.title, 30))} (${escapeHtml(truncateText(link.url, 40))})</span>
           <span class="duplicate-badge">失效</span>
         </div>
       `).join("") + (deadLinks.length > 20 ? `<p class="preview-more">还有 ${deadLinks.length - 20} 个未显示...</p>` : "");

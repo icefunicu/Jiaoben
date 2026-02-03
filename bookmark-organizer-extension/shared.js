@@ -336,3 +336,18 @@ export function getDomain(url) {
     }
 }
 
+
+/**
+ * HTML 转义，防止 XSS 攻击
+ * @param {string} text - 原始文本
+ * @returns {string} 转义后的文本
+ */
+export function escapeHtml(text) {
+    if (!text) return "";
+    return String(text)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
