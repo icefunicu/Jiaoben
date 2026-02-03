@@ -1,0 +1,33 @@
+{
+  "name": "书签整理器",
+  "description": "按关键词规则自动归类书签，支持 AI 智能分类、定时整理、可视化统计。",
+  "version": "0.3.0",
+  "manifest_version": 3,
+  "permissions": [
+    "bookmarks",
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "action": {
+    "default_title": "书签整理器",
+    "default_popup": "popup.html"
+  },
+  "options_page": "options.html",
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "commands": {
+    "quick-organize": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+B",
+        "mac": "Command+Shift+B"
+      },
+      "description": "一键整理书签（预演模式）"
+    }
+  }
+}

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="zh-CN">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>书签整理器设置</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header>
+    <h1>设置</h1>
+    <p>配置书签分类规则、AI 设置和定时任务</p>
+  </header>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <path
+          d="M20 20a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2h-7.9a2 2 0 0 1-1.69-.9L9.6 3.9A2 2 0 0 0 7.93 3H4a2 2 0 0 0-2 2v13a2 2 0 0 0 2 2Z" />
+      </svg>
+      归类目录
+    </h2>
+    <label>
+      根目录名称
+      <input id="rootFolderName" type="text" placeholder="例如：自动归类" maxlength="20" />
+    </label>
+    <p class="hint">整理时会在书签中创建该目录，并在其下生成分类文件夹。</p>
+  </section>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <circle cx="12" cy="12" r="10" />
+        <polyline points="12 6 12 12 16 14" />
+      </svg>
+      定时整理
+    </h2>
+    <p class="hint" style="margin-bottom: 14px;">设置自动整理任务，让书签保持整洁有序。</p>
+
+    <label class="checkbox" style="margin-top: 0;">
+      <input type="checkbox" id="scheduleEnabled" />
+      启用定时整理
+    </label>
+
+    <div id="scheduleOptions" class="schedule-options" style="display: none;">
+      <label>
+        整理间隔
+        <select id="scheduleInterval">
+          <option value="daily">每天</option>
+          <option value="weekly">每周</option>
+          <option value="monthly">每月</option>
+        </select>
+      </label>
+
+      <label>
+        整理模式
+        <select id="scheduleMode">
+          <option value="keyword">关键词模式</option>
+          <option value="ai">AI 智能模式</option>
+          <option value="hybrid">混合模式</option>
+        </select>
+      </label>
+
+      <p class="hint">定时整理仅处理新增书签，整理完成后会发送通知。</p>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <path d="M12 8V4H8" />
+        <rect width="16" height="12" x="4" y="8" rx="2" />
+        <path d="M2 14h2" />
+        <path d="M20 14h2" />
+        <path d="M15 13v2" />
+        <path d="M9 13v2" />
+      </svg>
+      AI 配置
+    </h2>
+    <p class="hint" style="margin-bottom: 14px;">选择 AI 服务商并填写 API 密钥即可启用智能分类。</p>
+
+    <label>
+      AI 服务商
+      <select id="aiProvider">
+        <option value="custom">自定义</option>
+        <optgroup label="国际服务">
+          <option value="openai">OpenAI</option>
+          <option value="anthropic">Anthropic (Claude)</option>
+          <option value="google">Google Gemini</option>
+          <option value="groq">Groq</option>
+          <option value="together">Together AI</option>
+          <option value="openrouter">OpenRouter</option>
+        </optgroup>
+        <optgroup label="国内服务">
+          <option value="deepseek">DeepSeek 深度求索</option>
+          <option value="zhipu">智谱 AI (GLM)</option>
+          <option value="moonshot">Moonshot (Kimi)</option>
+          <option value="qwen">通义千问 (阿里)</option>
+          <option value="baichuan">百川智能</option>
+          <option value="minimax">MiniMax</option>
+          <option value="yi">零一万物 (Yi)</option>
+          <option value="doubao">豆包 (字节)</option>
+          <option value="spark">讯飞星火</option>
+        </optgroup>
+        <optgroup label="本地服务">
+          <option value="ollama">Ollama (本地)</option>
+          <option value="lmstudio">LM Studio (本地)</option>
+        </optgroup>
+      </select>
+    </label>
+
+    <div id="providerInfo" class="provider-info" style="display: none;"></div>
+
+    <label id="apiUrlLabel">
+      API 地址
+      <input id="aiApiUrl" type="text" placeholder="https://api.openai.com/v1" />
+    </label>
+
+    <label>
+      API 密钥
+      <input id="aiApiKey" type="password" placeholder="sk-..." autocomplete="off" />
+    </label>
+
+    <label>
+      模型名称
+      <select id="aiModel">
+        <option value="">选择模型...</option>
+      </select>
+    </label>
+
+    <label>
+      每批处理数量
+      <select id="aiBatchSize">
+        <option value="10">10 条书签</option>
+        <option value="20" selected>20 条书签</option>
+        <option value="30">30 条书签</option>
+        <option value="50">50 条书签</option>
+      </select>
+    </label>
+
+    <details class="advanced-settings">
+      <summary>高级设置</summary>
+      <label>
+        自定义 API 地址（覆盖预设）
+        <input id="aiApiUrlCustom" type="text" placeholder="留空使用预设地址" />
+      </label>
+      <label>
+        自定义模型名称（覆盖预设）
+        <input id="aiModelCustom" type="text" placeholder="留空使用预设模型" />
+      </label>
+      <label>
+        分类提示词（可选）
+        <textarea id="aiPrompt" rows="3" placeholder="留空使用默认提示词"></textarea>
+      </label>
+      <label>
+        并发数量
+        <select id="aiConcurrency">
+          <option value="1">1（最慢，最稳定）</option>
+          <option value="2">2</option>
+          <option value="3" selected>3（推荐）</option>
+          <option value="5">5（较快）</option>
+        </select>
+      </label>
+      <label>
+        缓存有效期
+        <select id="aiCacheExpire">
+          <option value="1">1 天</option>
+          <option value="7" selected>7 天</option>
+          <option value="30">30 天</option>
+          <option value="0">不缓存</option>
+        </select>
+      </label>
+    </details>
+
+    <div class="buttons" style="margin-top: 14px;">
+      <button id="testAi" class="secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14" />
+          <polyline points="22 4 12 14.01 9 11.01" />
+        </svg>
+        测试连接
+      </button>
+      <span id="aiTestStatus" class="status"></span>
+    </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2" />
+        <path d="M15 2H9a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V3a1 1 0 0 0-1-1Z" />
+        <path d="M12 11h4" />
+        <path d="M12 16h4" />
+        <path d="M8 11h.01" />
+        <path d="M8 16h.01" />
+      </svg>
+      预设分类
+    </h2>
+    <p class="hint" style="margin-bottom: 14px;">
+      AI 分类时会参考以下预设分类名称，也用于关键词模式匹配。
+      <br>关键词支持正则表达式（以 / 包裹，如 /github\.com/）
+    </p>
+    <div id="rules"></div>
+    <div class="buttons">
+      <button id="addRule" class="secondary">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+          stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14" />
+          <path d="M12 5v14" />
+        </svg>
+        添加规则
+      </button>
+      <button id="saveRules" class="primary">
+        <div class="rules-header">
+          <h2>分类规则</h2>
+          <div class="actions">
+            <button id="addRule" class="secondary small-btn">+ 添加规则</button>
+            <button id="smartSuggest" class="secondary small-btn">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                style="margin-right:4px">
+                <path
+                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+              </svg>
+              智能推荐
+            </button>
+          </div>
+        </div>
+        <p class="hint">规则按照从上到下的顺序匹配。支持拖拽排序。</p>
+        <div id="rules" class="rules-list"></div>
+
+        <!-- 智能推荐模态框 -->
+        <div id="suggestModal" class="modal" style="display: none;">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h3>智能规则推荐</h3>
+              <span class="close-modal">&times;</span>
+            </div>
+            <p class="hint">系统分析了您的书签，发现了以下高频关键词。点击即可添加到规则中。</p>
+            <div id="suggestList" class="suggest-list">
+              <div class="loading-spinner">分析中...</div>
+            </div>
+          </div>
+        </div>
+  </section>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <rect width="18" height="11" x="3" y="11" rx="2" ry="2" />
+        <path d="M7 11V7a5 5 0 0 1 10 0v4" />
+      </svg>
+      快捷键
+    </h2>
+    <p class="hint">使用快捷键可以快速执行预演整理。</p>
+    <div class="shortcut-display">
+      <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>B</kbd>
+      <span class="shortcut-desc">一键预演整理</span>
+    </div>
+    <p class="hint" style="margin-top: 8px;">
+      可在浏览器扩展设置中修改快捷键：<code>chrome://extensions/shortcuts</code>
+    </p>
+  </section>
+
+  <template id="ruleTemplate">
+    <div class="rule" draggable="true">
+      <div class="rule-drag-handle">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+          <circle cx="9" cy="6" r="2" />
+          <circle cx="15" cy="6" r="2" />
+          <circle cx="9" cy="12" r="2" />
+          <circle cx="15" cy="12" r="2" />
+          <circle cx="9" cy="18" r="2" />
+          <circle cx="15" cy="18" r="2" />
+        </svg>
+      </div>
+      <div class="rule-content">
+        <div class="row">
+          <label>
+            分类名
+            <input class="rule-name" type="text" placeholder="例如：文档资料" maxlength="20" />
+          </label>
+          <button class="remove" type="button">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 6h18" />
+              <path d="M19 6v14c0 1-1 2-2 2H7c-1 0-2-1-2-2V6" />
+              <path d="M8 6V4c0-1 1-2 2-2h4c1 0 2 1 2 2v2" />
+            </svg>
+          </button>
+        </div>
+        <label>
+          关键词
+          <input class="rule-keywords" type="text" placeholder="例如：文档, 指南, 参考, /正则/" />
+        </label>
+      </div>
+    </div>
+  </template>
+
+  <script type="module" src="options.js"></script>
+</body>
+
+</html>

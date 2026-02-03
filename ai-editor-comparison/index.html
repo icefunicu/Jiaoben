@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI 代码编辑器终极对比 | The Ultimate AI Editor Comparison</title>
+    <meta name="description" content="实时对比 Cursor, Trae, Windsurf, Copilot 等主流 AI 编辑器的价格、模型额度与核心功能。">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>AI Editor <span style="font-weight: 300; opacity: 0.7;">Matrix</span></h1>
+            <p>全网最全 AI 辅助编程工具实时参数对比数据库</p>
+            <div class="last-updated">Last updated: <span id="update-date">2026-02-01</span></div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="filters">
+            <button class="filter-btn active" data-filter="all">全部展示</button>
+            <button class="filter-btn" data-filter="free">免费可用</button>
+            <button class="filter-btn" data-filter="paid">付费订阅</button>
+        </div>
+
+        <div id="editor-grid" class="grid">
+            <!-- Dynamic Content -->
+            <div class="loading">
+                <div style="margin-bottom: 12px">正在初始化数据矩阵...</div>
+                <div style="font-size: 0.9rem; opacity: 0.6">Connecting to knowledge base</div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2026 AI Editor Matrix. 数据仅供参考，请以各官网最新公告为准。</p>
+            <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.5;">Designed with UI/UX Pro Max Workflow</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
