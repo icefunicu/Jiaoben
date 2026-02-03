@@ -47,6 +47,17 @@
       </label>
     </div>
 
+    <div id="aiTemplateArea" style="margin-bottom: 15px; display: none;">
+      <label style="display:block;margin-bottom:5px;font-weight:500;color:#555;">AI 分类模板:</label>
+      <select id="classifyTemplate" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;">
+        <option value="general">通用模式 (新闻/科技/生活/娱乐)</option>
+        <option value="developer">开发者模式 (编程/工具/文档/资源)</option>
+        <option value="shopping">购物模式 (电商/单品/比价/优惠)</option>
+        <option value="academic">学术模式 (论文/期刊/资料/课程)</option>
+      </select>
+      <p class="hint" style="margin-top:4px;">选择适合您书签类型的分类模板，可提高 AI 准确率。</p>
+    </div>
+
     <div id="aiWarning" class="warning" style="display: none;">
       <svg class="warning-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor"
         stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
@@ -151,8 +162,16 @@
       <p class="hint">查找并合并重复的书签</p>
       <div style="margin-bottom: 8px;">
         <label class="checkbox">
+          <input type="checkbox" id="ignoreQuery" />
+          忽略参数 (比如 ?utm_source=...)
+        </label>
+        <label class="checkbox">
+          <input type="checkbox" id="ignoreHash" checked />
+          忽略哈希 (比如 #section)
+        </label>
+        <label class="checkbox">
           <input type="checkbox" id="fuzzyDuplicate" />
-          深度模糊匹配 (忽略参数差异)
+          深度模糊匹配 (相似度 > 85%)
         </label>
       </div>
       <button id="findDuplicates" class="secondary">检测重复</button>

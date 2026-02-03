@@ -388,7 +388,7 @@ async function fetchPageMetadata(url) {
 // ============================
 // AI 分类
 // ============================
-async function callAI(aiConfig, bookmarks, categoryNames, rootFolderName = DEFAULT_ROOT_FOLDER) {
+async function callAI(aiConfig, bookmarks, categoryNames, rootFolderName = DEFAULT_ROOT_FOLDER, template = "general") {
   // 收集现有文件夹
   const existingCategories = await collectExistingCategories(rootFolderName);
   const combinedCategories = Array.from(new Set([...categoryNames, ...existingCategories]));
@@ -400,7 +400,24 @@ async function callAI(aiConfig, bookmarks, categoryNames, rootFolderName = DEFAU
     ? `\n\n【重要】请优先归类到以下【现有分类】中：${existingCategories.join("、")}。只有当现有分类都不合适时，才从推荐分类中选择或新建分类。`
     : "";
 
-  promptTemplate += existingStr;
+  let templateInst = "";
+  switch (template) {
+    case "developer":
+      templateInst = "\n\n【模式指令】这是开发者书签。请重点识别：编程语言(Python/JS/Go)、框架(React/Vue)、工具(Docker/Git)、文档、教程。";
+      break;
+    case "shopping":
+      templateInst = "\n\n【模式指令】这是购物清单。请重点识别：商品品类(数码/家居/服饰)、电商平台(京东/淘宝/亚马逊)、优惠活动。";
+      break;
+    case "academic":
+      templateInst = "\n\n【模式指令】这是学术资料。请重点识别：学科(CS/Math/Physics)、论文来源(Arxiv/Nature)、期刊、课程。";
+      break;
+    case "general":
+    default:
+      templateInst = "\n\n【模式指令】请按通用网络浏览习惯分类，如新闻、娱乐、社交、工具等。";
+      break;
+  }
+
+  promptTemplate += existingStr + templateInst;
 
   const categories = combinedCategories.join("、");
   const systemPrompt = promptTemplate.replace("{CATEGORIES}", categories);
@@ -480,7 +497,7 @@ async function callAI(aiConfig, bookmarks, categoryNames, rootFolderName = DEFAU
   throw lastError;
 }
 
-async function aiClassifyBookmarks(bookmarks, aiConfig, categoryNames, sendProgress) {
+async function aiClassifyBookmarks(bookmarks, aiConfig, categoryNames, sendProgress, template = "general") {
   const batchSize = aiConfig.batchSize || 20;
   const results = new Map();
   const urlCategoryMap = {};
@@ -515,7 +532,7 @@ async function aiClassifyBookmarks(bookmarks, aiConfig, categoryNames, sendProgr
     sendProgress(processedCount, bookmarks.length, `AI 分类中... (${batchNum}/${batches.length})`);
 
     try {
-      const mapping = await callAI(aiConfig, batch, categoryNames, rootFolderName);
+      const mapping = await callAI(aiConfig, batch, categoryNames, rootFolderName, template);
 
       batch.forEach((bookmark, idx) => {
         const category = mapping[String(idx)];
@@ -542,7 +559,7 @@ async function aiClassifyBookmarks(bookmarks, aiConfig, categoryNames, sendProgr
 // 重复书签检测
 // ============================
 async function findDuplicateBookmarks(options = {}) {
-  const { similarityThreshold: simThreshold = 1.0, excludedFolders = [] } = options;
+  const { similarityThreshold: simThreshold = 1.0, excludedFolders = [], ignoreQuery = false, ignoreHash = true } = options;
   const tree = await chrome.bookmarks.getTree();
   const allBookmarks = [];
 
@@ -595,18 +612,33 @@ async function findDuplicateBookmarks(options = {}) {
   for (const [domain, group] of domainMap) {
     if (group.length < 2) continue;
 
+    // 预处理：计算归一化 URL
+    // Wrap bookmarks to cache cleaned URL
+    const processedGroup = group.map(b => {
+      let u = b.url;
+      try {
+        const urlObj = new URL(u);
+        if (ignoreQuery) urlObj.search = "";
+        if (ignoreHash) urlObj.hash = "";
+        u = urlObj.toString();
+      } catch (e) { }
+      return {
+        bookmark: b,
+        cleanUrl: normalizeUrlV2(u)
+      };
+    });
+
     // 如果阈值为 1.0，使用快速的精确匹配
     if (simThreshold >= 1.0) {
       const urlMap = new Map();
-      for (const b of group) {
-        const u = normalizeUrlV2(b.url);
-        if (!urlMap.has(u)) urlMap.set(u, []);
-        urlMap.get(u).push(b);
+      for (const item of processedGroup) {
+        if (!urlMap.has(item.cleanUrl)) urlMap.set(item.cleanUrl, []);
+        urlMap.get(item.cleanUrl).push(item.bookmark);
       }
       for (const [u, list] of urlMap) {
         if (list.length > 1) {
           duplicates.push({
-            url: list[0].url, // 代表 URL
+            url: list[0].url, // 代表 URL (原始)
             bookmarks: list.sort((a, b) => (a.dateAdded || 0) - (b.dateAdded || 0))
           });
         }
@@ -614,26 +646,26 @@ async function findDuplicateBookmarks(options = {}) {
     } else {
       // 模糊匹配 (O(N^2) within domain)
       const used = new Set();
-      for (let i = 0; i < group.length; i++) {
+      for (let i = 0; i < processedGroup.length; i++) {
         if (used.has(i)) continue;
-        const current = group[i];
-        const localDups = [current];
+        const current = processedGroup[i];
+        const localDups = [current.bookmark];
 
-        for (let j = i + 1; j < group.length; j++) {
+        for (let j = i + 1; j < processedGroup.length; j++) {
           if (used.has(j)) continue;
-          const other = group[j];
+          const other = processedGroup[j];
 
           // 计算 URL 相似度
-          const sim = calculateSimilarity(normalizeUrlV2(current.url), normalizeUrlV2(other.url));
+          const sim = calculateSimilarity(current.cleanUrl, other.cleanUrl);
           if (sim >= simThreshold) {
-            localDups.push(other);
+            localDups.push(other.bookmark);
             used.add(j);
           }
         }
 
         if (localDups.length > 1) {
           duplicates.push({
-            url: current.url,
+            url: current.bookmark.url,
             bookmarks: localDups.sort((a, b) => (a.dateAdded || 0) - (b.dateAdded || 0))
           });
         }
@@ -843,7 +875,7 @@ async function getPreviewData(options = {}) {
 // ============================
 // 主整理逻辑
 // ============================
-async function organizeBookmarks({ dryRun, mode = "keyword", incrementalOnly = false, groupByDomain = false, excludedFolders = [] }) {
+async function organizeBookmarks({ dryRun, mode = "keyword", incrementalOnly = false, groupByDomain = false, excludedFolders = [], template = "general" }) {
   const { rules, rootFolderName, aiConfig } = await getSettings();
   sendProgress(0, 0, "正在读取书签...");
   const tree = await chrome.bookmarks.getTree();
@@ -941,7 +973,7 @@ async function organizeBookmarks({ dryRun, mode = "keyword", incrementalOnly = f
       throw new Error("未配置 AI API 密钥");
     }
 
-    const aiResults = await aiClassifyBookmarks(allBookmarks, aiConfig, categoryNames, sendProgress);
+    const aiResults = await aiClassifyBookmarks(allBookmarks, aiConfig, categoryNames, sendProgress, template);
 
     for (const bookmark of allBookmarks) {
       const category = aiResults.get(bookmark.id);
@@ -967,7 +999,7 @@ async function organizeBookmarks({ dryRun, mode = "keyword", incrementalOnly = f
     }
 
     if (unmatchedBookmarks.length > 0 && aiConfig.apiKey) {
-      const aiResults = await aiClassifyBookmarks(unmatchedBookmarks, aiConfig, categoryNames, sendProgress);
+      const aiResults = await aiClassifyBookmarks(unmatchedBookmarks, aiConfig, categoryNames, sendProgress, template);
 
       for (const bookmark of unmatchedBookmarks) {
         const category = aiResults.get(bookmark.id);
@@ -1469,7 +1501,8 @@ chrome.runtime.onMessage.addListener((message, _sender, sendResponse) => {
           dryRun: Boolean(message.dryRun),
           mode: message.mode || "keyword",
           incrementalOnly: Boolean(message.incrementalOnly),
-          groupByDomain: Boolean(message.groupByDomain)
+          groupByDomain: Boolean(message.groupByDomain),
+          template: message.template || "general"
         });
 
       case "get-preview":

@@ -3,7 +3,7 @@ import {
   generateColor,
   truncateText,
   formatDate,
-  formatDate,
+
   debounce,
   escapeHtml
 } from './shared.js';
@@ -186,6 +186,18 @@ function updateAiWarning() {
 }
 
 // ============================
+// AI 模板显示控制
+// ============================
+function updateAiTemplateVisibility() {
+  const mode = getSelectedMode();
+  const area = document.getElementById("aiTemplateArea");
+  if (area) {
+    area.style.display = (mode === "ai" || mode === "hybrid") ? "block" : "none";
+  }
+  updateAiWarning();
+}
+
+// ============================
 // 可视化图表
 // ============================
 function renderPieChart(categories) {
@@ -336,7 +348,12 @@ function renderPreviewList(items, filterText = "") {
     html += `
       <div class="preview-group ai-pending-group">
         <div class="preview-group-header">
-          <span class="preview-category">🤖 待 AI 分类</span>
+          <span class="preview-category">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="vertical-align:-2px;margin-right:4px;">
+              <path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/>
+            </svg>
+            待 AI 分类
+          </span>
           <span class="preview-count">${aiPendingItems.length}</span>
         </div>
         <div class="preview-group-items">
@@ -524,9 +541,16 @@ async function findDuplicates() {
 
   try {
     const isFuzzy = document.getElementById("fuzzyDuplicate").checked;
+    const ignoreQuery = document.getElementById("ignoreQuery").checked;
+    const ignoreHash = document.getElementById("ignoreHash").checked;
+
     const response = await chrome.runtime.sendMessage({
       type: "find-duplicates",
-      options: { similarityThreshold: isFuzzy ? 0.85 : 1.0 }
+      options: {
+        similarityThreshold: isFuzzy ? 0.85 : 1.0,
+        ignoreQuery,
+        ignoreHash
+      }
     });
 
     if (!response?.ok) {
@@ -870,7 +894,7 @@ async function loadSettings() {
 // 事件监听
 // ============================
 modeRadios.forEach(radio => {
-  radio.addEventListener("change", updateAiWarning);
+  radio.addEventListener("change", updateAiTemplateVisibility);
 });
 
 runButton.addEventListener("click", async () => {
@@ -909,7 +933,8 @@ runButton.addEventListener("click", async () => {
       dryRun,
       mode,
       incrementalOnly,
-      groupByDomain // Added this line
+      groupByDomain: document.getElementById("groupByDomain").checked,
+      template: document.getElementById("classifyTemplate").value
     });
 
     if (!response?.ok) {
@@ -983,4 +1008,6 @@ chrome.runtime.onMessage.addListener((message) => {
 // ============================
 // 初始化
 // ============================
-loadSettings();
+loadSettings().then(() => {
+  updateAiTemplateVisibility(); // Init UI state
+});

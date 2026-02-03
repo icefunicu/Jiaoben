@@ -203,52 +203,71 @@
       </svg>
       预设分类
     </h2>
+    </svg>
+    预设分类
+    </h2>
     <p class="hint" style="margin-bottom: 14px;">
       AI 分类时会参考以下预设分类名称，也用于关键词模式匹配。
       <br>关键词支持正则表达式（以 / 包裹，如 /github\.com/）
     </p>
-    <div id="rules"></div>
-    <div class="buttons">
-      <button id="addRule" class="secondary">
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-          stroke-linecap="round" stroke-linejoin="round">
-          <path d="M5 12h14" />
-          <path d="M12 5v14" />
-        </svg>
-        添加规则
-      </button>
-      <button id="saveRules" class="primary">
-        <div class="rules-header">
-          <h2>分类规则</h2>
-          <div class="actions">
-            <button id="addRule" class="secondary small-btn">+ 添加规则</button>
-            <button id="smartSuggest" class="secondary small-btn">
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                style="margin-right:4px">
-                <path
-                  d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-              </svg>
-              智能推荐
-            </button>
-          </div>
-        </div>
-        <p class="hint">规则按照从上到下的顺序匹配。支持拖拽排序。</p>
-        <div id="rules" class="rules-list"></div>
 
-        <!-- 智能推荐模态框 -->
-        <div id="suggestModal" class="modal" style="display: none;">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3>智能规则推荐</h3>
-              <span class="close-modal">&times;</span>
-            </div>
-            <p class="hint">系统分析了您的书签，发现了以下高频关键词。点击即可添加到规则中。</p>
-            <div id="suggestList" class="suggest-list">
-              <div class="loading-spinner">分析中...</div>
-            </div>
-          </div>
+    <div class="rules-header"
+      style="margin-bottom: 10px; display: flex; justify-content: space-between; align-items: center;">
+      <span class="hint">支持拖拽排序</span>
+      <div class="actions">
+        <button id="addRule" class="secondary small-btn" style="padding: 4px 8px; font-size: 12px;">+ 添加规则</button>
+        <button id="smartSuggest" class="secondary small-btn" style="padding: 4px 8px; font-size: 12px;">
+          <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            style="vertical-align:-1px;margin-right:2px">
+            <path
+              d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
+          </svg>
+          智能推荐
+        </button>
+      </div>
+    </div>
+
+    <div id="rules" class="rules-list"></div>
+
+    <!-- 智能推荐模态框 -->
+    <div id="suggestModal" class="modal" style="display: none;">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3>智能规则推荐</h3>
+          <span class="close-modal">&times;</span>
         </div>
+        <p class="hint">系统分析了您的书签，发现了以下高频关键词。点击即可添加到规则中。</p>
+        <div id="suggestList" class="suggest-list">
+          <div class="loading-spinner">分析中...</div>
+        </div>
+      </div>
+    </div>
   </section>
+
+  <section class="card">
+    <h2>
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" stroke-linejoin="round" style="vertical-align: -2px; margin-right: 6px;">
+        <circle cx="12" cy="12" r="10"></circle>
+        <line x1="4.93" y1="4.93" x2="19.07" y2="19.07"></line>
+      </svg>
+      排除文件夹
+    </h2>
+    <p class="hint">以下文件夹中的书签将不会被移动。</p>
+    <div style="display: flex; gap: 8px; margin-bottom: 10px;">
+      <input id="newExclusionInput" type="text" placeholder="输入文件夹名称" style="flex: 1;">
+      <button id="addExclusionBtn" class="secondary">添加</button>
+    </div>
+    <div id="exclusionList" style="display: flex; flex-wrap: wrap; gap: 8px;"></div>
+  </section>
+
+  <div class="floating-actions"
+    style="position: sticky; bottom: 0; background: white; padding: 16px; border-top: 1px solid #eee; display: flex; gap: 10px; justify-content: flex-end; box-shadow: 0 -4px 10px rgba(0,0,0,0.05); margin: 0 -16px -16px -16px;">
+    <span id="saveStatus" style="margin-right: auto; align-self: center; font-size: 14px;"></span>
+    <button id="resetRules" class="secondary"
+      style="color: #ef4444; border-color: #fee2e2; background: #fef2f2;">重置所有</button>
+    <button id="saveRules" class="primary">保存设置</button>
+  </div>
 
   <section class="card">
     <h2>

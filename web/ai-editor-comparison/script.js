@@ -1,7 +1,13 @@
 document.addEventListener('DOMContentLoaded', () => {
   const grid = document.getElementById('editor-grid');
   const filterBtns = document.querySelectorAll('.filter-btn');
+  const searchInput = document.getElementById('search-input');
+  const sortBtn = document.getElementById('sort-btn');
+
   let editorsData = [];
+  let currentFilter = 'all';
+  let searchTerm = '';
+  let isSortedByPrice = false;
 
   // Fallback data (Chinese)
   const FALLBACK_DATA = [
@@ -337,13 +343,80 @@ document.addEventListener('DOMContentLoaded', () => {
         models: item.models.map(escapeHtml),
         features: item.features.map(escapeHtml),
       }));
-      renderGrid(editorsData);
+      applyFiltersAndSort();
     } catch (error) {
       console.warn('Fetch failed, using fallback data:', error);
       editorsData = FALLBACK_DATA;
-      renderGrid(editorsData);
+      applyFiltersAndSort();
     }
   }
+
+  // Filter & Sort Logic
+  function applyFiltersAndSort() {
+    let result = editorsData;
+
+    // 1. Filter by category
+    if (currentFilter !== 'all') {
+      result = result.filter(e => {
+        const isFree = e.pricing_tiers.some(t => t.price === '¥0' || t.price.includes('Free') || t.price === '$0');
+        // Paid means NOT completely free (has paid tier)
+        // But strict definition: 'paid' usually means requires payment. 
+        // Current logic in renderGrid was: isPaid = has non-free tier.
+        if (currentFilter === 'free') return isFree; // Show if it has a free tier
+        if (currentFilter === 'paid') return e.pricing_tiers.some(t => t.price !== '¥0' && !t.price.includes('Free') && t.price !== '$0');
+        return true;
+      });
+    }
+
+    // 2. Filter by search
+    if (searchTerm) {
+      const lower = searchTerm.toLowerCase();
+      result = result.filter(e =>
+        e.name.toLowerCase().includes(lower) ||
+        e.developer.toLowerCase().includes(lower) ||
+        e.features.some(f => f.toLowerCase().includes(lower))
+      );
+    }
+
+    // 3. Sort by Price (Approximate)
+    if (isSortedByPrice) {
+      // Simple heuristic: sort by lowest price of first paid tier, or 0 if all free
+      result = [...result].sort((a, b) => {
+        const getPrice = (e) => {
+          // Find first non-zero price number
+          for (let t of e.pricing_tiers) {
+            const match = t.price.match(/¥(\d+)/) || t.price.match(/\$(\d+)/);
+            if (match) return parseInt(match[1]) * (t.price.includes('$') ? 7.3 : 1);
+          }
+          return 0;
+        };
+        return getPrice(a) - getPrice(b);
+      });
+    }
+
+    renderGrid(result);
+  }
+
+  // Event Listeners
+  filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      filterBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      currentFilter = btn.dataset.filter;
+      applyFiltersAndSort();
+    });
+  });
+
+  searchInput.addEventListener('input', (e) => {
+    searchTerm = e.target.value.trim();
+    applyFiltersAndSort();
+  });
+
+  sortBtn.addEventListener('click', () => {
+    isSortedByPrice = !isSortedByPrice;
+    sortBtn.classList.toggle('active', isSortedByPrice);
+    applyFiltersAndSort();
+  });
 
   // Render Grid
   function renderGrid(data) {
@@ -432,29 +505,8 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-  // Filter Logic
-  filterBtns.forEach(btn => {
-    btn.addEventListener('click', () => {
-      filterBtns.forEach(b => b.classList.remove('active'));
-      btn.classList.add('active');
+  // Removed old filter logic block as it is replaced by applyFiltersAndSort
 
-      const filterType = btn.dataset.filter;
-
-      if (filterType === 'all') {
-        renderGrid(editorsData);
-      } else if (filterType === 'free') {
-        const filtered = editorsData.filter(e =>
-          e.pricing_tiers.some(t => t.price === '¥0' || t.price.includes('Free') || t.price === '$0')
-        );
-        renderGrid(filtered);
-      } else if (filterType === 'paid') {
-        const filtered = editorsData.filter(e =>
-          e.pricing_tiers.some(t => t.price !== '¥0' && !t.price.includes('Free') && t.price !== '$0')
-        );
-        renderGrid(filtered);
-      }
-    });
-  });
 
   // Add Mouse Move Effect for Cards
   // Add Mouse Move Effect for Cards (Optimized)

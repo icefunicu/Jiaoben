@@ -13,24 +13,35 @@
 <body>
     <header>
         <div class="container">
-            <h1>AI Editor <span style="font-weight: 300; opacity: 0.7;">Matrix</span></h1>
+            <h1>AI Editor <span class="title-highlight">Matrix</span></h1>
             <p>全网最全 AI 辅助编程工具实时参数对比数据库</p>
             <div class="last-updated">Last updated: <span id="update-date">2026-02-01</span></div>
         </div>
     </header>
 
     <main class="container">
-        <div class="filters">
-            <button class="filter-btn active" data-filter="all">全部展示</button>
-            <button class="filter-btn" data-filter="free">免费可用</button>
-            <button class="filter-btn" data-filter="paid">付费订阅</button>
+        <div class="controls-container">
+            <div class="search-box">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                <input type="text" id="search-input" placeholder="搜索编辑器...">
+            </div>
+            
+            <div class="filters">
+                <button class="filter-btn active" data-filter="all">全部</button>
+                <button class="filter-btn" data-filter="free">免费</button>
+                <button class="filter-btn" data-filter="paid">付费</button>
+            </div>
+
+            <button id="sort-btn" class="icon-btn" title="按价格排序">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20V4"/><path d="m6 16 6 4 6-4"/></svg>
+            </button>
         </div>
 
         <div id="editor-grid" class="grid">
             <!-- Dynamic Content -->
             <div class="loading">
-                <div style="margin-bottom: 12px">正在初始化数据矩阵...</div>
-                <div style="font-size: 0.9rem; opacity: 0.6">Connecting to knowledge base</div>
+                <div class="loading-title">正在初始化数据矩阵...</div>
+                <div class="loading-subtitle">Connecting to knowledge base</div>
             </div>
         </div>
     </main>
@@ -38,7 +49,7 @@
     <footer>
         <div class="container">
             <p>© 2026 AI Editor Matrix. 数据仅供参考，请以各官网最新公告为准。</p>
-            <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.5;">Designed with UI/UX Pro Max Workflow</p>
+            <p class="footer-note">Designed with UI/UX Pro Max Workflow</p>
         </div>
     </footer>
 

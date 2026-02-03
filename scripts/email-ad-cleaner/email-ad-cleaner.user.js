@@ -54,22 +54,25 @@
     ];
 
     // 广告标题关键词 (按权重分类)
+    // 广告标题关键词 (按权重分类)
     const AD_KEYWORDS = {
         high: [ // 高权重 - 明显的营销词汇
             '限时', '促销', '优惠', '折扣', '特价', '秒杀', '清仓', '狂欢',
             '免费领', '红包', '中奖', '抽奖', '会员专享', '独家', '劲爆',
             '疯抢', '抢购', '立减', '满减', '返现', '立省', '省钱',
-            'Sale', 'Discount', 'Free', 'Offer', 'Deal', 'Save',
-            '618', '双11', '双十一', '双12', '双十二', '黑五', '年货节'
+            'Sale', 'Discount', 'Free', 'Offer', 'Deal', 'Save', 'Clearance',
+            '618', '双11', '双十一', '双12', '双十二', '黑五', 'Black Friday',
+            'Cyber Monday', '年货节', '圣诞大促', '新年特惠', '开学季'
         ],
         medium: [ // 中权重 - 可能的推广词汇
             '订阅', '推荐', '精选', '热门', '新品', '上新', '首发',
             '活动', '福利', '礼包', '积分', '兑换', '升级', '专属',
-            '邀请', '回馈', '感恩', '周年', '庆典', '盛典'
+            '邀请', '回馈', '感恩', '周年', '庆典', '盛典',
+            'Weekly', 'Monthly', 'Newsletter', 'Highlights', 'Top Picks'
         ],
         low: [ // 低权重 - 常见但不确定的词汇
             '通知', '提醒', '更新', '周报', '月报', '简报', '快讯',
-            '资讯', '动态', '汇总', '盘点', '回顾'
+            '资讯', '动态', '汇总', '盘点', '回顾', 'Digest', 'Update'
         ]
     };
 
@@ -340,11 +343,27 @@
                 `${i + 1}. ${m.sender} - ${m.subject}`
             ).join('\n');
 
-            // 简化 prompt 加快响应
-            const prompt = `判断以下邮件是否为广告/推广邮件，返回JSON数组:
+            // 优化 Prompt，增加 Few-Shot 示例以提高准确率
+            const prompt = `你是一个专业的邮件反垃圾系统。请判断以下邮件是否为广告/推广/营销邮件。
+规则：
+1. 包含"退订"、"Unsubscribe"、"促销"、"优惠"等通常是广告。
+2. 包含系统通知、验证码、账单、个人对话通常不是广告。
+3. 即使是 Newsletter，如果是纯资讯类的也可以标记为 false，但如果是营销性质的标记为 true。
+
+请分析以下邮件列表，并返回 JSON 数组。
+
+示例输入:
+1. Apple - Your receipt for iCloud+
+2. JD.com - 618 大促最后一天，全场5折起！
+3. GitHub - [Jiaoben] Pull request #1 merged
+
+示例输出:
+[{"i":1,"ad":false,"c":90,"r":"账单收据"},{"i":2,"ad":true,"c":95,"r":"大促广告"},{"i":3,"ad":false,"c":85,"r":"代码通知"}]
+
+待分析邮件:
 ${mailsText}
 
-格式:[{"i":1,"ad":true/false,"c":80,"r":"理由"}] (i=序号,ad=是否广告,c=置信度,r=原因)`;
+请仅返回 JSON 数组，不要返回 markdown 代码块：`;
 
             return new Promise((resolve) => {
                 // 15秒超时
@@ -1008,6 +1027,27 @@ ${mailsText}
                     justify-content: center;
                     gap: 6px;
                 }
+                :root {
+                    --eac-primary: #3B82F6;
+                    --eac-secondary: #60A5FA;
+                    --eac-cta: #F97316;
+                    --eac-bg: #F8FAFC;
+                    --eac-text: #1E293B;
+                    --eac-border: #E2E8F0;
+                }
+                #eac-container {
+                    font-family: 'Fira Sans', -apple-system, sans-serif;
+                    position: fixed;
+                    bottom: 20px;
+                    right: 20px;
+                    z-index: 9999999;
+                    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+                    border-radius: 12px;
+                    background: white;
+                    color: var(--eac-text);
+                    width: 320px;
+                    transition: all 0.3s ease;
+                }
                 .eac-footer-btn {
                     background: white;
                     border: 1px solid #e0e0e0;
@@ -1193,6 +1233,107 @@ ${mailsText}
                 .eac-dark #eac-status { color: #aaa; }
                 .eac-dark #eac-empty { color: #888; }
                 .eac-dark .eac-mail-details { background: #252525; color: #aaa; }
+                .eac-dark .eac-mail-details { background: #252525; color: #aaa; }
+                
+                /* Rules Modal & Stats Modal Styles */
+                .eac-modal {
+                    display: none;
+                    position: fixed;
+                    top: 0; left: 0; width: 100%; height: 100%;
+                    background: rgba(0,0,0,0.5);
+                    z-index: 99999999;
+                    align-items: center;
+                    justify-content: center;
+                }
+                .eac-modal.active { display: flex; }
+                .eac-modal-content {
+                    background: white;
+                    border-radius: 12px;
+                    width: 500px;
+                    max-height: 85vh;
+                    display: flex;
+                    flex-direction: column;
+                    box-shadow: 0 20px 50px rgba(0,0,0,0.2);
+                    overflow: hidden;
+                }
+                .eac-modal-header {
+                    padding: 16px 20px;
+                    border-bottom: 1px solid #eee;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #f8f9fa;
+                }
+                .eac-modal-header h4 { margin: 0; font-size: 16px; color: #333; }
+                .eac-modal-close {
+                    background: none; border: none; font-size: 20px; color: #999; cursor: pointer;
+                }
+                .eac-modal-close:hover { color: #333; }
+                
+                .eac-modal-body { padding: 20px; overflow-y: auto; flex: 1; }
+                
+                /* Rules Table */
+                .eac-rules-tabs {
+                    display: flex; gap: 10px; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;
+                }
+                .eac-rules-tab {
+                    padding: 6px 12px; border-radius: 6px; cursor: pointer; color: #666; font-weight: 500;
+                }
+                .eac-rules-tab.active { background: #10B981; color: white; }
+                
+                .eac-rules-input-group {
+                    display: flex; gap: 8px; margin-bottom: 15px;
+                }
+                .eac-rules-input {
+                    flex: 1; padding: 8px 12px; border: 1px solid #ddd; border-radius: 6px;
+                }
+                .eac-rules-add-btn {
+                    background: #10B981; color: white; border: none; padding: 0 16px; border-radius: 6px; cursor: pointer;
+                }
+                
+                .eac-rules-list {
+                    border: 1px solid #eee; border-radius: 8px; max-height: 300px; overflow-y: auto;
+                }
+                .eac-rule-item {
+                    display: flex; justify-content: space-between; align-items: center;
+                    padding: 10px 14px; border-bottom: 1px solid #eee;
+                }
+                .eac-rule-item:last-child { border-bottom: none; }
+                .eac-rule-item:hover { background: #f8f9fa; }
+                .eac-rule-text { font-family: monospace; }
+                .eac-rule-del {
+                    color: #dc3545; cursor: pointer; opacity: 0.6; padding: 4px;
+                }
+                .eac-rule-del:hover { opacity: 1; background: rgba(220, 53, 69, 0.1); border-radius: 4px; }
+                
+                /* Stats */
+                .eac-stats-grid {
+                    display: grid; grid-template-columns: 1fr 1fr; gap: 15px; margin-bottom: 20px;
+                }
+                .eac-stat-card {
+                    background: #f8f9fa; padding: 15px; border-radius: 8px; text-align: center;
+                }
+                .eac-stat-num { font-size: 24px; font-weight: bold; color: #10B981; display: block; }
+                .eac-stat-label { font-size: 13px; color: #666; }
+                
+                .eac-top-list { list-style: none; padding: 0; margin: 0; }
+                .eac-top-item {
+                    display: flex; justify-content: space-between; padding: 8px 0; border-bottom: 1px dashed #eee;
+                }
+                
+                /* Dark Mode for Modals */
+                .eac-dark .eac-modal-content { background: #1e1e1e; color: #e0e0e0; }
+                .eac-dark .eac-modal-header { background: #252525; border-color: #333; }
+                .eac-dark .eac-modal-header h4 { color: #e0e0e0; }
+                .eac-dark .eac-rules-tab { color: #aaa; }
+                .eac-dark .eac-rules-tab.active { color: white; }
+                .eac-dark .eac-rules-input { background: #252525; border-color: #444; color: white; }
+                .eac-dark .eac-rules-list { border-color: #333; }
+                .eac-dark .eac-rule-item { border-color: #333; }
+                .eac-dark .eac-rule-item:hover { background: #252525; }
+                .eac-dark .eac-stat-card { background: #252525; }
+                .eac-dark .eac-stat-label { color: #aaa; }
+                .eac-dark .eac-top-item { border-color: #333; }
             `);
         },
 
@@ -1204,14 +1345,20 @@ ${mailsText}
                     </button>
                     <div id="eac-panel">
                         <div id="eac-header">
-                            <h3>📧 邮件广告清理助手</h3>
+                            <h3 style="display:flex;align-items:center;gap:8px;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                                广告清理助手
+                            </h3>
                             <div id="eac-header-btns">
                                 <button id="eac-minimize" title="最小化">－</button>
                                 <button id="eac-close" title="关闭">×</button>
                             </div>
                         </div>
                         <div id="eac-toolbar">
-                            <button id="eac-scan-btn">🔍 扫描邮件</button>
+                            <button id="eac-scan-btn">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+                                扫描邮件
+                            </button>
                             <span id="eac-status">点击扫描开始检测</span>
                         </div>
                         <div id="eac-actions" style="display:none;">
@@ -1219,7 +1366,10 @@ ${mailsText}
                                 <input type="checkbox" id="eac-select-all-cb">
                                 <span>全选 (<span id="eac-count">0</span>)</span>
                             </label>
-                            <button id="eac-delete-btn" disabled>🗑 移到垃圾箱</button>
+                            <button id="eac-delete-btn" disabled>
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="3 6 5 6 21 6"/><path d="M19 6v14a2 2 0 0 1-2 2H7a2 2 0 0 1-2-2V6m3 0V4a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>
+                                移到垃圾箱
+                            </button>
                         </div>
                         <div id="eac-list">
                             <div id="eac-empty">
@@ -1229,53 +1379,122 @@ ${mailsText}
                         </div>
                         <div id="eac-footer">
                             <div class="eac-footer-row">
-                                <button id="eac-settings-btn" class="eac-footer-btn"><span>⚙</span>设置</button>
-                                <button id="eac-whitelist-btn" class="eac-footer-btn"><span>✅</span>白名单</button>
-                                <button id="eac-blacklist-btn" class="eac-footer-btn"><span>🚫</span>黑名单</button>
-                                <button id="eac-stats-btn" class="eac-footer-btn"><span>📊</span>统计</button>
+                                <button id="eac-settings-btn" class="eac-footer-btn" title="设置"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></button>
+                                <button id="eac-whitelist-btn" class="eac-footer-btn" title="白名单"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="20 6 9 17 4 12"/></svg></button>
+                                <button id="eac-blacklist-btn" class="eac-footer-btn" title="黑名单"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="4.93" y1="4.93" x2="19.07" y2="19.07"/></svg></button>
+                                <button id="eac-stats-btn" class="eac-footer-btn" title="统计"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg></button>
                             </div>
                             <div class="eac-footer-row">
-                                <button id="eac-export-btn" class="eac-footer-btn"><span>📤</span>导出</button>
-                                <button id="eac-import-btn" class="eac-footer-btn"><span>📥</span>导入</button>
-                                <button id="eac-help-btn" class="eac-footer-btn"><span>❓</span>帮助</button>
+                                <button id="eac-export-btn" class="eac-footer-btn" title="导出"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg></button>
+                                <button id="eac-import-btn" class="eac-footer-btn" title="导入"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></button>
+                                <button id="eac-help-btn" class="eac-footer-btn" title="帮助"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg></button>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div id="eac-settings-modal">
-                    <div id="eac-settings-content">
-                        <h4>⚙ 设置</h4>
-                        <div class="eac-setting-item">
-                            <label>广告识别阈值: <span id="eac-threshold-val">60</span></label>
-                            <input type="range" id="eac-threshold" min="30" max="90" value="60">
-                            <small style="color:#888;">分数高于此值将被标记为广告 (30-90)</small>
+                <div id="eac-settings-modal" class="eac-modal">
+                    <div class="eac-modal-content" id="eac-settings-content">
+                        <div class="eac-modal-header">
+                            <h4 style="display:flex;align-items:center;gap:8px;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg>
+                                设置
+                            </h4>
+                            <button class="eac-modal-close" data-target="eac-settings-modal">×</button>
                         </div>
-                        <div class="eac-setting-item">
-                            <label><input type="checkbox" id="eac-autoscan"> 启用自动扫描</label>
-                            <small style="color:#888;">邮件列表变化时自动检测 (实验性)</small>
+                        <div class="eac-modal-body">
+                            <div class="eac-setting-item">
+                                <label>广告识别阈值: <span id="eac-threshold-val">60</span></label>
+                                <input type="range" id="eac-threshold" min="30" max="90" value="60">
+                                <small style="color:#888;">分数高于此值将被标记为广告 (30-90)</small>
+                            </div>
+                            <div class="eac-setting-item">
+                                <label><input type="checkbox" id="eac-autoscan"> 启用自动扫描</label>
+                                <small style="color:#888;">邮件列表变化时自动检测 (实验性)</small>
+                            </div>
+                            <hr style="border:none;border-top:1px solid #eee;margin:16px 0;">
+                            <h4>
+                                <svg width="16" height="16" style="vertical-align:-2px;margin-right:4px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 8V4H8"/><rect width="16" height="12" x="4" y="8" rx="2"/><path d="M2 14h2"/><path d="M20 14h2"/><path d="M15 13v2"/><path d="M9 13v2"/></svg>
+                                AI 智能识别
+                            </h4>
+                            <div class="eac-setting-item">
+                                <label><input type="checkbox" id="eac-ai-enabled"> 启用 AI 辅助识别</label>
+                                <small style="color:#888;">使用智谱 GLM-4-Flash (免费)</small>
+                            </div>
+                            <div class="eac-setting-item">
+                                <label>API Key:</label>
+                                <input type="password" id="eac-ai-apikey" placeholder="从 open.bigmodel.cn 获取" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;">
+                                <button id="eac-ai-test" style="margin-top:8px;padding:6px 12px;border:1px solid #10B981;background:white;color:#10B981;border-radius:4px;cursor:pointer;">测试连接</button>
+                            </div>
+                            <div class="eac-setting-item">
+                                <label>识别模式:</label>
+                                <select id="eac-ai-mode" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;">
+                                    <option value="hybrid">混合模式 (AI + 规则)</option>
+                                    <option value="ai_only">仅 AI 识别</option>
+                                    <option value="rules_only">仅规则识别</option>
+                                </select>
+                            </div>
+                            <div id="eac-settings-btns">
+                                <button id="eac-settings-cancel" class="eac-modal-close" data-target="eac-settings-modal">取消</button>
+                                <button id="eac-settings-save">保存</button>
+                            </div>
                         </div>
-                        <hr style="border:none;border-top:1px solid #eee;margin:16px 0;">
-                        <h4>🤖 AI 智能识别</h4>
-                        <div class="eac-setting-item">
-                            <label><input type="checkbox" id="eac-ai-enabled"> 启用 AI 辅助识别</label>
-                            <small style="color:#888;">使用智谱 GLM-4-Flash (免费)</small>
+                    </div>
+                </div>
+
+                <!-- Rules Modal -->
+                <div id="eac-rules-modal" class="eac-modal">
+                    <div class="eac-modal-content">
+                        <div class="eac-modal-header">
+                            <h4 style="display:flex;align-items:center;gap:8px;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                                规则管理
+                            </h4>
+                            <button class="eac-modal-close" data-target="eac-rules-modal">×</button>
                         </div>
-                        <div class="eac-setting-item">
-                            <label>API Key:</label>
-                            <input type="password" id="eac-ai-apikey" placeholder="从 open.bigmodel.cn 获取" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;">
-                            <button id="eac-ai-test" style="margin-top:8px;padding:6px 12px;border:1px solid #10B981;background:white;color:#10B981;border-radius:4px;cursor:pointer;">测试连接</button>
+                        <div class="eac-modal-body">
+                            <div class="eac-rules-tabs">
+                                <div class="eac-rules-tab active" data-tab="whitelist">白名单</div>
+                                <div class="eac-rules-tab" data-tab="blacklist">黑名单</div>
+                            </div>
+                            <div class="eac-rules-input-group">
+                                <input type="text" id="eac-rule-input" class="eac-rules-input" placeholder="输入邮箱或域名 (支持 * 通配符)">
+                                <button id="eac-rule-add-btn" class="eac-rules-add-btn">添加</button>
+                            </div>
+                            <div id="eac-rules-list" class="eac-rules-list">
+                                <!-- Rules inserted here -->
+                            </div>
                         </div>
-                        <div class="eac-setting-item">
-                            <label>识别模式:</label>
-                            <select id="eac-ai-mode" style="width:100%;padding:8px;border:1px solid #ddd;border-radius:6px;margin-top:4px;">
-                                <option value="hybrid">混合模式 (AI + 规则)</option>
-                                <option value="ai_only">仅 AI 识别</option>
-                                <option value="rules_only">仅规则识别</option>
-                            </select>
+                    </div>
+                </div>
+
+                <!-- Stats Modal -->
+                <div id="eac-stats-modal" class="eac-modal">
+                    <div class="eac-modal-content">
+                        <div class="eac-modal-header">
+                            <h4 style="display:flex;align-items:center;gap:8px;">
+                                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+                                清理统计
+                            </h4>
+                            <button class="eac-modal-close" data-target="eac-stats-modal">×</button>
                         </div>
-                        <div id="eac-settings-btns">
-                            <button id="eac-settings-cancel">取消</button>
-                            <button id="eac-settings-save">保存</button>
+                        <div class="eac-modal-body">
+                            <div class="eac-stats-grid">
+                                <div class="eac-stat-card">
+                                    <span class="eac-stat-num" id="eac-stat-total">0</span>
+                                    <span class="eac-stat-label">历史清理总数</span>
+                                </div>
+                                <div class="eac-stat-card">
+                                    <span class="eac-stat-label" id="eac-stat-last">从未</span>
+                                    <span class="eac-stat-label">上次清理时间</span>
+                                </div>
+                            </div>
+                            <h4 style="display:flex;align-items:center;gap:8px;">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+                                拦截来源 Top 5
+                            </h4>
+                            <ul id="eac-stat-top" class="eac-top-list">
+                                <!-- Top list -->
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -1374,19 +1593,43 @@ ${mailsText}
 
             // 帮助按钮
             document.getElementById('eac-help-btn').addEventListener('click', () => {
-                alert('📧 邮件广告清理助手 v2.0\n\n' +
+                alert('📧 邮件广告清理助手 v2.1\n\n' +
                     '🔍 使用方法:\n' +
                     '1. 点击"扫描邮件"扫描当前列表\n' +
                     '2. 勾选要清理的邮件\n' +
                     '3. 点击"移到垃圾箱"清理\n\n' +
-                    '⌨ 快捷键:\n' +
-                    '• Ctrl+Shift+S - 扫描邮件\n' +
-                    '• Ctrl+Shift+D - 删除选中\n' +
-                    '• Esc - 关闭面板\n\n' +
-                    '💡 提示:\n' +
-                    '• 白名单: 不会被标记为广告\n' +
-                    '• 黑名单: 直接标记为广告\n' +
-                    '• 支持通配符匹配: *@newsletter.*');
+                    '🛡 规则管理:\n' +
+                    '• 支持从白名单/黑名单列表添加和删除\n' +
+                    '• 支持通配符 (例如 *@spam.com)\n\n' +
+                    '🤖 AI 智能识别:\n' +
+                    '• 可在设置中开启 AI 辅助\n' +
+                    '• 混合模式下，AI 结果将提高规则评分');
+            });
+
+            // Modal Close Buttons
+            document.querySelectorAll('.eac-modal-close').forEach(btn => {
+                btn.addEventListener('click', (e) => {
+                    const targetId = e.target.dataset.target;
+                    if (targetId) {
+                        document.getElementById(targetId).classList.remove('active');
+                    }
+                });
+            });
+
+            // Rules Tabs
+            document.querySelectorAll('.eac-rules-tab').forEach(tab => {
+                tab.addEventListener('click', (e) => {
+                    this.currentRulesTab = e.target.dataset.tab;
+                    this.openRulesModal(); // Re-render
+                });
+            });
+
+            // Rule Add Button
+            document.getElementById('eac-rule-add-btn').addEventListener('click', () => {
+                this.addRule();
+            });
+            document.getElementById('eac-rule-input').addEventListener('keydown', (e) => {
+                if (e.key === 'Enter') this.addRule();
             });
         },
 
@@ -1679,6 +1922,19 @@ ${mailsText}
             document.getElementById('eac-settings-modal').classList.add('active');
         },
 
+        showSettings() {
+            document.getElementById('eac-settings-modal').classList.add('active');
+            // Load current settings
+            document.getElementById('eac-threshold').value = Storage.getSettings().threshold || CONFIG.threshold;
+            document.getElementById('eac-threshold-val').textContent = document.getElementById('eac-threshold').value;
+            document.getElementById('eac-autoscan').checked = Storage.getSettings().autoScan;
+
+            const aiSettings = Storage.getAISettings();
+            document.getElementById('eac-ai-enabled').checked = aiSettings.enabled;
+            document.getElementById('eac-ai-apikey').value = aiSettings.apiKey || '';
+            document.getElementById('eac-ai-mode').value = aiSettings.mode || 'hybrid';
+        },
+
         hideSettings() {
             document.getElementById('eac-settings-modal').classList.remove('active');
         },
@@ -1708,61 +1964,110 @@ ${mailsText}
             }
         },
 
+        // 规则管理相关
+        currentRulesTab: 'whitelist',
+
         showWhitelist() {
-            const whitelist = Storage.getWhitelist();
-            if (whitelist.length === 0) {
-                Toast.info('白名单为空');
+            this.currentRulesTab = 'whitelist';
+            this.openRulesModal();
+        },
+
+        showBlacklist() {
+            this.currentRulesTab = 'blacklist';
+            this.openRulesModal();
+        },
+
+        openRulesModal() {
+            const modal = document.getElementById('eac-rules-modal');
+            modal.classList.add('active');
+            this.renderRules();
+
+            // 更新 Tab 状态
+            document.querySelectorAll('.eac-rules-tab').forEach(t => {
+                t.classList.toggle('active', t.dataset.tab === this.currentRulesTab);
+            });
+        },
+
+        renderRules() {
+            const listEl = document.getElementById('eac-rules-list');
+            listEl.innerHTML = '';
+            const list = this.currentRulesTab === 'whitelist' ? Storage.getWhitelist() : Storage.getBlacklist();
+
+            if (list.length === 0) {
+                listEl.innerHTML = '<div style="padding:20px;text-align:center;color:#999;">暂无规则</div>';
                 return;
             }
 
-            const list = whitelist.map((email, i) => `${i + 1}. ${email}`).join('\n');
-            const action = prompt(`当前白名单:\n${list}\n\n输入序号删除，或输入邮箱添加:`);
+            list.forEach(item => {
+                const el = document.createElement('div');
+                el.className = 'eac-rule-item';
+                el.innerHTML = `
+                    <span class="eac-rule-text">${item}</span>
+                    <span class="eac-rule-del" title="删除">🗑</span>
+                `;
+                el.querySelector('.eac-rule-del').addEventListener('click', () => {
+                    this.removeRule(item);
+                });
+                listEl.appendChild(el);
+            });
+        },
 
-            if (action) {
-                const num = parseInt(action);
-                if (!isNaN(num) && num >= 1 && num <= whitelist.length) {
-                    Storage.removeFromWhitelist(whitelist[num - 1]);
-                    Toast.success('已从白名单移除');
-                } else if (action.includes('@')) {
-                    Storage.addToWhitelist(action);
-                    Toast.success('已添加到白名单');
-                }
+        addRule() {
+            const input = document.getElementById('eac-rule-input');
+            const val = input.value.trim();
+            if (!val) return;
+
+            const success = this.currentRulesTab === 'whitelist'
+                ? Storage.addToWhitelist(val)
+                : Storage.addToBlacklist(val);
+
+            if (success) {
+                input.value = '';
+                this.renderRules();
+                Toast.success(`已添加到${this.currentRulesTab === 'whitelist' ? '白名单' : '黑名单'}`);
+            } else {
+                Toast.warning('规则已存在');
             }
         },
 
-        // 显示黑名单管理
-        showBlacklist() {
-            const blacklist = Storage.getBlacklist();
-            const list = blacklist.length > 0
-                ? blacklist.map((email, i) => `${i + 1}. ${email}`).join('\n')
-                : '(空)';
-            const action = prompt(`当前黑名单:\n${list}\n\n输入序号删除，或输入邮箱/通配符添加 (如 *@newsletter.*):`);
-
-            if (action) {
-                const num = parseInt(action);
-                if (!isNaN(num) && num >= 1 && num <= blacklist.length) {
-                    Storage.removeFromBlacklist(blacklist[num - 1]);
-                    Toast.success('已从黑名单移除');
-                } else if (action.trim()) {
-                    Storage.addToBlacklist(action.trim());
-                    Toast.success('已添加到黑名单');
-                }
+        removeRule(val) {
+            if (this.currentRulesTab === 'whitelist') {
+                Storage.removeFromWhitelist(val);
+            } else {
+                Storage.removeFromBlacklist(val);
             }
+            this.renderRules();
         },
 
         // 显示统计面板
         showStats() {
+            const modal = document.getElementById('eac-stats-modal');
             const stats = Storage.getStats();
+
+            document.getElementById('eac-stat-total').textContent = stats.totalCleaned;
+            document.getElementById('eac-stat-last').textContent = stats.lastCleanDate ? new Date(stats.lastCleanDate).toLocaleDateString() : '从未';
+
+            const topList = document.getElementById('eac-stat-top');
+            topList.innerHTML = '';
+
             const topSenders = Object.entries(stats.topSenders)
                 .sort((a, b) => b[1] - a[1])
-                .slice(0, 5)
-                .map(([email, count]) => `  ${email}: ${count}次`)
-                .join('\n') || '  (暂无数据)';
+                .slice(0, 5);
 
-            alert(`📊 清理统计\n\n` +
-                `总清理数: ${stats.totalCleaned} 封\n` +
-                `最后清理: ${stats.lastCleanDate ? new Date(stats.lastCleanDate).toLocaleString() : '从未'}\n\n` +
-                `🔝 Top 5 广告发件人:\n${topSenders}`);
+            if (topSenders.length === 0) {
+                topList.innerHTML = '<li style="text-align:center;color:#999;padding:10px;">暂无数据</li>';
+            } else {
+                topSenders.forEach(([email, count]) => {
+                    topList.innerHTML += `
+                        <li class="eac-top-item">
+                            <span style="font-family:monospace;">${email}</span>
+                            <b>${count}</b>
+                        </li>
+                    `;
+                });
+            }
+
+            modal.classList.add('active');
         },
 
         // 导出配置
