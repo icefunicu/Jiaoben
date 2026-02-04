@@ -1,0 +1,8017 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "generatedAt": "2026-02-04T14:27:09Z",
+    "sources": [
+      {
+        "name": "wikidata",
+        "license": "CC0"
+      },
+      {
+        "name": "mesh",
+        "license": "NLM Terms and Conditions",
+        "year": 2026
+      },
+      {
+        "name": "fibo",
+        "license": "MIT",
+        "version": "master",
+        "subset": "FND,FBC,SEC",
+        "importLimit": 25
+      }
+    ],
+    "domainStats": {
+      "Software Engineering": 368,
+      "Finance": 76,
+      "Legal": 331,
+      "Medical": 406
+    },
+    "limits": {
+      "targetTotal": 3000,
+      "domainLimit": 800,
+      "rootLimit": 300
+    }
+  },
+  "items": [
+    {
+      "id": "Q419834",
+      "term": "(RS)-primaquine",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q178275",
+      "term": "1918–1920 flu pandemic",
+      "aliases": [
+        "1918–1920 flu pandemics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q31631",
+      "term": "1936 Soviet Constitution",
+      "aliases": [
+        "1936 Soviet Constitutions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q645016",
+      "term": "1977 Soviet Constitution",
+      "aliases": [
+        "1977 Soviet Constitutions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q836113",
+      "term": "A-share",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1886589",
+      "term": "ablation",
+      "aliases": [
+        "ablations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q516233",
+      "term": "Acacia pycnantha",
+      "aliases": [
+        "Acacia pycnanthas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q766133",
+      "term": "Acer cappadocicum",
+      "aliases": [
+        "Acer cappadocicums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1021864",
+      "term": "Acer laevigatum",
+      "aliases": [
+        "Acer laevigatums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2248403",
+      "term": "Acerbo Law",
+      "aliases": [
+        "Acerbo Laws"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1647638",
+      "term": "Active Hexose Correlated Compound",
+      "aliases": [
+        "Active Hexose Correlated Compounds"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q344266",
+      "term": "Active Server Pages",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q121713",
+      "term": "acupuncture",
+      "aliases": [
+        "acupunctures"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q11650808",
+      "term": "acupuncture and moxibustion",
+      "aliases": [
+        "acupuncture and moxibustions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q935761",
+      "term": "Adderall",
+      "aliases": [
+        "Adderalls"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356005",
+      "term": "adenoid cystic carcinoma",
+      "aliases": [
+        "adenoid cystic carcinomas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356194",
+      "term": "adenoidectomy",
+      "aliases": [
+        "adenoidectomies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1055374",
+      "term": "adenosine deaminase deficiency",
+      "aliases": [
+        "adenosine deaminase deficiencies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356410",
+      "term": "adermatoglyphia",
+      "aliases": [
+        "adermatoglyphias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q225107",
+      "term": "adjugate matrix",
+      "aliases": [
+        "adjugate matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q106450207",
+      "term": "Administrative Law Enforcement Supervision Regulations of Jiangxi Province",
+      "aliases": [
+        "Administrative Law Enforcement Supervision Regulations of Jiangxi Provinces"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q190746",
+      "term": "Advanced Encryption Standard",
+      "aliases": [
+        "Advanced Encryption Standards"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q573132",
+      "term": "Aesculus indica",
+      "aliases": [
+        "Aesculus indicas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q358375",
+      "term": "agarwood",
+      "aliases": [
+        "agarwoods"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q830308",
+      "term": "age related macular degeneration",
+      "aliases": [
+        "age related macular degenerations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q321839",
+      "term": "agreement",
+      "aliases": [
+        "agreements"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q396090",
+      "term": "agricultural geography",
+      "aliases": [
+        "agricultural geographies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q402342",
+      "term": "Aho–Corasick algorithm",
+      "aliases": [
+        "Aho–Corasick algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134529768",
+      "term": "AI-powered enterprise system",
+      "aliases": [
+        "AI-powered enterprise systems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134263749",
+      "term": "AI-powered infrastructure",
+      "aliases": [
+        "AI-powered infrastructures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q135940190",
+      "term": "AI-powered roadside infrastructure",
+      "aliases": [
+        "AI-powered roadside infrastructures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q12199",
+      "term": "AIDS",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q81867",
+      "term": "albinism",
+      "aliases": [
+        "albinisms"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q19109595",
+      "term": "Alcohol",
+      "aliases": [
+        "Alcohols"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q272436",
+      "term": "allergic rhinitis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q42296896",
+      "term": "AlphaGo versus Fan Hui",
+      "aliases": [
+        "AlphaGo versus Fan Huis"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q30035185",
+      "term": "AlphaGo versus Ke Jie",
+      "aliases": [
+        "AlphaGo versus Ke Jies"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q23016184",
+      "term": "AlphaGo versus Lee Sedol",
+      "aliases": [
+        "AlphaGo versus Lee Sedols"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q105246837",
+      "term": "American Rescue Plan Act of 2021",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1111004",
+      "term": "Americans with Disabilities Act of 1990",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4747075",
+      "term": "amlodipine/valsartan",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q206901",
+      "term": "amyotrophic lateral sclerosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q71950564",
+      "term": "An Act to prohibit the commercial export of covered munitions items to the Hong Kong Police Force",
+      "aliases": [
+        "An Act to prohibit the commercial export of covered munitions items to the Hong Kong Police Forces"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q847098",
+      "term": "Angelica dahurica",
+      "aliases": [
+        "Angelica dahuricas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q535364",
+      "term": "Angelman syndrome",
+      "aliases": [
+        "Angelman syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q733081",
+      "term": "angle trisection",
+      "aliases": [
+        "angle trisections"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q97154236",
+      "term": "Anhui Zhifei Longcom Biopharmaceutical COVID-19 vaccine candidate",
+      "aliases": [
+        "Anhui Zhifei Longcom Biopharmaceutical COVID-19 vaccine candidates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q135120194",
+      "term": "anime/manga style",
+      "aliases": [
+        "anime/manga styles"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17151716",
+      "term": "Anji bai cha",
+      "aliases": [
+        "Anji bai chas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208726",
+      "term": "anogenital venereal wart",
+      "aliases": [
+        "anogenital venereal warts"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1063123",
+      "term": "anti-Catholicism",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q22078733",
+      "term": "Anti-terrorism Law of the People's Republic of China",
+      "aliases": [
+        "Anti-terrorism Law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12187",
+      "term": "antibiotic",
+      "aliases": [
+        "antibiotics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q274493",
+      "term": "antiseptic",
+      "aliases": [
+        "antiseptics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q846227",
+      "term": "antiviral drug",
+      "aliases": [
+        "antiviral drugs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q618690",
+      "term": "apitherapy",
+      "aliases": [
+        "apitherapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q126486452",
+      "term": "Apple Intelligence",
+      "aliases": [
+        "Apple Intelligences"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q213710",
+      "term": "Apple Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q220783",
+      "term": "arachnophobia",
+      "aliases": [
+        "arachnophobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q648982",
+      "term": "argyria",
+      "aliases": [
+        "argyrias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q662575",
+      "term": "Ariola",
+      "aliases": [
+        "Ariolas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q664167",
+      "term": "Arista Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2663969",
+      "term": "Arnim Zola",
+      "aliases": [
+        "Arnim Zolas"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q186152",
+      "term": "array data structure",
+      "aliases": [
+        "array data structures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q80083142",
+      "term": "article 9 of the Universal Declaration of Human Rights",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q126888",
+      "term": "artificial heart",
+      "aliases": [
+        "artificial hearts"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q108456694",
+      "term": "Artificial Intelligence Act",
+      "aliases": [
+        "Artificial Intelligence Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60573975",
+      "term": "Asia Reassurance Initiative Act",
+      "aliases": [
+        "Asia Reassurance Initiative Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6470767",
+      "term": "assembler",
+      "aliases": [
+        "assemblers"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q165436",
+      "term": "assembly language",
+      "aliases": [
+        "assembly languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1139122",
+      "term": "asset-backed security",
+      "aliases": [
+        "asset-backed securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q80585",
+      "term": "associative array",
+      "aliases": [
+        "associative arrays"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q26377",
+      "term": "asylum",
+      "aliases": [
+        "asylums"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3556505",
+      "term": "attention deficit hyperactivity disorder management",
+      "aliases": [
+        "attention deficit hyperactivity disorder managements"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q17514211",
+      "term": "Autism CARES Act of 2014",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q741490",
+      "term": "autonomous car",
+      "aliases": [
+        "autonomous cars"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q790686",
+      "term": "Avex Group",
+      "aliases": [
+        "Avex Groups"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q43987",
+      "term": "avian influenza",
+      "aliases": [
+        "avian influenzas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132325",
+      "term": "Ayurveda",
+      "aliases": [
+        "Ayurvedas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q170461",
+      "term": "Azadirachta indica",
+      "aliases": [
+        "Azadirachta indicas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q788110",
+      "term": "Bach flowers",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q243748",
+      "term": "bacteriology",
+      "aliases": [
+        "bacteriologies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q798658",
+      "term": "Bad Boy Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97351541",
+      "term": "Baidu Fanyi",
+      "aliases": [
+        "Baidu Fanyis"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q162351",
+      "term": "bail",
+      "aliases": [
+        "bails"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4860832",
+      "term": "Barium sulfate suspension",
+      "aliases": [
+        "Barium sulfate suspensions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15165",
+      "term": "Basic Law of Hong Kong",
+      "aliases": [
+        "Basic Law of Hong Kongs"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q709136",
+      "term": "Bates method",
+      "aliases": [
+        "Bates methods"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q812548",
+      "term": "Bayh–Dole Act",
+      "aliases": [
+        "Bayh–Dole Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97154230",
+      "term": "BBIBP-CorV",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q810009",
+      "term": "BCPL",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q812923",
+      "term": "Beale ciphers",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q647525",
+      "term": "behavioral economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q134529244",
+      "term": "Bell Corporate Ecosystem",
+      "aliases": [
+        "Bell Corporate Ecosystems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134528840",
+      "term": "bell infrastructure platform",
+      "aliases": [
+        "bell infrastructure platforms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q209563",
+      "term": "Berkeley Open Infrastructure for Network Computing",
+      "aliases": [
+        "Berkeley Open Infrastructure for Network Computings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q770103",
+      "term": "Bertelsmann Music Group",
+      "aliases": [
+        "Bertelsmann Music Groups"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q853135",
+      "term": "Besiege Wèi to rescue Zhào",
+      "aliases": [
+        "Besiege Wèi to rescue Zhàos"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2565881",
+      "term": "bet",
+      "aliases": [
+        "bets"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q422297",
+      "term": "beta-lipotropin",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27277423",
+      "term": "bexagliflozin",
+      "aliases": [
+        "bexagliflozins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2983740",
+      "term": "Biluochun",
+      "aliases": [
+        "Biluochuns"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q243754",
+      "term": "binary search algorithm",
+      "aliases": [
+        "binary search algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q623818",
+      "term": "binary search tree",
+      "aliases": [
+        "binary search trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q380172",
+      "term": "binary tree",
+      "aliases": [
+        "binary trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q128570",
+      "term": "bioinformatics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q179991",
+      "term": "biopsy",
+      "aliases": [
+        "biopsies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q866300",
+      "term": "bisection method",
+      "aliases": [
+        "bisection methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131723",
+      "term": "Bitcoin",
+      "aliases": [
+        "Bitcoins"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q34328146",
+      "term": "Bitcoin Cash",
+      "aliases": [
+        "Bitcoin Cashes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1194708",
+      "term": "bitmap",
+      "aliases": [
+        "bitmaps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111913391",
+      "term": "BKEngine",
+      "aliases": [
+        "BKEngines"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1218005",
+      "term": "blind men and an elephant",
+      "aliases": [
+        "blind men and an elephants"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q20514253",
+      "term": "blockchain",
+      "aliases": [
+        "blockchains"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q275157",
+      "term": "blood glucose",
+      "aliases": [
+        "blood glucoses"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q886731",
+      "term": "blood phobia",
+      "aliases": [
+        "blood phobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q885373",
+      "term": "Bloom filter",
+      "aliases": [
+        "Bloom filters"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q762850",
+      "term": "bogosort",
+      "aliases": [
+        "bogosorts"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11693",
+      "term": "bond",
+      "aliases": [
+        "bonds"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2154740",
+      "term": "boom",
+      "aliases": [
+        "booms"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q4955187",
+      "term": "Brady Handgun Violence Prevention Act",
+      "aliases": [
+        "Brady Handgun Violence Prevention Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q325904",
+      "term": "breadth-first search",
+      "aliases": [
+        "breadth-first searches"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1410808",
+      "term": "breast fibroadenoma",
+      "aliases": [
+        "breast fibroadenomas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8876908",
+      "term": "Bridelia stipularis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4971815",
+      "term": "broad-spectrum antibiotic",
+      "aliases": [
+        "broad-spectrum antibiotics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6787153",
+      "term": "bucket sort",
+      "aliases": [
+        "bucket sorts"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1016605",
+      "term": "Burkitt lymphoma",
+      "aliases": [
+        "Burkitt lymphomas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q165728",
+      "term": "Bürgerliches Gesetzbuch",
+      "aliases": [
+        "Bürgerliches Gesetzbuches"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q489412",
+      "term": "cabin fever",
+      "aliases": [
+        "cabin fevers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q42385",
+      "term": "cacao",
+      "aliases": [
+        "cacaos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q909139",
+      "term": "Calamine lotion",
+      "aliases": [
+        "Calamine lotions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q706",
+      "term": "calcium",
+      "aliases": [
+        "calciums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q759899",
+      "term": "call stack",
+      "aliases": [
+        "call stacks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2349546",
+      "term": "Canavan disease",
+      "aliases": [
+        "Canavan diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1787013",
+      "term": "cancer prevention",
+      "aliases": [
+        "cancer preventions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3044843",
+      "term": "cancer screening",
+      "aliases": [
+        "cancer screenings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q127766413",
+      "term": "Cangjie",
+      "aliases": [
+        "Cangjies"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2937480",
+      "term": "Capitol Music Group",
+      "aliases": [
+        "Capitol Music Groups"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193023",
+      "term": "Capitol Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q21155816",
+      "term": "caraway seeds",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q695851",
+      "term": "Carlsbad Decrees",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q332293",
+      "term": "carpal tunnel syndrome",
+      "aliases": [
+        "carpal tunnel syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q46441",
+      "term": "Cascading Style Sheets",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q603117",
+      "term": "Castle Communications",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q337492",
+      "term": "castor oil",
+      "aliases": [
+        "castor oils"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207642",
+      "term": "Catha edulis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1768566",
+      "term": "cause of action",
+      "aliases": [
+        "cause of actions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28859600",
+      "term": "ceftolozane / tazobactam",
+      "aliases": [
+        "ceftolozane / tazobactams"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104176881",
+      "term": "celery juice",
+      "aliases": [
+        "celery juices"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q158867",
+      "term": "Century Media Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q228036",
+      "term": "cesarean section",
+      "aliases": [
+        "cesarean sections"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281528",
+      "term": "charge/discharge optimization",
+      "aliases": [
+        "charge/discharge optimizations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q547896",
+      "term": "Chemical Weapons Convention",
+      "aliases": [
+        "Chemical Weapons Conventions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q73988",
+      "term": "chenpi",
+      "aliases": [
+        "chenpis"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q568865",
+      "term": "cherubism",
+      "aliases": [
+        "cherubisms"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q44727",
+      "term": "chickenpox",
+      "aliases": [
+        "chickenpoxes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q511618",
+      "term": "Children's Online Privacy Protection Act",
+      "aliases": [
+        "Children's Online Privacy Protection Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106514790",
+      "term": "Chinese Academy of Medical Sciences COVID-19 vaccine",
+      "aliases": [
+        "Chinese Academy of Medical Sciences COVID-19 vaccines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2876705",
+      "term": "Chinese BASIC",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1073716",
+      "term": "Chinese Exclusion Act",
+      "aliases": [
+        "Chinese Exclusion Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q261503",
+      "term": "Chinese herbology",
+      "aliases": [
+        "Chinese herbologies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5100861",
+      "term": "Chinese patent medicine",
+      "aliases": [
+        "Chinese patent medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5100624",
+      "term": "Chinese Student Protection Act of 1992",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q11341994",
+      "term": "Chinese thorowax root",
+      "aliases": [
+        "Chinese thorowax roots"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10876607",
+      "term": "ChinesePython",
+      "aliases": [
+        "ChinesePythons"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q113449362",
+      "term": "CHIPS and Science Act",
+      "aliases": [
+        "CHIPS and Science Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q658096",
+      "term": "chiropractic",
+      "aliases": [
+        "chiropractics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q688",
+      "term": "chlorine",
+      "aliases": [
+        "chlorines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12090",
+      "term": "cholera",
+      "aliases": [
+        "choleras"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q559082",
+      "term": "chondrocalcinosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28165",
+      "term": "cinnamon",
+      "aliases": [
+        "cinnamons"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2736227",
+      "term": "cipher block chaining message authentication code",
+      "aliases": [
+        "cipher block chaining message authentication codes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q61066827",
+      "term": "Citizenship (Amendment) Act, 2019",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q10372494",
+      "term": "Civil Code of Japan",
+      "aliases": [
+        "Civil Code of Japans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q56261592",
+      "term": "Civil Code of the People's Republic of China",
+      "aliases": [
+        "Civil Code of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17164556",
+      "term": "Civil Servants Election And Recall Act",
+      "aliases": [
+        "Civil Servants Election And Recall Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1527956",
+      "term": "clause",
+      "aliases": [
+        "clauses"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q222634",
+      "term": "cleft lip and cleft palate",
+      "aliases": [
+        "cleft lip and cleft palates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q146813",
+      "term": "client-server model",
+      "aliases": [
+        "client-server models"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5012783",
+      "term": "CLP(R)",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1147152",
+      "term": "cognitive behavioral therapy",
+      "aliases": [
+        "cognitive behavioral therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1107087",
+      "term": "Cohen syndrome",
+      "aliases": [
+        "Cohen syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q418946",
+      "term": "colistin",
+      "aliases": [
+        "colistins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q694563",
+      "term": "collateral",
+      "aliases": [
+        "collaterals"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1108930",
+      "term": "collateralized debt obligation",
+      "aliases": [
+        "collateralized debt obligations"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5146039",
+      "term": "Collected Cases of Injustice Rectified",
+      "aliases": [
+        "Collected Cases of Injustice Rectifieds"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q189053",
+      "term": "command-line interface",
+      "aliases": [
+        "command-line interfaces"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q26643",
+      "term": "commerce",
+      "aliases": [
+        "commerces"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7886321",
+      "term": "commercial mortgage-backed security",
+      "aliases": [
+        "commercial mortgage-backed securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q12125",
+      "term": "common cold",
+      "aliases": [
+        "common colds"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10872860",
+      "term": "Common Program of the Chinese People's Political Consultative Conference",
+      "aliases": [
+        "Common Program of the Chinese People's Political Consultative Conferences"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1081659",
+      "term": "common stock",
+      "aliases": [
+        "common stocks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q171497",
+      "term": "common sunflower",
+      "aliases": [
+        "common sunflowers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q651794",
+      "term": "compiled language",
+      "aliases": [
+        "compiled languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q29791664",
+      "term": "complete binary tree",
+      "aliases": [
+        "complete binary trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q886518",
+      "term": "complete blood count",
+      "aliases": [
+        "complete blood counts"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5958573",
+      "term": "compulsive sexual behaviour disorder",
+      "aliases": [
+        "compulsive sexual behaviour disorders"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q369472",
+      "term": "computational chemistry",
+      "aliases": [
+        "computational chemistries"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q205084",
+      "term": "computational complexity theory",
+      "aliases": [
+        "computational complexity theories"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q32566",
+      "term": "computed tomography",
+      "aliases": [
+        "computed tomographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1138872",
+      "term": "computed tomography of the head",
+      "aliases": [
+        "computed tomography of the heads"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q868714",
+      "term": "computer-aided software engineering",
+      "aliases": [
+        "computer-aided software engineerings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4230857",
+      "term": "concatenative programming language",
+      "aliases": [
+        "concatenative programming languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q366868",
+      "term": "congenital adrenal hyperplasia",
+      "aliases": [
+        "congenital adrenal hyperplasias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3508618",
+      "term": "Congenital contractural arachnodactyly",
+      "aliases": [
+        "Congenital contractural arachnodactylies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q939364",
+      "term": "congenital heart disease",
+      "aliases": [
+        "congenital heart diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3508800",
+      "term": "congenital myasthenic syndrome",
+      "aliases": [
+        "congenital myasthenic syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104709025",
+      "term": "Consolidated Appropriations Act, 2021",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q111307740",
+      "term": "Consolidated Appropriations Act, 2022",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q115864497",
+      "term": "Consolidated Appropriations Act, 2023",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q312584",
+      "term": "Constitutio Antoniniana",
+      "aliases": [
+        "Constitutio Antoninianas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q122804",
+      "term": "Constitution of the Empire of Japan",
+      "aliases": [
+        "Constitution of the Empire of Japans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1128903",
+      "term": "continuation",
+      "aliases": [
+        "continuations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q749893",
+      "term": "continuation-passing style",
+      "aliases": [
+        "continuation-passing styles"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q93288",
+      "term": "contract",
+      "aliases": [
+        "contracts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1129769",
+      "term": "contract for difference",
+      "aliases": [
+        "contract for differences"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q20687997",
+      "term": "Contract law of the People's Republic of China",
+      "aliases": [
+        "Contract law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7361709",
+      "term": "convenience store",
+      "aliases": [
+        "convenience stores"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q851857",
+      "term": "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishment",
+      "aliases": [
+        "Convention against Torture and Other Cruel, Inhuman or Degrading Treatment or Punishments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q152805",
+      "term": "Convention on Biological Diversity",
+      "aliases": [
+        "Convention on Biological Diversities"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1426885",
+      "term": "Convention on International Civil Aviation",
+      "aliases": [
+        "Convention on International Civil Aviations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1352119",
+      "term": "Convention on the Conservation of Antarctic Marine Living Resources",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q277072",
+      "term": "Convention on the Elimination of All Forms of Discrimination against Women",
+      "aliases": [
+        "Convention on the Elimination of All Forms of Discrimination against Womens"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1156234",
+      "term": "Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matter",
+      "aliases": [
+        "Convention on the Prevention of Marine Pollution by Dumping of Wastes and Other Matters"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q680031",
+      "term": "Convention on the Recognition and Enforcement of Foreign Arbitral Awards",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1069706",
+      "term": "Convention on the Rights of Persons with Disabilities",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q466087",
+      "term": "Convention on the Rights of the Child",
+      "aliases": [
+        "Convention on the Rights of the Childs"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5166243",
+      "term": "Convention Relating to the Status of Stateless Persons",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1297822",
+      "term": "copyright",
+      "aliases": [
+        "copyrights"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q31070023",
+      "term": "Countering America's Adversaries Through Sanctions Act",
+      "aliases": [
+        "Countering America's Adversaries Through Sanctions Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28456479",
+      "term": "Countering Foreign Propaganda and Disinformation Act",
+      "aliases": [
+        "Countering Foreign Propaganda and Disinformation Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q84263196",
+      "term": "COVID-19",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q83554667",
+      "term": "COVID-19 lockdown in China",
+      "aliases": [
+        "COVID-19 lockdown in Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q117477640",
+      "term": "Covid-19 Origin Act of 2023",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q86901049",
+      "term": "COVID-19 test",
+      "aliases": [
+        "COVID-19 tests"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q322666",
+      "term": "Cramer's rule",
+      "aliases": [
+        "Cramer's rules"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q63860166",
+      "term": "creator who is not dead",
+      "aliases": [
+        "creator who is not deads"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q624028",
+      "term": "credit default swap",
+      "aliases": [
+        "credit default swaps"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157165",
+      "term": "creditor",
+      "aliases": [
+        "creditors"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q49989",
+      "term": "Creutzfeldt-Jakob disease",
+      "aliases": [
+        "Creutzfeldt-Jakob diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q329525",
+      "term": "criminal charge",
+      "aliases": [
+        "criminal charges"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1761413",
+      "term": "criminalization",
+      "aliases": [
+        "criminalizations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1472",
+      "term": "Crohn's disease",
+      "aliases": [
+        "Crohn's diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q21769973",
+      "term": "cryptocurrency mining",
+      "aliases": [
+        "cryptocurrency minings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1790389",
+      "term": "cryptographically secure pseudo-random number generator",
+      "aliases": [
+        "cryptographically secure pseudo-random number generators"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q8789",
+      "term": "cryptography",
+      "aliases": [
+        "cryptographies"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q107121219",
+      "term": "cryptojacking",
+      "aliases": [
+        "cryptojackings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5192041",
+      "term": "Cuban Adjustment Act",
+      "aliases": [
+        "Cuban Adjustment Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q484449",
+      "term": "Cube Entertainment",
+      "aliases": [
+        "Cube Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1584911",
+      "term": "cuckoo hashing",
+      "aliases": [
+        "cuckoo hashings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q147513",
+      "term": "Cupressus sempervirens",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q515371",
+      "term": "currency swap",
+      "aliases": [
+        "currency swaps"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q178194",
+      "term": "cystic fibrosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q899329",
+      "term": "Dangerous Substances Directive",
+      "aliases": [
+        "Dangerous Substances Directives"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q612728",
+      "term": "data cluster",
+      "aliases": [
+        "data clusters"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q135035",
+      "term": "Data Encryption Standard",
+      "aliases": [
+        "Data Encryption Standards"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q175263",
+      "term": "data structure",
+      "aliases": [
+        "data structures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q557632",
+      "term": "Decca",
+      "aliases": [
+        "Deccas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q177571",
+      "term": "decision theory",
+      "aliases": [
+        "decision theories"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q15937037",
+      "term": "Decree of the State Council of the People's Republic of China No. 649",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q64605672",
+      "term": "decriminalisation of homosexuality",
+      "aliases": [
+        "decriminalisation of homosexualities"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3235334",
+      "term": "Deep Blue versus Garry Kasparov",
+      "aliases": [
+        "Deep Blue versus Garry Kasparovs"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q654283",
+      "term": "Def Jam Recordings",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q191783",
+      "term": "defamation",
+      "aliases": [
+        "defamations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4921754",
+      "term": "Defeat the enemy by capturing their chief",
+      "aliases": [
+        "Defeat the enemy by capturing their chiefs"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27617",
+      "term": "denazification",
+      "aliases": [
+        "denazifications"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30953",
+      "term": "dengue fever",
+      "aliases": [
+        "dengue fevers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q831774",
+      "term": "density matrix",
+      "aliases": [
+        "density matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q548984",
+      "term": "dentinogenesis imperfecta",
+      "aliases": [
+        "dentinogenesis imperfectas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q66295",
+      "term": "derivative",
+      "aliases": [
+        "derivatives"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q3493547",
+      "term": "desensitization",
+      "aliases": [
+        "desensitizations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q168407",
+      "term": "Deutsche Grammophon",
+      "aliases": [
+        "Deutsche Grammophons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3025599",
+      "term": "dexfenfluramine",
+      "aliases": [
+        "dexfenfluramines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5270124",
+      "term": "Diabetes control and complications trial",
+      "aliases": [
+        "Diabetes control and complications trials"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q220551",
+      "term": "diabetes insipidus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q332791",
+      "term": "diagonal matrix",
+      "aliases": [
+        "diagonal matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2458742",
+      "term": "dialect",
+      "aliases": [
+        "dialects"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5276090",
+      "term": "digital health",
+      "aliases": [
+        "digital healths"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q104829590",
+      "term": "Digital Markets Act",
+      "aliases": [
+        "Digital Markets Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q753379",
+      "term": "Digital Millennium Copyright Act",
+      "aliases": [
+        "Digital Millennium Copyright Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q100691575",
+      "term": "Digital Services Act",
+      "aliases": [
+        "Digital Services Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q422222",
+      "term": "digoxin",
+      "aliases": [
+        "digoxins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8548",
+      "term": "Dijkstra's algorithm",
+      "aliases": [
+        "Dijkstra's algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q420439",
+      "term": "dimenhydrinate",
+      "aliases": [
+        "dimenhydrinates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q730933",
+      "term": "Dinic's algorithm",
+      "aliases": [
+        "Dinic's algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q771101",
+      "term": "Diospyros lotus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q419770",
+      "term": "dipeptidyl peptidase-4 inhibitors",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q55110225",
+      "term": "Directive on Copyright in the Digital Single Market",
+      "aliases": [
+        "Directive on Copyright in the Digital Single Markets"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2274060",
+      "term": "disaster medicine",
+      "aliases": [
+        "disaster medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q169207",
+      "term": "discrimination",
+      "aliases": [
+        "discriminations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5283178",
+      "term": "distributed social network",
+      "aliases": [
+        "distributed social networks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q411447",
+      "term": "DL-ofloxacin",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6535129",
+      "term": "do not resuscitate",
+      "aliases": [
+        "do not resuscitates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15377916",
+      "term": "Dogecoin",
+      "aliases": [
+        "Dogecoins"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q909377",
+      "term": "donkey-hide gelatin",
+      "aliases": [
+        "donkey-hide gelatins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28163580",
+      "term": "Dopamine",
+      "aliases": [
+        "Dopamines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5327743",
+      "term": "double eyelid surgery",
+      "aliases": [
+        "double eyelid surgeries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1192005",
+      "term": "double-ended queue",
+      "aliases": [
+        "double-ended queues"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q309607",
+      "term": "Dual_EC_DRBG",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q121437649",
+      "term": "Dubious Food",
+      "aliases": [
+        "Dubious Foods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1648484",
+      "term": "Duchenne muscular dystrophy",
+      "aliases": [
+        "Duchenne muscular dystrophies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281765",
+      "term": "dynamic pricing in infrastructure services",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q132971",
+      "term": "dyslexia",
+      "aliases": [
+        "dyslexias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3390520",
+      "term": "E-Gate",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q615541",
+      "term": "eager evaluation",
+      "aliases": [
+        "eager evaluations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q583528",
+      "term": "ear candling",
+      "aliases": [
+        "ear candlings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q666365",
+      "term": "earliest deadline first scheduling",
+      "aliases": [
+        "earliest deadline first schedulings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11088328",
+      "term": "Easy Programming Language",
+      "aliases": [
+        "Easy Programming Languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q51993",
+      "term": "Ebola hemorrhagic fever",
+      "aliases": [
+        "Ebola hemorrhagic fevers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q187097",
+      "term": "economic geography",
+      "aliases": [
+        "economic geographies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q189833",
+      "term": "economic growth",
+      "aliases": [
+        "economic growths"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q8134",
+      "term": "economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5333576",
+      "term": "economics education",
+      "aliases": [
+        "economics educations"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q806718",
+      "term": "economics of banking",
+      "aliases": [
+        "economics of bankings"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q180764",
+      "term": "Edict of Milan",
+      "aliases": [
+        "Edict of Milans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q845506",
+      "term": "Electrecord",
+      "aliases": [
+        "Electrecords"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q79785",
+      "term": "electrocardiography",
+      "aliases": [
+        "electrocardiographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q131543",
+      "term": "electroconvulsive therapy",
+      "aliases": [
+        "electroconvulsive therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q179965",
+      "term": "electroencephalography",
+      "aliases": [
+        "electroencephalographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q726251",
+      "term": "Elektra",
+      "aliases": [
+        "Elektras"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q332126",
+      "term": "ELISA",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1686420",
+      "term": "Embargo Act of 1807",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5369984",
+      "term": "Embedded C",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111378521",
+      "term": "Emergency (Exemption from Statutory Requirements) (COVID-19) Regulation",
+      "aliases": [
+        "Emergency (Exemption from Statutory Requirements) (COVID-19) Regulations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q175844",
+      "term": "emetophobia",
+      "aliases": [
+        "emetophobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3045977",
+      "term": "EMI Classics",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q166332",
+      "term": "eminent domain",
+      "aliases": [
+        "eminent domains"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q834469",
+      "term": "Emperor Entertainment Group",
+      "aliases": [
+        "Emperor Entertainment Groups"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q54803564",
+      "term": "empty matrix",
+      "aliases": [
+        "empty matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q212809",
+      "term": "endoscopy",
+      "aliases": [
+        "endoscopies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134267342",
+      "term": "energy arbitrage",
+      "aliases": [
+        "energy arbitrages"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q134281645",
+      "term": "energy arbitrage using AI",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134267357",
+      "term": "energy trading strategy",
+      "aliases": [
+        "energy trading strategies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1342448",
+      "term": "Engishiki",
+      "aliases": [
+        "Engishikis"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q245652",
+      "term": "ensemble learning",
+      "aliases": [
+        "ensemble learnings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3281753",
+      "term": "Entada phaseoloides",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6881511",
+      "term": "enterprise",
+      "aliases": [
+        "enterprises"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5323966",
+      "term": "ePassport gates",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q13530468",
+      "term": "ephedra",
+      "aliases": [
+        "ephedras"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q136787512",
+      "term": "Epstein Files Transparency Act",
+      "aliases": [
+        "Epstein Files Transparency Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5384135",
+      "term": "Equal Pay Act of 1963",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q264980",
+      "term": "Equal Vision Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28163615",
+      "term": "estradiol cypionate/medroxyprogesterone acetate",
+      "aliases": [
+        "estradiol cypionate/medroxyprogesterone acetates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q60218105",
+      "term": "estradiol valerate/cyproterone acetate",
+      "aliases": [
+        "estradiol valerate/cyproterone acetates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16783523",
+      "term": "Ethereum",
+      "aliases": [
+        "Ethereums"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q29583124",
+      "term": "Ethereum Classic",
+      "aliases": [
+        "Ethereum Classics"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4205889",
+      "term": "ethiodized oil",
+      "aliases": [
+        "ethiodized oils"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1371645",
+      "term": "etonogestrel birth control implant",
+      "aliases": [
+        "etonogestrel birth control implants"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1608174",
+      "term": "Euler's factorization method",
+      "aliases": [
+        "Euler's factorization methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q110868019",
+      "term": "European Chips Act",
+      "aliases": [
+        "European Chips Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q100159",
+      "term": "euthanasia",
+      "aliases": [
+        "euthanasias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q691640",
+      "term": "evidence-based medicine",
+      "aliases": [
+        "evidence-based medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2298789",
+      "term": "evolutionary game theory",
+      "aliases": [
+        "evolutionary game theories"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18835757",
+      "term": "Exit and Entry Administration Law of the People's Republic of China",
+      "aliases": [
+        "Exit and Entry Administration Law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5420623",
+      "term": "exoneration",
+      "aliases": [
+        "exonerations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1385195",
+      "term": "extracorporeal membrane oxygenation",
+      "aliases": [
+        "extracorporeal membrane oxygenations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q210603",
+      "term": "extradition",
+      "aliases": [
+        "extraditions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q39601771",
+      "term": "Face ID",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3064815",
+      "term": "False Claims Act",
+      "aliases": [
+        "False Claims Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1476057",
+      "term": "false position method",
+      "aliases": [
+        "false position methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2711291",
+      "term": "familial hypercholesterolemia",
+      "aliases": [
+        "familial hypercholesterolemias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1144618",
+      "term": "familial Mediterranean fever",
+      "aliases": [
+        "familial Mediterranean fevers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q870449",
+      "term": "family therapy",
+      "aliases": [
+        "family therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1179460",
+      "term": "Fanconi syndrome",
+      "aliases": [
+        "Fanconi syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q32980",
+      "term": "fast inverse square root",
+      "aliases": [
+        "fast inverse square roots"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17013334",
+      "term": "feature learning",
+      "aliases": [
+        "feature learnings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3258618",
+      "term": "Federal Election Campaign Act",
+      "aliases": [
+        "Federal Election Campaign Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2982567",
+      "term": "Federal Reserve Act",
+      "aliases": [
+        "Federal Reserve Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30325419",
+      "term": "Fediverse",
+      "aliases": [
+        "Fediverses"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4922239",
+      "term": "Feign madness but keep your balance",
+      "aliases": [
+        "Feign madness but keep your balances"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q208373",
+      "term": "female genital mutilation",
+      "aliases": [
+        "female genital mutilations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q167732",
+      "term": "Fenfluramine/phentermine",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1276370",
+      "term": "Fenwick tree",
+      "aliases": [
+        "Fenwick trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111185",
+      "term": "Ferula assa-foetida",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1410737",
+      "term": "Fibonacci heap",
+      "aliases": [
+        "Fibonacci heaps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1410851",
+      "term": "fibromatosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q515636",
+      "term": "FIFO",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q247506",
+      "term": "financial instrument",
+      "aliases": [
+        "financial instruments"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q8248157",
+      "term": "fisheries biology",
+      "aliases": [
+        "fisheries biologies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1420050",
+      "term": "fisheries science",
+      "aliases": [
+        "fisheries sciences"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q6522952",
+      "term": "Fisher–Yates shuffle",
+      "aliases": [
+        "Fisher–Yates shuffles"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5460029",
+      "term": "Flood Control Act of 1928",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1263070",
+      "term": "Foreign Agents Registration Act",
+      "aliases": [
+        "Foreign Agents Registration Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q471295",
+      "term": "Foreign Corrupt Practices Act",
+      "aliases": [
+        "Foreign Corrupt Practices Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5470110",
+      "term": "Former Presidents Act",
+      "aliases": [
+        "Former Presidents Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q744762",
+      "term": "forward contract",
+      "aliases": [
+        "forward contracts"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157031",
+      "term": "foundation",
+      "aliases": [
+        "foundations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q221472",
+      "term": "fragile X syndrome",
+      "aliases": [
+        "fragile X syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5500256",
+      "term": "free list",
+      "aliases": [
+        "free lists"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2981534",
+      "term": "French code of criminal procedure",
+      "aliases": [
+        "French code of criminal procedures"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2981466",
+      "term": "french commercial code",
+      "aliases": [
+        "french commercial codes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2981515",
+      "term": "French Intellectual Property Code",
+      "aliases": [
+        "French Intellectual Property Codes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q677681",
+      "term": "French penal code",
+      "aliases": [
+        "French penal codes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q18846240",
+      "term": "Frontier Health and Quarantine Law of the People's Republic of China",
+      "aliases": [
+        "Frontier Health and Quarantine Law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29791667",
+      "term": "full binary tree",
+      "aliases": [
+        "full binary trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q183984",
+      "term": "futures contract",
+      "aliases": [
+        "futures contracts"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5519271",
+      "term": "Galois/Counter Mode",
+      "aliases": [
+        "Galois/Counter Modes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q44455",
+      "term": "game theory",
+      "aliases": [
+        "game theories"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1461834",
+      "term": "Garbage can model",
+      "aliases": [
+        "Garbage can models"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q21546392",
+      "term": "garlic",
+      "aliases": [
+        "garlics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q861645",
+      "term": "Gaucher's disease",
+      "aliases": [
+        "Gaucher's diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2658",
+      "term": "Gaussian elimination",
+      "aliases": [
+        "Gaussian eliminations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2448949",
+      "term": "Gauss–Legendre algorithm",
+      "aliases": [
+        "Gauss–Legendre algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q15893711",
+      "term": "Gboard",
+      "aliases": [
+        "Gboards"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q212699",
+      "term": "Geffen Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1053501",
+      "term": "gender-affirming surgery",
+      "aliases": [
+        "gender-affirming surgeries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1172506",
+      "term": "General Data Protection Regulation",
+      "aliases": [
+        "General Data Protection Regulations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q25104379",
+      "term": "generative adversarial network",
+      "aliases": [
+        "generative adversarial networks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q187787",
+      "term": "genetic algorithm",
+      "aliases": [
+        "genetic algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q285223",
+      "term": "genetic testing",
+      "aliases": [
+        "genetic testings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q865344",
+      "term": "Genocide Convention",
+      "aliases": [
+        "Genocide Conventions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q222046",
+      "term": "genomics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2192",
+      "term": "GIF",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2233575",
+      "term": "gift economy",
+      "aliases": [
+        "gift economies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q10282075",
+      "term": "gingival fibromatosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q20817212",
+      "term": "ginseng",
+      "aliases": [
+        "ginsengs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1410030",
+      "term": "Glass-Steagall legislation",
+      "aliases": [
+        "Glass-Steagall legislations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q311213",
+      "term": "glycated haemoglobin",
+      "aliases": [
+        "glycated haemoglobins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1523234",
+      "term": "golden share",
+      "aliases": [
+        "golden shares"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2196894",
+      "term": "Golgi's method",
+      "aliases": [
+        "Golgi's methods"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q101896",
+      "term": "gonorrhea",
+      "aliases": [
+        "gonorrheas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3756229",
+      "term": "GOST R 34.11-94 and GOST 34.311-95",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2324820",
+      "term": "government bond",
+      "aliases": [
+        "government bonds"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2479726",
+      "term": "graph data structure",
+      "aliases": [
+        "graph data structures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q484083",
+      "term": "green tea",
+      "aliases": [
+        "green teas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5611269",
+      "term": "Group signature",
+      "aliases": [
+        "Group signatures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1028292",
+      "term": "Grover's algorithm",
+      "aliases": [
+        "Grover's algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q603889",
+      "term": "GUID Partition Table",
+      "aliases": [
+        "GUID Partition Tables"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q910962",
+      "term": "Guidelines for National Unification",
+      "aliases": [
+        "Guidelines for National Unifications"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q205214",
+      "term": "Guillain–Barré syndrome",
+      "aliases": [
+        "Guillain–Barré syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1281398",
+      "term": "Gustav III of Sweden's coffee experiment",
+      "aliases": [
+        "Gustav III of Sweden's coffee experiments"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1566342",
+      "term": "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflict",
+      "aliases": [
+        "Hague Convention for the Protection of Cultural Property in the Event of Armed Conflicts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q685286",
+      "term": "hair transplantation",
+      "aliases": [
+        "hair transplantations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q552461",
+      "term": "hand washing",
+      "aliases": [
+        "hand washings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q14746",
+      "term": "hash tree",
+      "aliases": [
+        "hash trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2660870",
+      "term": "head shaving",
+      "aliases": [
+        "head shavings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q31218",
+      "term": "health economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q274089",
+      "term": "heap",
+      "aliases": [
+        "heaps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q323808",
+      "term": "hearing aid",
+      "aliases": [
+        "hearing aids"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q857300",
+      "term": "Heimlich maneuver",
+      "aliases": [
+        "Heimlich maneuvers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q391744",
+      "term": "hemodialysis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134003",
+      "term": "hemophilia",
+      "aliases": [
+        "hemophilias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6853",
+      "term": "hepatitis B",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154869",
+      "term": "hepatitis C",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q861699",
+      "term": "herbalism",
+      "aliases": [
+        "herbalisms"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3567797",
+      "term": "hereditary mucosal leukokeratosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1531998",
+      "term": "Heun's method",
+      "aliases": [
+        "Heun's methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q420724",
+      "term": "hexakosioihexekontahexaphobia",
+      "aliases": [
+        "hexakosioihexekontahexaphobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q545403",
+      "term": "hh blood group",
+      "aliases": [
+        "hh blood groups"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4922200",
+      "term": "Hide a knife behind a smile",
+      "aliases": [
+        "Hide a knife behind a smiles"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q341999",
+      "term": "hidradenitis suppurativa",
+      "aliases": [
+        "hidradenitis suppurativas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5758064",
+      "term": "Higher Education Act of 1965",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q711447",
+      "term": "HIM International Music",
+      "aliases": [
+        "HIM International Musics"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1031957",
+      "term": "HITS algorithm",
+      "aliases": [
+        "HITS algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q182005",
+      "term": "Holt-Oram syndrome",
+      "aliases": [
+        "Holt-Oram syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q81058",
+      "term": "homeopathy",
+      "aliases": [
+        "homeopathies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q994859",
+      "term": "homocystinuria",
+      "aliases": [
+        "homocystinurias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q97158846",
+      "term": "Hong Kong Autonomy Act",
+      "aliases": [
+        "Hong Kong Autonomy Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q8421679",
+      "term": "Hong Kong Basic Law Article 23",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29656435",
+      "term": "Hong Kong Human Rights and Democracy Act of 2019",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193003",
+      "term": "hydrocephalus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q162297",
+      "term": "hygiene",
+      "aliases": [
+        "hygienes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16499",
+      "term": "hyperthyroidism",
+      "aliases": [
+        "hyperthyroidisms"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q540",
+      "term": "Hyphanet",
+      "aliases": [
+        "Hyphanets"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q184260",
+      "term": "hypothec",
+      "aliases": [
+        "hypothecs"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193794",
+      "term": "identity matrix",
+      "aliases": [
+        "identity matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q79448",
+      "term": "immunoglobulin G",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q101929",
+      "term": "immunology",
+      "aliases": [
+        "immunologies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q21562092",
+      "term": "imperative programming language",
+      "aliases": [
+        "imperative programming languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q284378",
+      "term": "in flagrante delicto",
+      "aliases": [
+        "in flagrante delictos"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q27732636",
+      "term": "inchinkoto",
+      "aliases": [
+        "inchinkotos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1516888",
+      "term": "inclusion-cell disease",
+      "aliases": [
+        "inclusion-cell diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1259145",
+      "term": "independent component analysis",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q754348",
+      "term": "infant respiratory distress syndrome",
+      "aliases": [
+        "infant respiratory distress syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4118322",
+      "term": "infection control",
+      "aliases": [
+        "infection controls"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q96623327",
+      "term": "inferred from coordinate location",
+      "aliases": [
+        "inferred from coordinate locations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q105771502",
+      "term": "inferred from identifier database lookup",
+      "aliases": [
+        "inferred from identifier database lookups"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q113468254",
+      "term": "Inflation Reduction Act of 2022",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q359180",
+      "term": "inflation-indexed bond",
+      "aliases": [
+        "inflation-indexed bonds"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2840",
+      "term": "influenza",
+      "aliases": [
+        "influenzas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q383260",
+      "term": "influenza vaccine",
+      "aliases": [
+        "influenza vaccines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3522823",
+      "term": "Information Technology Act, 2000",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134260478",
+      "term": "infrastructure intelligence",
+      "aliases": [
+        "infrastructure intelligences"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q373494",
+      "term": "injury prevention",
+      "aliases": [
+        "injury preventions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1663799",
+      "term": "inline expansion",
+      "aliases": [
+        "inline expansions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q613332",
+      "term": "Instruction list",
+      "aliases": [
+        "Instruction lists"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q50265665",
+      "term": "insulin",
+      "aliases": [
+        "insulins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6042444",
+      "term": "Insurrection Act",
+      "aliases": [
+        "Insurrection Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134530002",
+      "term": "Integrated Infrastructure Ecosystem",
+      "aliases": [
+        "Integrated Infrastructure Ecosystems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q273328",
+      "term": "integration by parts",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131257",
+      "term": "intellectual property",
+      "aliases": [
+        "intellectual properties"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1665857",
+      "term": "Interactive Data Language",
+      "aliases": [
+        "Interactive Data Languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q205258",
+      "term": "interest rate swap",
+      "aliases": [
+        "interest rate swaps"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q64802234",
+      "term": "Intermittent Energy Restriction and Chewing on Neural Stem Cell Ageing and Adult Hippocampal Neurogenesis Associated Cognition",
+      "aliases": [
+        "Intermittent Energy Restriction and Chewing on Neural Stem Cell Ageing and Adult Hippocampal Neurogenesis Associated Cognitions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q523582",
+      "term": "International Convention for the Safety of Life at Sea",
+      "aliases": [
+        "International Convention for the Safety of Life at Seas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1473305",
+      "term": "International Convention on Load Lines",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1545599",
+      "term": "International Convention on Standards of Training, Certification and Watchkeeping for Seafarers",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q743306",
+      "term": "International Convention on the Elimination of All Forms of Racial Discrimination",
+      "aliases": [
+        "International Convention on the Elimination of All Forms of Racial Discriminations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q392119",
+      "term": "International Covenant on Civil and Political Rights",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q457862",
+      "term": "International Covenant on Economic, Social and Cultural Rights",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3799604",
+      "term": "International Emergency Economic Powers Act",
+      "aliases": [
+        "International Emergency Economic Powers Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1993334",
+      "term": "interpreted language",
+      "aliases": [
+        "interpreted languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q231694",
+      "term": "Interscope Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17004012",
+      "term": "intersex surgery",
+      "aliases": [
+        "intersex surgeries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q24885926",
+      "term": "intravenous fluid replacement",
+      "aliases": [
+        "intravenous fluid replacements"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q640448",
+      "term": "intravenous infusion and defusion",
+      "aliases": [
+        "intravenous infusion and defusions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q666438",
+      "term": "inversion of control",
+      "aliases": [
+        "inversion of controls"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q242188",
+      "term": "invertible matrix",
+      "aliases": [
+        "invertible matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q694381",
+      "term": "involuntary commitment",
+      "aliases": [
+        "involuntary commitments"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1052516",
+      "term": "involutory matrix",
+      "aliases": [
+        "involutory matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q183472",
+      "term": "itai-itai disease",
+      "aliases": [
+        "itai-itai diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q415178",
+      "term": "ivermectin",
+      "aliases": [
+        "ivermectins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q685567",
+      "term": "Ja'fari School",
+      "aliases": [
+        "Ja'fari Schools"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q66240948",
+      "term": "Jammu and Kashmir Reorganisation Act, 2019",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1059474",
+      "term": "Japanese economic miracle",
+      "aliases": [
+        "Japanese economic miracles"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1000106",
+      "term": "Jintan",
+      "aliases": [
+        "Jintans"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q26329975",
+      "term": "JPEG File Interchange Format",
+      "aliases": [
+        "JPEG File Interchange Formats"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q30050792",
+      "term": "Judicial Yuan Interpretation Zi No. 748 Interpretation",
+      "aliases": [
+        "Judicial Yuan Interpretation Zi No. 748 Interpretations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3093648",
+      "term": "jujube",
+      "aliases": [
+        "jujubes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3251025",
+      "term": "juniper berry",
+      "aliases": [
+        "juniper berries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q155076",
+      "term": "juridical person",
+      "aliases": [
+        "juridical persons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q483238",
+      "term": "JYP Entertainment",
+      "aliases": [
+        "JYP Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3608019",
+      "term": "k-ary tree",
+      "aliases": [
+        "k-ary trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q309949",
+      "term": "k-d tree",
+      "aliases": [
+        "k-d trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q476415",
+      "term": "Kastle-Meyer test",
+      "aliases": [
+        "Kastle-Meyer tests"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1737034",
+      "term": "Kaufman Assessment Battery for Children",
+      "aliases": [
+        "Kaufman Assessment Battery for Childrens"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6140753",
+      "term": "Kentucky and Virginia Resolutions",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q580506",
+      "term": "keratosis follicularis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3496793",
+      "term": "key derivation function",
+      "aliases": [
+        "key derivation functions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27811382",
+      "term": "kikyoto",
+      "aliases": [
+        "kikyotos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1328605",
+      "term": "King Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q74253442",
+      "term": "knowledge distillation",
+      "aliases": [
+        "knowledge distillations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q664925",
+      "term": "Kobe child murders",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2655281",
+      "term": "Kosaraju's algorithm",
+      "aliases": [
+        "Kosaraju's algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q410346",
+      "term": "lamotrigine",
+      "aliases": [
+        "lamotrigines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6484062",
+      "term": "land economy",
+      "aliases": [
+        "land economies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18837695",
+      "term": "Land Management Law of the People's Republic of China",
+      "aliases": [
+        "Land Management Law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q847796",
+      "term": "laser surgery",
+      "aliases": [
+        "laser surgeries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q898739",
+      "term": "laudanum",
+      "aliases": [
+        "laudanums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q295354",
+      "term": "law and economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1378386",
+      "term": "leaky bucket",
+      "aliases": [
+        "leaky buckets"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1262161",
+      "term": "Leber hereditary optic neuropathy",
+      "aliases": [
+        "Leber hereditary optic neuropathies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q56274769",
+      "term": "lecanemab",
+      "aliases": [
+        "lecanemabs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154882",
+      "term": "legionnaires' disease",
+      "aliases": [
+        "legionnaires' diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207637",
+      "term": "Lend-Lease",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q36956",
+      "term": "leprosy",
+      "aliases": [
+        "leprosies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q727436",
+      "term": "Lesch-Nyhan syndrome",
+      "aliases": [
+        "Lesch-Nyhan syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q837725",
+      "term": "Let the enemy's own spy sow discord in the enemy camp",
+      "aliases": [
+        "Let the enemy's own spy sow discord in the enemy camps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1144334",
+      "term": "leukorrhea",
+      "aliases": [
+        "leukorrheas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5037862",
+      "term": "levodopa/carbidopa",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q91677786",
+      "term": "Lian-Hua qingwen",
+      "aliases": [
+        "Lian-Hua qingwens"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q606795",
+      "term": "Liang–Barsky algorithm",
+      "aliases": [
+        "Liang–Barsky algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q925246",
+      "term": "limnic eruption",
+      "aliases": [
+        "limnic eruptions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q88376242",
+      "term": "line of writing",
+      "aliases": [
+        "line of writings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q10861030",
+      "term": "linear regression",
+      "aliases": [
+        "linear regressions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554218",
+      "term": "link/cut tree",
+      "aliases": [
+        "link/cut trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554356",
+      "term": "linked data structure",
+      "aliases": [
+        "linked data structures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7003418",
+      "term": "linked list",
+      "aliases": [
+        "linked lists"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2314345",
+      "term": "liquid bandage",
+      "aliases": [
+        "liquid bandages"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q29053744",
+      "term": "liquid water",
+      "aliases": [
+        "liquid waters"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132874",
+      "term": "Lisp",
+      "aliases": [
+        "Lisps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6613355",
+      "term": "list of consorts of Savoy",
+      "aliases": [
+        "list of consorts of Savoys"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1368191",
+      "term": "liver transplantation",
+      "aliases": [
+        "liver transplantations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207684",
+      "term": "lobotomy",
+      "aliases": [
+        "lobotomies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2480675",
+      "term": "Local Autonomy Act",
+      "aliases": [
+        "Local Autonomy Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3072516",
+      "term": "local finance",
+      "aliases": [
+        "local finances"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q6672123",
+      "term": "long-term care",
+      "aliases": [
+        "long-term cares"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1069130",
+      "term": "Longjing tea",
+      "aliases": [
+        "Longjing teas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4921320",
+      "term": "Loot a burning house",
+      "aliases": [
+        "Loot a burning houses"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q719444",
+      "term": "lumbar puncture",
+      "aliases": [
+        "lumbar punctures"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1425554",
+      "term": "lymphogram",
+      "aliases": [
+        "lymphograms"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q837890",
+      "term": "Macao Basic Law",
+      "aliases": [
+        "Macao Basic Laws"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q79798",
+      "term": "machine translation",
+      "aliases": [
+        "machine translations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q39680",
+      "term": "macroeconomics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q161238",
+      "term": "magnetic resonance imaging",
+      "aliases": [
+        "magnetic resonance imagings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q630717",
+      "term": "Magnitsky Act",
+      "aliases": [
+        "Magnitsky Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q505852",
+      "term": "Magnuson Act",
+      "aliases": [
+        "Magnuson Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12156",
+      "term": "malaria",
+      "aliases": [
+        "malarias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q48221",
+      "term": "Malikism",
+      "aliases": [
+        "Malikisms"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q11002196",
+      "term": "mammaplasty",
+      "aliases": [
+        "mammaplasties"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1427967",
+      "term": "manual therapy",
+      "aliases": [
+        "manual therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1404943",
+      "term": "manufacturing execution system",
+      "aliases": [
+        "manufacturing execution systems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q110614231",
+      "term": "Mapbox Style Specification",
+      "aliases": [
+        "Mapbox Style Specifications"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q133818614",
+      "term": "MapLibre Style Specification",
+      "aliases": [
+        "MapLibre Style Specifications"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q208562",
+      "term": "Marfan syndrome",
+      "aliases": [
+        "Marfan syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1361092",
+      "term": "market dominance",
+      "aliases": [
+        "market dominances"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4576",
+      "term": "Marshall Plan",
+      "aliases": [
+        "Marshall Plans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7458532",
+      "term": "masculinizing surgery",
+      "aliases": [
+        "masculinizing surgeries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q318367",
+      "term": "mastic",
+      "aliases": [
+        "mastics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q747534",
+      "term": "mathematical economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q44337",
+      "term": "matrix",
+      "aliases": [
+        "matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2916484",
+      "term": "matrix of ones",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1707206",
+      "term": "Max (programming language)",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6800168",
+      "term": "McCarran Internal Security Act",
+      "aliases": [
+        "McCarran Internal Security Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q727008",
+      "term": "McCune–Albright syndrome",
+      "aliases": [
+        "McCune–Albright syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q741247",
+      "term": "MD2",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1144542",
+      "term": "MD4",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554101",
+      "term": "medical device",
+      "aliases": [
+        "medical devices"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q624029",
+      "term": "medicine in the medieval Islamic world",
+      "aliases": [
+        "medicine in the medieval Islamic worlds"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q162171",
+      "term": "Melia azedarach",
+      "aliases": [
+        "Melia azedaraches"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q639203",
+      "term": "Menkes disease",
+      "aliases": [
+        "Menkes diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q111955925",
+      "term": "Mental illness in ancient Rome",
+      "aliases": [
+        "Mental illness in ancient Romes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1757463",
+      "term": "Merkle–Damgård construction",
+      "aliases": [
+        "Merkle–Damgård constructions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q903778",
+      "term": "metagenomics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1385229",
+      "term": "metaheuristic",
+      "aliases": [
+        "metaheuristics"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q48563715",
+      "term": "metformin / pioglitazone",
+      "aliases": [
+        "metformin / pioglitazones"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q39072",
+      "term": "microeconomics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18344624",
+      "term": "microservices",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q16654806",
+      "term": "Middle East respiratory syndrome",
+      "aliases": [
+        "Middle East respiratory syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q980224",
+      "term": "Miller–Rabin primality test",
+      "aliases": [
+        "Miller–Rabin primality tests"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6868446",
+      "term": "Minnesota Starvation Experiment",
+      "aliases": [
+        "Minnesota Starvation Experiments"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q495605",
+      "term": "Miracle on the Han River",
+      "aliases": [
+        "Miracle on the Han Rivers"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1936265",
+      "term": "misogi",
+      "aliases": [
+        "misogis"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1941439",
+      "term": "mobile banking",
+      "aliases": [
+        "mobile bankings"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q496647",
+      "term": "Modern Monetary Theory",
+      "aliases": [
+        "Modern Monetary Theories"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q580018",
+      "term": "monetary economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q13576850",
+      "term": "money creation",
+      "aliases": [
+        "money creations"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q232207",
+      "term": "Monte Carlo method",
+      "aliases": [
+        "Monte Carlo methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6906262",
+      "term": "Montreal Cognitive Assessment",
+      "aliases": [
+        "Montreal Cognitive Assessments"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q326303",
+      "term": "Montreal Convention",
+      "aliases": [
+        "Montreal Conventions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q281140",
+      "term": "Moon Treaty",
+      "aliases": [
+        "Moon Treaties"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q111699874",
+      "term": "mortgage law",
+      "aliases": [
+        "mortgage laws"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q545906",
+      "term": "mortgage-backed security",
+      "aliases": [
+        "mortgage-backed securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157307",
+      "term": "Morus alba",
+      "aliases": [
+        "Morus albas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q43327",
+      "term": "Motown",
+      "aliases": [
+        "Motowns"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q937737",
+      "term": "moxibustion",
+      "aliases": [
+        "moxibustions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q83196494",
+      "term": "Mulan",
+      "aliases": [
+        "Mulans"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q12772052",
+      "term": "multi-paradigm programming language",
+      "aliases": [
+        "multi-paradigm programming languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q60455577",
+      "term": "Music Modernization Act",
+      "aliases": [
+        "Music Modernization Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4263507",
+      "term": "Music Plus",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2779095",
+      "term": "Mutual Defense Assistance Act",
+      "aliases": [
+        "Mutual Defense Assistance Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6944182",
+      "term": "Mutual Security Act",
+      "aliases": [
+        "Mutual Security Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q130318104",
+      "term": "Mutual Use of QR Code between HKSAR and Macao SAR Clearance Service",
+      "aliases": [
+        "Mutual Use of QR Code between HKSAR and Macao SAR Clearance Services"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q897939",
+      "term": "Myers-Briggs Type Indicator",
+      "aliases": [
+        "Myers-Briggs Type Indicators"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1423683",
+      "term": "mysophobia",
+      "aliases": [
+        "mysophobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q848532",
+      "term": "napkin",
+      "aliases": [
+        "napkins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2670506",
+      "term": "Napoleon's problem",
+      "aliases": [
+        "Napoleon's problems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1495961",
+      "term": "National Defense Authorization Act for Fiscal Year 2012",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q56097188",
+      "term": "National Defense Authorization Act for Fiscal Year 2019",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97628142",
+      "term": "National Defense Authorization Act for Fiscal Year 2021",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q108821985",
+      "term": "National Defense Authorization Act for Fiscal Year 2022",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q120681668",
+      "term": "National Defense Authorization Act for Fiscal Year 2024",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3141633",
+      "term": "National Industrial Recovery Act",
+      "aliases": [
+        "National Industrial Recovery Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1967718",
+      "term": "National Security Act of 1947",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q154954",
+      "term": "natural person",
+      "aliases": [
+        "natural persons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48818118",
+      "term": "nature therapy",
+      "aliases": [
+        "nature therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q211897",
+      "term": "Naval Act of 1938",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6982708",
+      "term": "Navy shower",
+      "aliases": [
+        "Navy showers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q181843",
+      "term": "necrophilia",
+      "aliases": [
+        "necrophilias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q160070",
+      "term": "negligence",
+      "aliases": [
+        "negligences"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1935806",
+      "term": "neighbor joining",
+      "aliases": [
+        "neighbor joinings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q215948",
+      "term": "neurolinguistics",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3872",
+      "term": "neuropsychology",
+      "aliases": [
+        "neuropsychologies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1079392",
+      "term": "neusis construction",
+      "aliases": [
+        "neusis constructions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q60238",
+      "term": "new classical macroeconomics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7013400",
+      "term": "New York Constitution",
+      "aliases": [
+        "New York Constitutions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q374195",
+      "term": "Newton's method",
+      "aliases": [
+        "Newton's methods"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q773717",
+      "term": "Nippon Columbia",
+      "aliases": [
+        "Nippon Columbias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q110442458",
+      "term": "nirmatrelvir/ritonavir",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1329394",
+      "term": "No Child Left Behind Act",
+      "aliases": [
+        "No Child Left Behind Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q188724",
+      "term": "non-steroidal anti-inflammatory drug",
+      "aliases": [
+        "non-steroidal anti-inflammatory drugs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1543446",
+      "term": "Noonan syndrome",
+      "aliases": [
+        "Noonan syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q20708386",
+      "term": "notorious market",
+      "aliases": [
+        "notorious markets"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2179394",
+      "term": "nude swimming",
+      "aliases": [
+        "nude swimmings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q820183",
+      "term": "Nuremberg Charter",
+      "aliases": [
+        "Nuremberg Charters"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q899523",
+      "term": "object-based language",
+      "aliases": [
+        "object-based languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131012",
+      "term": "Occam's razor",
+      "aliases": [
+        "Occam's razors"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q66062123",
+      "term": "Occlusion Versus Pharmacologic Therapy for Moderate Amblyopia",
+      "aliases": [
+        "Occlusion Versus Pharmacologic Therapy for Moderate Amblyopias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q629029",
+      "term": "occupational health and safety",
+      "aliases": [
+        "occupational health and safeties"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q380141",
+      "term": "occupational therapy",
+      "aliases": [
+        "occupational therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7090364",
+      "term": "Omnibus Trade and Competitiveness Act",
+      "aliases": [
+        "Omnibus Trade and Competitiveness Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97350126",
+      "term": "On Relations between the Russian Federation and Taiwan",
+      "aliases": [
+        "On Relations between the Russian Federation and Taiwans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134500668",
+      "term": "One Big Beautiful Bill Act",
+      "aliases": [
+        "One Big Beautiful Bill Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7092316",
+      "term": "one-key message authentication code",
+      "aliases": [
+        "one-key message authentication codes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q150474",
+      "term": "one-time pad",
+      "aliases": [
+        "one-time pads"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q104176807",
+      "term": "onion juice",
+      "aliases": [
+        "onion juices"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2851545",
+      "term": "oophoritis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4921808",
+      "term": "Openly repair the gallery roads, but sneak through the passage of Chencang",
+      "aliases": [
+        "Openly repair the gallery roads, but sneak through the passage of Chencangs"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q46452",
+      "term": "opium",
+      "aliases": [
+        "opiums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q167555",
+      "term": "optical character recognition",
+      "aliases": [
+        "optical character recognitions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q187860",
+      "term": "option",
+      "aliases": [
+        "options"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18835393",
+      "term": "Organic Law of the National People's Congress of the People's Republic of China",
+      "aliases": [
+        "Organic Law of the National People's Congress of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q10871935",
+      "term": "Organic Law of the People's Courts of the People's Republic of China",
+      "aliases": [
+        "Organic Law of the People's Courts of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q619261",
+      "term": "ornithophobia",
+      "aliases": [
+        "ornithophobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1571081",
+      "term": "orthokeratology",
+      "aliases": [
+        "orthokeratologies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1241279",
+      "term": "orthoptics",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q325253",
+      "term": "osteopathy",
+      "aliases": [
+        "osteopathies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q18556140",
+      "term": "ostertagiasis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q256608",
+      "term": "Outer Space Treaty",
+      "aliases": [
+        "Outer Space Treaties"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q838115",
+      "term": "Oxford Capacity Analysis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q576379",
+      "term": "oxidase test",
+      "aliases": [
+        "oxidase tests"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q907730",
+      "term": "oxyntomodulin",
+      "aliases": [
+        "oxyntomodulins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1197154",
+      "term": "page description language",
+      "aliases": [
+        "page description languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q533945",
+      "term": "paleolithic diet",
+      "aliases": [
+        "paleolithic diets"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3359556",
+      "term": "Panama",
+      "aliases": [
+        "Panamas"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1527888",
+      "term": "pancreatitis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q420405",
+      "term": "pangamic acid",
+      "aliases": [
+        "pangamic acids"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15964758",
+      "term": "paper generator",
+      "aliases": [
+        "paper generators"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1151042",
+      "term": "paper towel",
+      "aliases": [
+        "paper towels"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q594433",
+      "term": "parable of the broken window",
+      "aliases": [
+        "parable of the broken windows"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11085",
+      "term": "Parkinson's disease",
+      "aliases": [
+        "Parkinson's diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208909",
+      "term": "Parlophone",
+      "aliases": [
+        "Parlophones"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q614361",
+      "term": "partition table",
+      "aliases": [
+        "partition tables"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1686000",
+      "term": "party",
+      "aliases": [
+        "parties"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q81571",
+      "term": "Pascal",
+      "aliases": [
+        "Pascals"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1193328",
+      "term": "passing",
+      "aliases": [
+        "passings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17148557",
+      "term": "Passports Act, 1967",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q959710",
+      "term": "Password Authentication Protocol",
+      "aliases": [
+        "Password Authentication Protocols"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q119806353",
+      "term": "Past life regression",
+      "aliases": [
+        "Past life regressions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1414593",
+      "term": "Patient Protection and Affordable Care Act",
+      "aliases": [
+        "Patient Protection and Affordable Care Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q221689",
+      "term": "Patriot Act",
+      "aliases": [
+        "Patriot Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q378859",
+      "term": "pattern recognition",
+      "aliases": [
+        "pattern recognitions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1161133",
+      "term": "pedicure",
+      "aliases": [
+        "pedicures"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q161410",
+      "term": "peer-to-peer",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1770529",
+      "term": "penal transportation",
+      "aliases": [
+        "penal transportations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1939224",
+      "term": "penny stock",
+      "aliases": [
+        "penny stocks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q27650141",
+      "term": "peony root",
+      "aliases": [
+        "peony roots"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2427787",
+      "term": "persistent data structure",
+      "aliases": [
+        "persistent data structures"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q64836845",
+      "term": "Personal Activity Intelligence and Body Weight",
+      "aliases": [
+        "Personal Activity Intelligence and Body Weights"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1000371",
+      "term": "personalization",
+      "aliases": [
+        "personalizations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3221044",
+      "term": "pharmaceutical preparation of nitroglycerin",
+      "aliases": [
+        "pharmaceutical preparation of nitroglycerins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q194041",
+      "term": "phenylketonuria",
+      "aliases": [
+        "phenylketonurias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2285767",
+      "term": "Phoenix sylvestris",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1872556",
+      "term": "photobiomodulation",
+      "aliases": [
+        "photobiomodulations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q835153",
+      "term": "physical examination",
+      "aliases": [
+        "physical examinations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16643870",
+      "term": "physiotherapy",
+      "aliases": [
+        "physiotherapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q18576",
+      "term": "Pick disease",
+      "aliases": [
+        "Pick diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10405662",
+      "term": "Pien tze huang",
+      "aliases": [
+        "Pien tze huangs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650240",
+      "term": "pinellia tuber",
+      "aliases": [
+        "pinellia tubers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q269829",
+      "term": "placebo",
+      "aliases": [
+        "placebos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8328350",
+      "term": "plant nutrition",
+      "aliases": [
+        "plant nutritions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q161105",
+      "term": "Plantanus orientalis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q51367",
+      "term": "plausible deniability",
+      "aliases": [
+        "plausible deniabilities"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q45282",
+      "term": "Pledis Entertainment",
+      "aliases": [
+        "Pledis Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q55998",
+      "term": "pleurisy",
+      "aliases": [
+        "pleurisies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12192",
+      "term": "pneumonia",
+      "aliases": [
+        "pneumonias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12195",
+      "term": "poliomyelitis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7278",
+      "term": "political party",
+      "aliases": [
+        "political parties"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q371520",
+      "term": "polydactyly",
+      "aliases": [
+        "polydactylies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q155152",
+      "term": "Polydor",
+      "aliases": [
+        "Polydors"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q700359",
+      "term": "PolyGram",
+      "aliases": [
+        "PolyGrams"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q176996",
+      "term": "polymerase chain reaction",
+      "aliases": [
+        "polymerase chain reactions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q513712",
+      "term": "Pony Canyon",
+      "aliases": [
+        "Pony Canyons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q653122",
+      "term": "ponytail",
+      "aliases": [
+        "ponytails"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q147064",
+      "term": "Populus nigra",
+      "aliases": [
+        "Populus nigras"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208376",
+      "term": "positron emission tomography",
+      "aliases": [
+        "positron emission tomographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28453504",
+      "term": "potassium permanganate",
+      "aliases": [
+        "potassium permanganates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q594013",
+      "term": "Prader–Willi syndrome",
+      "aliases": [
+        "Prader–Willi syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3909890",
+      "term": "Pranic Healing",
+      "aliases": [
+        "Pranic Healings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7239230",
+      "term": "pre-exposure prophylaxis against HIV",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q622588",
+      "term": "preferred stock",
+      "aliases": [
+        "preferred stocks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2108857",
+      "term": "Presidential Records Act of 1978",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48998239",
+      "term": "prevention of mental disorders",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281458",
+      "term": "price forecasting",
+      "aliases": [
+        "price forecastings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q213098",
+      "term": "progeria",
+      "aliases": [
+        "progerias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q9143",
+      "term": "programming language",
+      "aliases": [
+        "programming languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q70666159",
+      "term": "Prohibition on Face Covering Regulation",
+      "aliases": [
+        "Prohibition on Face Covering Regulations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q66590068",
+      "term": "prolactin",
+      "aliases": [
+        "prolactins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q190122",
+      "term": "promissory note",
+      "aliases": [
+        "promissory notes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7250220",
+      "term": "Property Law of the People's Republic of China",
+      "aliases": [
+        "Property Law of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1151839",
+      "term": "prospect theory",
+      "aliases": [
+        "prospect theories"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q646522",
+      "term": "prostate massage",
+      "aliases": [
+        "prostate massages"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2001931",
+      "term": "Prosthetic Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60468",
+      "term": "Protocol Relating to the Status of Refugees",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q39918",
+      "term": "Prunus dulcis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q41630",
+      "term": "psychoanalysis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q366886",
+      "term": "psychopathy",
+      "aliases": [
+        "psychopathies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q19652",
+      "term": "public domain",
+      "aliases": [
+        "public domains"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q274490",
+      "term": "public finance",
+      "aliases": [
+        "public finances"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1549152",
+      "term": "public institution",
+      "aliases": [
+        "public institutions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29627",
+      "term": "public interest",
+      "aliases": [
+        "public interests"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q857667",
+      "term": "pulmonary edema",
+      "aliases": [
+        "pulmonary edemas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q13046587",
+      "term": "pulmonary tuberculosis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1140495",
+      "term": "pulse oximetry",
+      "aliases": [
+        "pulse oximetries"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4363942",
+      "term": "Pythagoras",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q204368",
+      "term": "qigong",
+      "aliases": [
+        "qigongs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q86656575",
+      "term": "Qingfeipaidutang",
+      "aliases": [
+        "Qingfeipaidutangs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q218155",
+      "term": "Quercus ilex",
+      "aliases": [
+        "Quercus ilexes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3565069",
+      "term": "Quercus infectoria",
+      "aliases": [
+        "Quercus infectorias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q165145",
+      "term": "Quercus robur",
+      "aliases": [
+        "Quercus roburs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q486598",
+      "term": "quicksort",
+      "aliases": [
+        "quicksorts"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q39222",
+      "term": "rabies",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4007169",
+      "term": "rabies vaccine",
+      "aliases": [
+        "rabies vaccines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1384131",
+      "term": "Rabin–Karp algorithm",
+      "aliases": [
+        "Rabin–Karp algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q245341",
+      "term": "radiography",
+      "aliases": [
+        "radiographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q170170",
+      "term": "Ramsar Convention",
+      "aliases": [
+        "Ramsar Conventions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q94361709",
+      "term": "Randomised Evaluation of COVID-19 Therapy",
+      "aliases": [
+        "Randomised Evaluation of COVID-19 Therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q182270",
+      "term": "raster graphics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7276210",
+      "term": "RC algorithm",
+      "aliases": [
+        "RC algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q846955",
+      "term": "RC4",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q202585",
+      "term": "RCA Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6138701",
+      "term": "RDF query language",
+      "aliases": [
+        "RDF query languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134267434",
+      "term": "real-time optimization",
+      "aliases": [
+        "real-time optimizations"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1195672",
+      "term": "received signal strength indication",
+      "aliases": [
+        "received signal strength indications"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7302459",
+      "term": "Reciprocal Tariff Act",
+      "aliases": [
+        "Reciprocal Tariff Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1457734",
+      "term": "recurrent neural network",
+      "aliases": [
+        "recurrent neural networks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7307654",
+      "term": "Refugee Relief Act",
+      "aliases": [
+        "Refugee Relief Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1061415",
+      "term": "regenerative medicine",
+      "aliases": [
+        "regenerative medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104940063",
+      "term": "Regulation of Shenzhen Special Economic Zone on Individual Bankruptcy",
+      "aliases": [
+        "Regulation of Shenzhen Special Economic Zone on Individual Bankruptcies"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106443593",
+      "term": "Regulations on the Administration of Rural Collective Economic Contracts in Ningxia Hui Autonomous Region",
+      "aliases": [
+        "Regulations on the Administration of Rural Collective Economic Contracts in Ningxia Hui Autonomous Regions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106444036",
+      "term": "Regulations on the Protection of Intangible Cultural Heritage in Ningxia Hui Autonomous Region",
+      "aliases": [
+        "Regulations on the Protection of Intangible Cultural Heritage in Ningxia Hui Autonomous Regions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106430732",
+      "term": "Regulations on Water Project Management of Wenshan Zhuang and Miao Autonomous Prefecture, Yunnan Province",
+      "aliases": [
+        "Regulations on Water Project Management of Wenshan Zhuang and Miao Autonomous Prefecture, Yunnan Provinces"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q830687",
+      "term": "reinforcement learning",
+      "aliases": [
+        "reinforcement learnings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q115570683",
+      "term": "reinforcement learning from human feedback",
+      "aliases": [
+        "reinforcement learning from human feedbacks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4922218",
+      "term": "Remove the firewood from under the pot",
+      "aliases": [
+        "Remove the firewood from under the pots"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q260447",
+      "term": "Rentenmark",
+      "aliases": [
+        "Rentenmarks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q3427718",
+      "term": "residential mortgage-backed security",
+      "aliases": [
+        "residential mortgage-backed securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q740504",
+      "term": "Restriction of Hazardous Substances Directive",
+      "aliases": [
+        "Restriction of Hazardous Substances Directives"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q120468350",
+      "term": "retatrutide",
+      "aliases": [
+        "retatrutides"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q500695",
+      "term": "retinoblastoma",
+      "aliases": [
+        "retinoblastomas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q114085",
+      "term": "rhinitis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3149137",
+      "term": "Rho(D) immune globulin",
+      "aliases": [
+        "Rho(D) immune globulins"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650430",
+      "term": "rhubarb",
+      "aliases": [
+        "rhubarbs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2124306",
+      "term": "RIPEMD",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2154708",
+      "term": "Rise Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7277102",
+      "term": "RMS Titanic Maritime Memorial Act",
+      "aliases": [
+        "RMS Titanic Maritime Memorial Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q170978",
+      "term": "robotics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1194456",
+      "term": "Roc Nation",
+      "aliases": [
+        "Roc Nations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q697466",
+      "term": "Rock Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q488532",
+      "term": "Rorschach Test",
+      "aliases": [
+        "Rorschach Tests"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q133617",
+      "term": "Rosa multiflora",
+      "aliases": [
+        "Rosa multifloras"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1004415",
+      "term": "run-time system",
+      "aliases": [
+        "run-time systems"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1583213",
+      "term": "Russian Constitution of 1906",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q210868",
+      "term": "sampling",
+      "aliases": [
+        "samplings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q32098",
+      "term": "sanction",
+      "aliases": [
+        "sanctions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60050195",
+      "term": "Savanna's Act",
+      "aliases": [
+        "Savanna's Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7428376",
+      "term": "Savlon",
+      "aliases": [
+        "Savlons"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650332",
+      "term": "sclerotium of umbrella polypore",
+      "aliases": [
+        "sclerotium of umbrella polypores"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q187432",
+      "term": "scripting language",
+      "aliases": [
+        "scripting languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27650611",
+      "term": "scutellaria root",
+      "aliases": [
+        "scutellaria roots"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1132965",
+      "term": "sea bathing",
+      "aliases": [
+        "sea bathings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1999032",
+      "term": "Securities Exchange Act of 1934",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q852175",
+      "term": "securitization",
+      "aliases": [
+        "securitizations"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q169489",
+      "term": "security",
+      "aliases": [
+        "securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q847705",
+      "term": "sedative",
+      "aliases": [
+        "sedatives"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2377385",
+      "term": "segment tree",
+      "aliases": [
+        "segment trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q8189667",
+      "term": "seirogan",
+      "aliases": [
+        "seirogans"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3954727",
+      "term": "Selective Service Act of 1917",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q245955",
+      "term": "self-balancing binary search tree",
+      "aliases": [
+        "self-balancing binary search trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1136838",
+      "term": "self-organizing map",
+      "aliases": [
+        "self-organizing maps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1045785",
+      "term": "semantic network",
+      "aliases": [
+        "semantic networks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3539534",
+      "term": "semantic triple",
+      "aliases": [
+        "semantic triples"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q54837",
+      "term": "Semantic Web",
+      "aliases": [
+        "Semantic Webs"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1041418",
+      "term": "semi-supervised learning",
+      "aliases": [
+        "semi-supervised learnings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q41589189",
+      "term": "sequence-to-sequence learning",
+      "aliases": [
+        "sequence-to-sequence learnings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q103177",
+      "term": "severe acute respiratory syndrome",
+      "aliases": [
+        "severe acute respiratory syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q24962748",
+      "term": "sex characteristics",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3496485",
+      "term": "shading language",
+      "aliases": [
+        "shading languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11692",
+      "term": "share",
+      "aliases": [
+        "shares"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q848955",
+      "term": "shellsort",
+      "aliases": [
+        "shellsorts"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1425088",
+      "term": "Sherman Antitrust Act",
+      "aliases": [
+        "Sherman Antitrust Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q27868361",
+      "term": "shikunshito",
+      "aliases": [
+        "shikunshitos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4922304",
+      "term": "Shut the door to catch the thief",
+      "aliases": [
+        "Shut the door to catch the thiefs"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3273355",
+      "term": "Siddha traditional medicinal Procedure",
+      "aliases": [
+        "Siddha traditional medicinal Procedures"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1542201",
+      "term": "Sieve of Atkin",
+      "aliases": [
+        "Sieve of Atkins"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q863783",
+      "term": "simulated annealing",
+      "aliases": [
+        "simulated annealings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q849737",
+      "term": "single-photon emission computed tomography",
+      "aliases": [
+        "single-photon emission computed tomographies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q483938",
+      "term": "SM Entertainment",
+      "aliases": [
+        "SM Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12214",
+      "term": "smallpox",
+      "aliases": [
+        "smallpoxes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1585491",
+      "term": "Smoot–Hawley Tariff Act",
+      "aliases": [
+        "Smoot–Hawley Tariff Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q281928",
+      "term": "social anxiety disorder",
+      "aliases": [
+        "social anxiety disorders"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q205398",
+      "term": "social work",
+      "aliases": [
+        "social works"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q279014",
+      "term": "Societas Europaea",
+      "aliases": [
+        "Societas Europaeas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q80993",
+      "term": "software engineering",
+      "aliases": [
+        "software engineerings"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q847971",
+      "term": "Soma Quality Recordings",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q330629",
+      "term": "Sony Music",
+      "aliases": [
+        "Sony Musics"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q732503",
+      "term": "Sony Music Entertainment Japan",
+      "aliases": [
+        "Sony Music Entertainment Japans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7392495",
+      "term": "SPDR",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q189436",
+      "term": "speech recognition",
+      "aliases": [
+        "speech recognitions"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1434575",
+      "term": "spermatic cord torsion",
+      "aliases": [
+        "spermatic cord torsions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q551840",
+      "term": "split-brain procedure",
+      "aliases": [
+        "split-brain procedures"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2902363",
+      "term": "SPQR tree",
+      "aliases": [
+        "SPQR trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q177929",
+      "term": "stack",
+      "aliases": [
+        "stacks"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1550393",
+      "term": "Stapled hemorrhoidopexy",
+      "aliases": [
+        "Stapled hemorrhoidopexies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q216227",
+      "term": "state of emergency",
+      "aliases": [
+        "state of emergencies"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1196314",
+      "term": "stock",
+      "aliases": [
+        "stocks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q674827",
+      "term": "Strafgesetzbuch",
+      "aliases": [
+        "Strafgesetzbuches"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7632064",
+      "term": "substance abuse prevention",
+      "aliases": [
+        "substance abuse preventions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q748364",
+      "term": "substitution box",
+      "aliases": [
+        "substitution boxes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3298118",
+      "term": "suicide prevention",
+      "aliases": [
+        "suicide preventions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q632323",
+      "term": "Summit Entertainment",
+      "aliases": [
+        "Summit Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1566000",
+      "term": "superintelligence",
+      "aliases": [
+        "superintelligences"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q112217556",
+      "term": "Surgery in ancient Rome",
+      "aliases": [
+        "Surgery in ancient Romes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10898482",
+      "term": "surgical hand disinfection",
+      "aliases": [
+        "surgical hand disinfections"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1136583",
+      "term": "swap",
+      "aliases": [
+        "swaps"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2446723",
+      "term": "swarm robotics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q41083",
+      "term": "syphilis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1485",
+      "term": "systemic lupus erythematosus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q72093828",
+      "term": "Taiwan Allies International Protection and Enhancement Initiative (TAIPEI) Act of 2019",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q105252811",
+      "term": "Taiwan Chingguan Yihau",
+      "aliases": [
+        "Taiwan Chingguan Yihaus"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q476667",
+      "term": "Taiwan Relations Act",
+      "aliases": [
+        "Taiwan Relations Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30949931",
+      "term": "Taiwan Travel Act",
+      "aliases": [
+        "Taiwan Travel Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4922314",
+      "term": "Take the opportunity to pilfer the goat",
+      "aliases": [
+        "Take the opportunity to pilfer the goats"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1195751",
+      "term": "Tang Code",
+      "aliases": [
+        "Tang Codes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48832",
+      "term": "tea tree oil",
+      "aliases": [
+        "tea tree oils"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3142419",
+      "term": "Telarc International Corporation",
+      "aliases": [
+        "Telarc International Corporations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q612851",
+      "term": "telephone phobia",
+      "aliases": [
+        "telephone phobias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q47790",
+      "term": "tetanus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2406697",
+      "term": "Tetra-amelia syndrome",
+      "aliases": [
+        "Tetra-amelia syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q374832",
+      "term": "thallium poisoning",
+      "aliases": [
+        "thallium poisonings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8071124",
+      "term": "thallium poisoning case of Zhu Ling",
+      "aliases": [
+        "thallium poisoning case of Zhu Lings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q85844345",
+      "term": "The Process Recovery Center",
+      "aliases": [
+        "The Process Recovery Centers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1935697",
+      "term": "Tiger",
+      "aliases": [
+        "Tigers"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q166066",
+      "term": "Time-based One-time Password Algorithm",
+      "aliases": [
+        "Time-based One-time Password Algorithms"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5840",
+      "term": "toilet paper",
+      "aliases": [
+        "toilet papers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1372258",
+      "term": "Tokuma Shoten",
+      "aliases": [
+        "Tokuma Shotens"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q93935",
+      "term": "tooth brushing",
+      "aliases": [
+        "tooth brushings"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q191779",
+      "term": "Tourette syndrome",
+      "aliases": [
+        "Tourette syndromes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1350203",
+      "term": "tourism geography",
+      "aliases": [
+        "tourism geographies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q17149605",
+      "term": "Trade Act of 1974",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7831944",
+      "term": "Trade Expansion Act",
+      "aliases": [
+        "Trade Expansion Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q136450764",
+      "term": "Trade Unions Ordinance",
+      "aliases": [
+        "Trade Unions Ordinances"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2329068",
+      "term": "traditional African medicine",
+      "aliases": [
+        "traditional African medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3439913",
+      "term": "traditional Asian medicine",
+      "aliases": [
+        "traditional Asian medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q200253",
+      "term": "traditional Chinese medicine",
+      "aliases": [
+        "traditional Chinese medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q710679",
+      "term": "traditional Korean medicine",
+      "aliases": [
+        "traditional Korean medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2572867",
+      "term": "traditional Mongolian medicine",
+      "aliases": [
+        "traditional Mongolian medicines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3045034",
+      "term": "Transanal hemorrhoidal dearterialization",
+      "aliases": [
+        "Transanal hemorrhoidal dearterializations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q263962",
+      "term": "transcranial magnetic stimulation",
+      "aliases": [
+        "transcranial magnetic stimulations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1482183",
+      "term": "transformation matrix",
+      "aliases": [
+        "transformation matrixes"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5903802",
+      "term": "transgender hormone therapy",
+      "aliases": [
+        "transgender hormone therapies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q703961",
+      "term": "transmissible spongiform encephalopathy",
+      "aliases": [
+        "transmissible spongiform encephalopathies"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q105196",
+      "term": "transplantation",
+      "aliases": [
+        "transplantations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q660564",
+      "term": "transport economics",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q833293",
+      "term": "trapezoidal rule",
+      "aliases": [
+        "trapezoidal rules"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1516464",
+      "term": "treasury stock",
+      "aliases": [
+        "treasury stocks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q181902",
+      "term": "Treaty of Trianon",
+      "aliases": [
+        "Treaty of Trianons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q223655",
+      "term": "tree",
+      "aliases": [
+        "trees"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q40745",
+      "term": "trial by ordeal",
+      "aliases": [
+        "trial by ordeals"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q608259",
+      "term": "trichotillomania",
+      "aliases": [
+        "trichotillomanias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q491998",
+      "term": "TS Entertainment",
+      "aliases": [
+        "TS Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1420011",
+      "term": "Tuskegee Syphilis Experiment",
+      "aliases": [
+        "Tuskegee Syphilis Experiments"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q303469",
+      "term": "Two-Ocean Navy Act",
+      "aliases": [
+        "Two-Ocean Navy Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3245302",
+      "term": "Tylenol",
+      "aliases": [
+        "Tylenols"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q160649",
+      "term": "typhus",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q948562",
+      "term": "ulnar collateral ligament reconstruction",
+      "aliases": [
+        "ulnar collateral ligament reconstructions"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1465791",
+      "term": "Undertakings for Collective Investment in Transferable Securities Directives",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q850712",
+      "term": "Unified Expression Language",
+      "aliases": [
+        "Unified Expression Languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q16920636",
+      "term": "United Bank",
+      "aliases": [
+        "United Banks"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q216996",
+      "term": "United Nations Convention on the Law of the Sea",
+      "aliases": [
+        "United Nations Convention on the Law of the Seas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q331520",
+      "term": "United Nations Convention to Combat Desertification",
+      "aliases": [
+        "United Nations Convention to Combat Desertifications"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q208645",
+      "term": "United Nations Framework Convention on Climate Change",
+      "aliases": [
+        "United Nations Framework Convention on Climate Changes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1561771",
+      "term": "United States Treasury security",
+      "aliases": [
+        "United States Treasury securities"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7863496",
+      "term": "United States–China Relations Act of 2000",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7893553",
+      "term": "United States–Hong Kong Policy Act",
+      "aliases": [
+        "United States–Hong Kong Policy Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3258610",
+      "term": "Unlawful Activities (Prevention) Act, 1967",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16984194",
+      "term": "urinothorax",
+      "aliases": [
+        "urinothoraxes"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q966551",
+      "term": "Uruguay Round Agreements Act",
+      "aliases": [
+        "Uruguay Round Agreements Acts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q67936634",
+      "term": "Uyghur Human Rights Policy Act of 2020",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q192995",
+      "term": "vaccination",
+      "aliases": [
+        "vaccinations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134808",
+      "term": "vaccine",
+      "aliases": [
+        "vaccines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q676191",
+      "term": "vaginitis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2721987",
+      "term": "varicella vaccine",
+      "aliases": [
+        "varicella vaccines"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4052630",
+      "term": "Velvet Music",
+      "aliases": [
+        "Velvet Musics"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q178074",
+      "term": "veto power",
+      "aliases": [
+        "veto powers"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1202628",
+      "term": "Victor Entertainment",
+      "aliases": [
+        "Victor Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7927914",
+      "term": "video game graphics",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q700855",
+      "term": "Vienna Convention on Consular Relations",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q659717",
+      "term": "Vienna Convention on Diplomatic Relations",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q699366",
+      "term": "Vienna Convention on Road Signs and Signals",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2603200",
+      "term": "viral pneumonia",
+      "aliases": [
+        "viral pneumonias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q203059",
+      "term": "Virgin Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q861170",
+      "term": "virtual keyboard",
+      "aliases": [
+        "virtual keyboards"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q24321",
+      "term": "visa policy in the European Union",
+      "aliases": [
+        "visa policy in the European Unions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16920442",
+      "term": "visa policy of Afghanistan",
+      "aliases": [
+        "visa policy of Afghanistans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935347",
+      "term": "visa policy of Argentina",
+      "aliases": [
+        "visa policy of Argentinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4818189",
+      "term": "visa policy of Azerbaijan",
+      "aliases": [
+        "visa policy of Azerbaijans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15621614",
+      "term": "visa policy of Bahamas",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935349",
+      "term": "visa policy of Belize",
+      "aliases": [
+        "visa policy of Belizes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935353",
+      "term": "visa policy of Bhutan",
+      "aliases": [
+        "visa policy of Bhutans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935355",
+      "term": "visa policy of Bosnia and Herzegovina",
+      "aliases": [
+        "visa policy of Bosnia and Herzegovinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17080673",
+      "term": "visa policy of Brazil",
+      "aliases": [
+        "visa policy of Brazils"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17031453",
+      "term": "visa policy of Burkina Faso",
+      "aliases": [
+        "visa policy of Burkina Fasos"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16990887",
+      "term": "visa policy of Burundi",
+      "aliases": [
+        "visa policy of Burundis"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17037669",
+      "term": "visa policy of Cape Verde",
+      "aliases": [
+        "visa policy of Cape Verdes"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17080764",
+      "term": "visa policy of Central African Republic",
+      "aliases": [
+        "visa policy of Central African Republics"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110896",
+      "term": "visa policy of Costa Rica",
+      "aliases": [
+        "visa policy of Costa Ricas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16920448",
+      "term": "visa policy of Djibouti",
+      "aliases": [
+        "visa policy of Djiboutis"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110905",
+      "term": "visa policy of Ecuador",
+      "aliases": [
+        "visa policy of Ecuadors"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17071280",
+      "term": "visa policy of Egypt",
+      "aliases": [
+        "visa policy of Egypts"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110892",
+      "term": "visa policy of Georgia",
+      "aliases": [
+        "visa policy of Georgias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935364",
+      "term": "visa policy of Haiti",
+      "aliases": [
+        "visa policy of Haitis"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5930665",
+      "term": "visa policy of Hong Kong",
+      "aliases": [
+        "visa policy of Hong Kongs"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110894",
+      "term": "visa policy of India",
+      "aliases": [
+        "visa policy of Indias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110893",
+      "term": "visa policy of Indonesia",
+      "aliases": [
+        "visa policy of Indonesias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1105736",
+      "term": "visa policy of Japan",
+      "aliases": [
+        "visa policy of Japans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935370",
+      "term": "visa policy of Kyrgyzstan",
+      "aliases": [
+        "visa policy of Kyrgyzstans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15008052",
+      "term": "visa policy of Lebanon",
+      "aliases": [
+        "visa policy of Lebanons"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q114899",
+      "term": "visa policy of Macau",
+      "aliases": [
+        "visa policy of Macaus"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935374",
+      "term": "visa policy of Maldives",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935376",
+      "term": "visa policy of Moldova",
+      "aliases": [
+        "visa policy of Moldovas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935377",
+      "term": "visa policy of Mongolia",
+      "aliases": [
+        "visa policy of Mongolias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q93623",
+      "term": "visa policy of New Zealand",
+      "aliases": [
+        "visa policy of New Zealands"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935400",
+      "term": "visa policy of North Macedonia",
+      "aliases": [
+        "visa policy of North Macedonias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935380",
+      "term": "visa policy of Pakistan",
+      "aliases": [
+        "visa policy of Pakistans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17071315",
+      "term": "visa policy of Qatar",
+      "aliases": [
+        "visa policy of Qatars"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110900",
+      "term": "visa policy of Russia",
+      "aliases": [
+        "visa policy of Russias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15971076",
+      "term": "visa policy of Saudi Arabia",
+      "aliases": [
+        "visa policy of Saudi Arabias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110901",
+      "term": "visa policy of Singapore",
+      "aliases": [
+        "visa policy of Singapores"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17049515",
+      "term": "visa policy of Somalia",
+      "aliases": [
+        "visa policy of Somalias"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110906",
+      "term": "visa policy of South Africa",
+      "aliases": [
+        "visa policy of South Africas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110904",
+      "term": "visa policy of Sri Lanka",
+      "aliases": [
+        "visa policy of Sri Lankas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110902",
+      "term": "visa policy of Thailand",
+      "aliases": [
+        "visa policy of Thailands"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17087072",
+      "term": "visa policy of the British Overseas Territories",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935398",
+      "term": "visa policy of the Kingdom of the Netherlands in the Caribbean",
+      "aliases": [
+        "visa policy of the Kingdom of the Netherlands in the Caribbeans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1105702",
+      "term": "visa policy of the People's Republic of China",
+      "aliases": [
+        "visa policy of the People's Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1107204",
+      "term": "visa policy of the Republic of China",
+      "aliases": [
+        "visa policy of the Republic of Chinas"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q213013",
+      "term": "visa policy of the United Arab Emirates",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2918599",
+      "term": "visa policy of the United States",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110903",
+      "term": "visa policy of Turkmenistan",
+      "aliases": [
+        "visa policy of Turkmenistans"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110890",
+      "term": "visa policy of Vietnam",
+      "aliases": [
+        "visa policy of Vietnams"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q45177",
+      "term": "Visa Waiver Program",
+      "aliases": [
+        "Visa Waiver Programs"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q215486",
+      "term": "Vitruvian Man",
+      "aliases": [
+        "Vitruvian Mans"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q48204",
+      "term": "voluntary association",
+      "aliases": [
+        "voluntary associations"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q14130",
+      "term": "waist-length hair",
+      "aliases": [
+        "waist-length hairs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q617663",
+      "term": "war bond",
+      "aliases": [
+        "war bonds"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1419202",
+      "term": "War Powers Resolution",
+      "aliases": [
+        "War Powers Resolutions"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q843402",
+      "term": "Warner Bros. Records",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q21077",
+      "term": "Warner Music Group",
+      "aliases": [
+        "Warner Music Groups"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q637156",
+      "term": "warrant",
+      "aliases": [
+        "warrants"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q108770579",
+      "term": "wenyan‑lang",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1893324",
+      "term": "Whirlpool",
+      "aliases": [
+        "Whirlpools"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134547086",
+      "term": "Whole-body periodic acceleration",
+      "aliases": [
+        "Whole-body periodic accelerations"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q91493633",
+      "term": "Wikipedia coverage of the COVID-19 pandemic",
+      "aliases": [
+        "Wikipedia coverage of the COVID-19 pandemics"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3568034",
+      "term": "WikipediaFS",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q192869",
+      "term": "Windows Bitmap",
+      "aliases": [
+        "Windows Bitmaps"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3115198",
+      "term": "Wolfiporia extensa",
+      "aliases": [
+        "Wolfiporia extensas"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4994367",
+      "term": "World Bank high-income economy",
+      "aliases": [
+        "World Bank high-income economies"
+      ],
+      "category": "Finance"
+    },
+    {
+      "id": "Q107028193",
+      "term": "Wuhan pneumonia",
+      "aliases": [
+        "Wuhan pneumonias"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3281380",
+      "term": "X-linked lymphoproliferative disease",
+      "aliases": [
+        "X-linked lymphoproliferative diseases"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q297868",
+      "term": "x86 assembly language",
+      "aliases": [
+        "x86 assembly languages"
+      ],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2451397",
+      "term": "xenon-133",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q612693",
+      "term": "xeroderma pigmentosum",
+      "aliases": [
+        "xeroderma pigmentosums"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132533381",
+      "term": "Xiao Chai Hu Tang",
+      "aliases": [
+        "Xiao Chai Hu Tangs"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2115",
+      "term": "XML",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q88454408",
+      "term": "Xue-Bi-Jing",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q957751",
+      "term": "XY gonadal dysgenesis",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q76973",
+      "term": "yaws",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154874",
+      "term": "yellow fever",
+      "aliases": [
+        "yellow fevers"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q117068",
+      "term": "yerba mate",
+      "aliases": [
+        "yerba mates"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q50595",
+      "term": "YG Entertainment",
+      "aliases": [
+        "YG Entertainments"
+      ],
+      "category": "Legal"
+    },
+    {
+      "id": "Q8061329",
+      "term": "Yunnan Baiyao",
+      "aliases": [
+        "Yunnan Baiyaos"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q11533980",
+      "term": "Yuzu bath",
+      "aliases": [
+        "Yuzu baths"
+      ],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4053513",
+      "term": "Z-matrix",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q10921015",
+      "term": "ZhPy",
+      "aliases": [
+        "ZhPies"
+      ],
+      "category": "Software Engineering"
+    }
+  ]
+}

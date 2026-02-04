@@ -14,6 +14,9 @@
 // @run-at       document-idle
 // ==/UserScript==
 
+// 外部请求清单：
+// - 无（脚本运行时不发起网络请求）。注：脚本管理器可能会拉取 @icon: https://www.google.com/s2/favicons?sz=64&domain=medium.com
+
 (function () {
     'use strict';
 /*
@@ -2792,9 +2795,18 @@ const STYLES = `
         box-shadow: 0 2px 5px rgba(0,0,0,0.3);
         user-select: none;
         transition: transform 0.2s;
+        cursor: grab;
+        touch-action: none;
     }
     #imr-fab:hover {
         transform: scale(1.1);
+    }
+    #imr-fab.imr-fab-dragging {
+        cursor: grabbing;
+        transform: scale(1.05);
+    }
+    #imr-fab.imr-fab-dragging:hover {
+        transform: scale(1.05);
     }
 
     /* 阅读器关闭按钮 */
@@ -2910,6 +2922,12 @@ const STYLES = `
 let isReaderActive = false;
 let readerContainer = null;
 let originalOverflow = '';
+const FAB_SNAP_MARGIN = 20;
+const FAB_DRAG_THRESHOLD = 4;
+let fabElement = null;
+let fabDragState = null;
+let fabLastDragAt = 0;
+let fabDragHandlersBound = false;
 
 function getArticleCacheKey() {
     return `${location.href}|${document.title || ''}`;
@@ -2958,8 +2976,113 @@ function createFAB() {
     fab.id = 'imr-fab';
     fab.innerHTML = '📖';
     fab.title = '进入沉浸式阅读 (Alt+R)';
-    fab.onclick = toggleReaderMode;
     document.body.appendChild(fab);
+    initFabDraggable(fab);
+}
+
+function initFabDraggable(fab) {
+    fabElement = fab;
+    fab.addEventListener('pointerdown', onFabPointerDown);
+    fab.addEventListener('click', onFabClick);
+    if (!fabDragHandlersBound) {
+        window.addEventListener('pointermove', onFabPointerMove, { passive: false });
+        window.addEventListener('pointerup', onFabPointerUp);
+        window.addEventListener('pointercancel', onFabPointerUp);
+        window.addEventListener('resize', onFabWindowResize, { passive: true });
+        fabDragHandlersBound = true;
+    }
+}
+
+function onFabClick(e) {
+    if (Date.now() - fabLastDragAt < 400) {
+        e.preventDefault();
+        e.stopPropagation();
+        return;
+    }
+    toggleReaderMode();
+}
+
+function onFabPointerDown(e) {
+    if (!fabElement) return;
+    if (typeof e.button === 'number' && e.button !== 0) return;
+    e.preventDefault();
+    const rect = fabElement.getBoundingClientRect();
+    fabElement.style.left = `${Math.round(rect.left)}px`;
+    fabElement.style.top = `${Math.round(rect.top)}px`;
+    fabElement.style.right = 'auto';
+    fabElement.style.bottom = 'auto';
+    fabDragState = {
+        pointerId: e.pointerId,
+        startX: e.clientX,
+        startY: e.clientY,
+        startLeft: rect.left,
+        startTop: rect.top,
+        moved: false
+    };
+    fabElement.classList.add('imr-fab-dragging');
+    if (fabElement.setPointerCapture) {
+        try { fabElement.setPointerCapture(e.pointerId); } catch (err) {}
+    }
+}
+
+function onFabPointerMove(e) {
+    if (!fabDragState || !fabElement || e.pointerId !== fabDragState.pointerId) return;
+    e.preventDefault();
+    const dx = e.clientX - fabDragState.startX;
+    const dy = e.clientY - fabDragState.startY;
+    if (!fabDragState.moved && Math.hypot(dx, dy) >= FAB_DRAG_THRESHOLD) {
+        fabDragState.moved = true;
+    }
+    const rect = fabElement.getBoundingClientRect();
+    const minLeft = FAB_SNAP_MARGIN;
+    const minTop = FAB_SNAP_MARGIN;
+    const maxLeft = Math.max(minLeft, window.innerWidth - rect.width - FAB_SNAP_MARGIN);
+    const maxTop = Math.max(minTop, window.innerHeight - rect.height - FAB_SNAP_MARGIN);
+    const nextLeft = clampNumber(fabDragState.startLeft + dx, minLeft, maxLeft);
+    const nextTop = clampNumber(fabDragState.startTop + dy, minTop, maxTop);
+    fabElement.style.left = `${Math.round(nextLeft)}px`;
+    fabElement.style.top = `${Math.round(nextTop)}px`;
+}
+
+function onFabPointerUp(e) {
+    if (!fabDragState || !fabElement || e.pointerId !== fabDragState.pointerId) return;
+    if (fabElement.releasePointerCapture) {
+        try { fabElement.releasePointerCapture(e.pointerId); } catch (err) {}
+    }
+    const moved = fabDragState.moved;
+    fabDragState = null;
+    fabElement.classList.remove('imr-fab-dragging');
+    if (moved) {
+        fabLastDragAt = Date.now();
+        snapFabToEdge(fabElement);
+    }
+}
+
+function onFabWindowResize() {
+    if (!fabElement || !fabElement.isConnected) return;
+    snapFabToEdge(fabElement);
+}
+
+function snapFabToEdge(fab) {
+    const rect = fab.getBoundingClientRect();
+    const minTop = FAB_SNAP_MARGIN;
+    const maxTop = Math.max(minTop, window.innerHeight - rect.height - FAB_SNAP_MARGIN);
+    const nextTop = clampNumber(rect.top, minTop, maxTop);
+    const shouldSnapRight = rect.left + rect.width / 2 >= window.innerWidth / 2;
+    fab.style.top = `${Math.round(nextTop)}px`;
+    fab.style.bottom = 'auto';
+    if (shouldSnapRight) {
+        fab.style.right = `${FAB_SNAP_MARGIN}px`;
+        fab.style.left = 'auto';
+    } else {
+        fab.style.left = `${FAB_SNAP_MARGIN}px`;
+        fab.style.right = 'auto';
+    }
+}
+
+function clampNumber(value, min, max) {
+    if (Number.isNaN(value)) return min;
+    return Math.min(max, Math.max(min, value));
 }
 
 function createReaderContainer() {

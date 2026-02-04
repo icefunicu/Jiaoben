@@ -1,0 +1,6307 @@
+{
+  "meta": {
+    "schemaVersion": 2,
+    "generatedAt": "2026-02-04T14:27:09Z",
+    "sources": [
+      {
+        "name": "wikidata",
+        "license": "CC0"
+      },
+      {
+        "name": "mesh",
+        "license": "NLM Terms and Conditions",
+        "year": 2026
+      },
+      {
+        "name": "fibo",
+        "license": "MIT",
+        "version": "master",
+        "subset": "FND,FBC,SEC",
+        "importLimit": 25
+      }
+    ],
+    "domainStats": {
+      "Software Engineering": 368,
+      "Finance": 76,
+      "Legal": 331,
+      "Medical": 406
+    },
+    "limits": {
+      "targetTotal": 3000,
+      "domainLimit": 800,
+      "rootLimit": 300
+    }
+  },
+  "items": [
+    {
+      "id": "Q419834",
+      "term": "伯氨喹",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q178275",
+      "term": "西班牙流感",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q31631",
+      "term": "1936年蘇聯憲法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q645016",
+      "term": "1977年蘇聯憲法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q836113",
+      "term": "A股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1886589",
+      "term": "消融",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q516233",
+      "term": "密花相思树",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q766133",
+      "term": "青皮槭",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1021864",
+      "term": "光叶槭",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2248403",
+      "term": "阿塞博法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1647638",
+      "term": "活性己糖相關化合物",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q344266",
+      "term": "動態伺服器網頁",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q121713",
+      "term": "针刺",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q11650808",
+      "term": "针灸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q935761",
+      "term": "阿得拉",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356005",
+      "term": "腺樣囊狀癌",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356194",
+      "term": "腺样体切除术",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1055374",
+      "term": "腺苷脱氨酶缺乏症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q356410",
+      "term": "皮纹病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q225107",
+      "term": "伴随矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q106450207",
+      "term": "江西省行政执法监督条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q190746",
+      "term": "高级加密标准",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q573132",
+      "term": "印度七叶树",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q358375",
+      "term": "沉香",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q830308",
+      "term": "老年黃斑變性",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q321839",
+      "term": "协议",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q396090",
+      "term": "农业地理学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q402342",
+      "term": "AC自动机算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134529768",
+      "term": "人工智能驱动的企业系统",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134263749",
+      "term": "AI 驱动的基础设施",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q135940190",
+      "term": "人工智能驱动的路边基础设施",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q12199",
+      "term": "艾滋病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q81867",
+      "term": "白化症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q19109595",
+      "term": "乙醇",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q272436",
+      "term": "過敏性鼻炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q42296896",
+      "term": "AlphaGo樊麾五番棋",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q30035185",
+      "term": "AlphaGo柯洁三番棋",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q23016184",
+      "term": "AlphaGo對李世乭",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q105246837",
+      "term": "美国救援方案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1111004",
+      "term": "美国残疾人法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4747075",
+      "term": "氨氯地平/缬沙坦",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q206901",
+      "term": "肌萎缩性脊髓侧索硬化症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q71950564",
+      "term": "保護香港法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q847098",
+      "term": "白芷",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q535364",
+      "term": "天使人症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q733081",
+      "term": "三等分角",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q97154236",
+      "term": "智克威得2019冠状病毒病疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q135120194",
+      "term": "日本動漫風格",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17151716",
+      "term": "安吉白茶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208726",
+      "term": "尖锐湿疣",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1063123",
+      "term": "反天主教",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q22078733",
+      "term": "中华人民共和国反恐怖主义法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12187",
+      "term": "抗菌药",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q274493",
+      "term": "消毒藥水",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q846227",
+      "term": "抗病毒药物",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q618690",
+      "term": "蜂毒療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q126486452",
+      "term": "Apple 智能",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q213710",
+      "term": "苹果唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q220783",
+      "term": "蜘蛛恐惧症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q648982",
+      "term": "銀質沈著症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q662575",
+      "term": "Ariola唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q664167",
+      "term": "芒穗唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2663969",
+      "term": "阿尼姆·索拉",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q186152",
+      "term": "数组",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q80083142",
+      "term": "第九条. 《世界人权宣言》全文",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q126888",
+      "term": "人工心臟",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q108456694",
+      "term": "人工智能法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60573975",
+      "term": "2018年亞洲再保證倡議法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6470767",
+      "term": "組譯器",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q165436",
+      "term": "汇编语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1139122",
+      "term": "资产抵押债券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q80585",
+      "term": "关联数组",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q26377",
+      "term": "庇護",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3556505",
+      "term": "注意力不足過動症的治療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q17514211",
+      "term": "2014年自閉症CARES法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q741490",
+      "term": "自動駕駛汽車",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q790686",
+      "term": "愛貝克思",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q43987",
+      "term": "禽流感",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132325",
+      "term": "阿育吠陀",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q170461",
+      "term": "印度苦楝樹",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q788110",
+      "term": "巴赫花精療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q243748",
+      "term": "细菌学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q798658",
+      "term": "壞小子唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97351541",
+      "term": "百度翻译",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q162351",
+      "term": "保釋",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4860832",
+      "term": "硫酸鋇懸浮液",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15165",
+      "term": "中華人民共和國香港特別行政區基本法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q709136",
+      "term": "貝茨方法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q812548",
+      "term": "拜-多爾法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97154230",
+      "term": "众爱可维2019冠状病毒病疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q810009",
+      "term": "基本組合編程語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q812923",
+      "term": "比尔密码",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q647525",
+      "term": "行為經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q134529244",
+      "term": "贝尔企业生态系统",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134528840",
+      "term": "贝尔基础设施平台",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q209563",
+      "term": "伯克利开放式网络计算平台",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q770103",
+      "term": "贝塔斯曼音乐集团",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q853135",
+      "term": "圍魏救趙",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2565881",
+      "term": "賭本",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q422297",
+      "term": "促脂解素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27277423",
+      "term": "贝沙格列净",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2983740",
+      "term": "碧螺春",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q243754",
+      "term": "二分查找",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q623818",
+      "term": "二叉搜索树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q380172",
+      "term": "二叉树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q128570",
+      "term": "生物信息学",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q179991",
+      "term": "活體組織切片",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q866300",
+      "term": "二分法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131723",
+      "term": "比特幣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q34328146",
+      "term": "比特币现金",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1194708",
+      "term": "位图",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111913391",
+      "term": "面包引擎",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1218005",
+      "term": "盲人摸象",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q20514253",
+      "term": "区块链",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q275157",
+      "term": "血糖",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q886731",
+      "term": "恐血症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q885373",
+      "term": "布隆过滤器",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q762850",
+      "term": "猴子排序",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11693",
+      "term": "债券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2154740",
+      "term": "經濟景氣",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q4955187",
+      "term": "布拉迪手枪暴力防治法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q325904",
+      "term": "广度优先搜索",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1410808",
+      "term": "乳腺纤维腺瘤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8876908",
+      "term": "土蜜藤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4971815",
+      "term": "廣效抗生素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6787153",
+      "term": "散列组排序",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1016605",
+      "term": "伯基特氏淋巴瘤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q165728",
+      "term": "德国民法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q489412",
+      "term": "幽閉煩躁症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q42385",
+      "term": "可可樹",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q909139",
+      "term": "炉甘石洗剂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q706",
+      "term": "钙",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q759899",
+      "term": "调用栈",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2349546",
+      "term": "卡纳万病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1787013",
+      "term": "癌症預防",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3044843",
+      "term": "癌症篩查",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q127766413",
+      "term": "仓颉",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2937480",
+      "term": "國會音樂集團",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193023",
+      "term": "国会唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q21155816",
+      "term": "葛縷子",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q695851",
+      "term": "卡爾司巴德敕令（Carlsbad Decrees）",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q332293",
+      "term": "腕隧道症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q46441",
+      "term": "层叠样式表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q603117",
+      "term": "城堡唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q337492",
+      "term": "蓖麻油",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207642",
+      "term": "巧茶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1768566",
+      "term": "請求權",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28859600",
+      "term": "头孢洛扎/塔唑巴坦",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104176881",
+      "term": "芹菜汁",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q158867",
+      "term": "世紀媒體唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q228036",
+      "term": "剖宫产",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281528",
+      "term": "充放电优化",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q547896",
+      "term": "禁止化学武器公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q73988",
+      "term": "陳皮",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q568865",
+      "term": "巨颌症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q44727",
+      "term": "水痘",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q511618",
+      "term": "儿童在线隐私保护法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106514790",
+      "term": "科维福",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2876705",
+      "term": "中文培基",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1073716",
+      "term": "排华法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q261503",
+      "term": "中药",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5100861",
+      "term": "中成药",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5100624",
+      "term": "1992年中国学生保护法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q11341994",
+      "term": "柴胡",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10876607",
+      "term": "中蟒",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q113449362",
+      "term": "晶片與科學法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q658096",
+      "term": "脊骨神經醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q688",
+      "term": "氯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12090",
+      "term": "霍亂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q559082",
+      "term": "軟骨鈣質沈著病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28165",
+      "term": "肉桂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2736227",
+      "term": "密码块链接消息认证码",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q61066827",
+      "term": "公民身份修正法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q10372494",
+      "term": "民法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q56261592",
+      "term": "中华人民共和国民法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17164556",
+      "term": "公職人員選舉罷免法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1527956",
+      "term": "条款",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q222634",
+      "term": "唇腭裂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q146813",
+      "term": "主從式架構",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5012783",
+      "term": "實數約束邏輯編程",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1147152",
+      "term": "认知行为疗法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1107087",
+      "term": "科恩綜合症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q418946",
+      "term": "粘杆菌素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q694563",
+      "term": "担保物权",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1108930",
+      "term": "債務擔保證券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5146039",
+      "term": "洗冤集录",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q189053",
+      "term": "命令行界面",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q26643",
+      "term": "商业",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7886321",
+      "term": "商业地产抵押贷款支持证券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q12125",
+      "term": "普通感冒",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10872860",
+      "term": "中国人民政治协商会议共同纲领",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1081659",
+      "term": "普通股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q171497",
+      "term": "向日葵",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q651794",
+      "term": "編譯語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q29791664",
+      "term": "完全二元樹",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q886518",
+      "term": "全血细胞计数",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5958573",
+      "term": "强迫性性行为障碍",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q369472",
+      "term": "计算化学",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q205084",
+      "term": "計算複雜性理論",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q32566",
+      "term": "X射线计算机断层成像",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1138872",
+      "term": "頭顱計算機斷層成像術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q868714",
+      "term": "電腦輔助軟體工程",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4230857",
+      "term": "串接编程语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q366868",
+      "term": "先天性腎上腺增生症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3508618",
+      "term": "先天性攣縮細長指",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q939364",
+      "term": "先天性心臟病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3508800",
+      "term": "先天性肌无力综合征",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104709025",
+      "term": "2021年综合拨款法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q111307740",
+      "term": "2022年綜合撥款法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q115864497",
+      "term": "2023年綜合撥款法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q312584",
+      "term": "安东尼努斯敕令",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q122804",
+      "term": "大日本帝國憲法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1128903",
+      "term": "续体",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q749893",
+      "term": "續延傳遞風格",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q93288",
+      "term": "合同",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1129769",
+      "term": "差價合約",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q20687997",
+      "term": "中华人民共和国合同法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7361709",
+      "term": "便利商店",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q851857",
+      "term": "禁止酷刑和其他残忍、不人道或有辱人格的待遇或处罚公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q152805",
+      "term": "生物多樣性公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1426885",
+      "term": "國際民用航空公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1352119",
+      "term": "南极海洋生物资源养护公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q277072",
+      "term": "消除對婦女一切形式歧視公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1156234",
+      "term": "防止倾倒废物及其他物质污染海洋的公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q680031",
+      "term": "承认及执行外国仲裁裁决公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1069706",
+      "term": "残疾人权利公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q466087",
+      "term": "兒童權利公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5166243",
+      "term": "关于无国籍人地位的公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1297822",
+      "term": "著作權",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q31070023",
+      "term": "以制裁反制美国敌人法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28456479",
+      "term": "打击外国宣传和虚假信息法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q84263196",
+      "term": "2019冠状病毒病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q83554667",
+      "term": "2019冠狀病毒病中國大陸封鎖措施",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q117477640",
+      "term": "2023年COVID-19起源法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q86901049",
+      "term": "2019冠状病毒病检测",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q322666",
+      "term": "克萊姆法則",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q63860166",
+      "term": "未逝世创作者",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q624028",
+      "term": "信貸違約掉期",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157165",
+      "term": "债权人",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q49989",
+      "term": "克雅二氏病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q329525",
+      "term": "公诉",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1761413",
+      "term": "刑事化",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1472",
+      "term": "克隆氏症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q21769973",
+      "term": "挖礦",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1790389",
+      "term": "密码学安全伪随机数生成器",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q8789",
+      "term": "密码编码学",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q107121219",
+      "term": "騎劫挖礦",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5192041",
+      "term": "古巴移民修正法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q484449",
+      "term": "Cube娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1584911",
+      "term": "布谷鸟哈希",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q147513",
+      "term": "地中海柏木",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q515371",
+      "term": "货币互换",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q178194",
+      "term": "囊腫性纖維化",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q899329",
+      "term": "危險物質指令 (67/548/EEC)",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q612728",
+      "term": "簇",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q135035",
+      "term": "資料加密標準",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q175263",
+      "term": "資料結構",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q557632",
+      "term": "迪卡唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q177571",
+      "term": "决策论",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q15937037",
+      "term": "中华人民共和国国务院令第649号",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q64605672",
+      "term": "同性性行為的非刑事化",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3235334",
+      "term": "深蓝对卡斯帕罗夫",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q654283",
+      "term": "說唱即興唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q191783",
+      "term": "诽谤",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4921754",
+      "term": "擒賊擒王",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27617",
+      "term": "去纳粹化",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30953",
+      "term": "骨痛熱症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q831774",
+      "term": "密度矩陣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q548984",
+      "term": "牙本质发育不全",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q66295",
+      "term": "金融衍生工具",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q3493547",
+      "term": "减敏",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q168407",
+      "term": "德意志留声机公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3025599",
+      "term": "右芬氟拉明",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5270124",
+      "term": "糖尿病控制与合并症试验",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q220551",
+      "term": "尿崩症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q332791",
+      "term": "對角矩陣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2458742",
+      "term": "方言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5276090",
+      "term": "数字健康",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q104829590",
+      "term": "數位市場法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q753379",
+      "term": "數字千年版權法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q100691575",
+      "term": "數位服務法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q422222",
+      "term": "地高辛",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8548",
+      "term": "戴克斯特拉算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q420439",
+      "term": "克暈片錠",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q730933",
+      "term": "Dinic算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q771101",
+      "term": "君遷子",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q419770",
+      "term": "二肽基肽酶-4抑制剂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q55110225",
+      "term": "数字化单一市场版权指令",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2274060",
+      "term": "災難醫療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q169207",
+      "term": "歧視",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5283178",
+      "term": "分散式社交網路",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q411447",
+      "term": "氧氟沙星",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6535129",
+      "term": "拒絕心肺復甦術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15377916",
+      "term": "狗狗幣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q909377",
+      "term": "阿胶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28163580",
+      "term": "多巴胺",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5327743",
+      "term": "重睑术",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1192005",
+      "term": "双端队列",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q309607",
+      "term": "双椭圆曲线确定性随机数发生器",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q121437649",
+      "term": "微妙的菜肴",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1648484",
+      "term": "杜興氏肌肉營養不良症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281765",
+      "term": "基础设施服务的动态定价",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q132971",
+      "term": "失讀症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3390520",
+      "term": "自動查驗通關系統",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q615541",
+      "term": "及早求值",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q583528",
+      "term": "耳燭",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q666365",
+      "term": "最近截止期限最先",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11088328",
+      "term": "易语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q51993",
+      "term": "埃博拉出血热",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q187097",
+      "term": "经济地理学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q189833",
+      "term": "经济增长",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q8134",
+      "term": "经济学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5333576",
+      "term": "经济学教育",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q806718",
+      "term": "銀行業",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q180764",
+      "term": "米兰敕令",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q845506",
+      "term": "伊萊克特羅柯德唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q79785",
+      "term": "心电图",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q131543",
+      "term": "電痙攣療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q179965",
+      "term": "腦電圖",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q726251",
+      "term": "Elektra唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q332126",
+      "term": "酶联免疫吸附试验",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1686420",
+      "term": "1807年禁运法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5369984",
+      "term": "嵌入式C语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111378521",
+      "term": "緊急情況(豁免法定規定)(2019冠狀病毒病)規例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q175844",
+      "term": "呕吐恐惧症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3045977",
+      "term": "EMI古典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q166332",
+      "term": "徵收",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q834469",
+      "term": "英皇娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q54803564",
+      "term": "空矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q212809",
+      "term": "內視鏡",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134267342",
+      "term": "能源套利",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q134281645",
+      "term": "使用 AI 的能源套利",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134267357",
+      "term": "能源交易策略",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1342448",
+      "term": "延喜式",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q245652",
+      "term": "集成学习",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3281753",
+      "term": "榼藤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6881511",
+      "term": "工商企业",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5323966",
+      "term": "电子护照闸门",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q13530468",
+      "term": "麻黄",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q136787512",
+      "term": "愛潑斯坦檔案透明法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5384135",
+      "term": "1963年公平薪酬法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q264980",
+      "term": "Equal Vision唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q28163615",
+      "term": "注射避孕",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q60218105",
+      "term": "戊酸雌二醇/醋酸环丙孕酮",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16783523",
+      "term": "以太坊",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q29583124",
+      "term": "以太坊經典",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4205889",
+      "term": "碘化油",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1371645",
+      "term": "依托孕烯植埋剂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1608174",
+      "term": "欧拉因式分解法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q110868019",
+      "term": "欧洲芯片法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q100159",
+      "term": "安乐死",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q691640",
+      "term": "循证医学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2298789",
+      "term": "演化博弈论",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18835757",
+      "term": "中华人民共和国出境入境管理法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5420623",
+      "term": "免责",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1385195",
+      "term": "體外膜氧合",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q210603",
+      "term": "引渡",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q39601771",
+      "term": "面容ID",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3064815",
+      "term": "虛假申報法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1476057",
+      "term": "盈不足术",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2711291",
+      "term": "家族性高胆固醇血症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1144618",
+      "term": "家族性地中海熱",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q870449",
+      "term": "家庭治療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1179460",
+      "term": "范可尼综合征",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q32980",
+      "term": "平方根倒数速算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17013334",
+      "term": "表征学习",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3258618",
+      "term": "聯邦選舉競選法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2982567",
+      "term": "聯邦儲備法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30325419",
+      "term": "联邦宇宙",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4922239",
+      "term": "假癡不癲",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q208373",
+      "term": "女性生殖器切割",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q167732",
+      "term": "芬特明",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1276370",
+      "term": "树状数组",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q111185",
+      "term": "南伊朗阿魏",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1410737",
+      "term": "斐波那契堆",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1410851",
+      "term": "纤维瘤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q515636",
+      "term": "先進先出",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q247506",
+      "term": "金融工具",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q8248157",
+      "term": "渔业生物学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1420050",
+      "term": "漁業學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q6522952",
+      "term": "Fisher–Yates 洗牌演算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5460029",
+      "term": "1928年防洪法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1263070",
+      "term": "外國代理人登記法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q471295",
+      "term": "海外反腐败法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5470110",
+      "term": "卸任总统法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q744762",
+      "term": "远期合约",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157031",
+      "term": "基金会",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q221472",
+      "term": "X染色體易裂症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5500256",
+      "term": "自由表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2981534",
+      "term": "法国刑事诉讼法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2981466",
+      "term": "商法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2981515",
+      "term": "知识产权法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q677681",
+      "term": "刑法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q18846240",
+      "term": "中华人民共和国国境卫生检疫法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29791667",
+      "term": "滿二元樹",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q183984",
+      "term": "期货",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q5519271",
+      "term": "伽羅瓦/計數器模式",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q44455",
+      "term": "博弈论",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1461834",
+      "term": "垃圾桶模式",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q21546392",
+      "term": "大蒜",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q861645",
+      "term": "高雪氏症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2658",
+      "term": "高斯消去法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2448949",
+      "term": "高斯-勒让德算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q15893711",
+      "term": "Google输入法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q212699",
+      "term": "格芬唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1053501",
+      "term": "性别肯定手术",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1172506",
+      "term": "通用数据保护条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q25104379",
+      "term": "生成对抗网络",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q187787",
+      "term": "遗传算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q285223",
+      "term": "基因檢測",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q865344",
+      "term": "防止及惩治灭绝种族罪公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q222046",
+      "term": "基因組學",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2192",
+      "term": "图形交换格式",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2233575",
+      "term": "禮物經濟",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q10282075",
+      "term": "遗传性牙龈纤维瘤病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q20817212",
+      "term": "人蔘",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1410030",
+      "term": "格拉斯-斯蒂格尔法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q311213",
+      "term": "糖化血红蛋白",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1523234",
+      "term": "黃金股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2196894",
+      "term": "高尔基染色法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q101896",
+      "term": "淋病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3756229",
+      "term": "GOST函數",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2324820",
+      "term": "国债券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2479726",
+      "term": "圖",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q484083",
+      "term": "綠茶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5611269",
+      "term": "群签名",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1028292",
+      "term": "格罗夫算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q603889",
+      "term": "全局唯一标识符磁碟分割表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q910962",
+      "term": "國家統一綱領",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q205214",
+      "term": "格林－巴利综合征",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1281398",
+      "term": "古斯塔夫三世的咖啡实验",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1566342",
+      "term": "关于武装冲突情况下保护文化财产的海牙公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q685286",
+      "term": "植髮",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q552461",
+      "term": "洗手",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q14746",
+      "term": "默克樹",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2660870",
+      "term": "剃光头",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q31218",
+      "term": "健康经济学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q274089",
+      "term": "堆",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q323808",
+      "term": "助聽器",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q857300",
+      "term": "哈姆立克急救法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q391744",
+      "term": "血液透析",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134003",
+      "term": "血友病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6853",
+      "term": "乙型肝炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154869",
+      "term": "丙型肝炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q861699",
+      "term": "草藥醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3567797",
+      "term": "白色海绵痣",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1531998",
+      "term": "Heun方法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q420724",
+      "term": "666恐懼症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q545403",
+      "term": "Hh血型系统",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4922200",
+      "term": "笑裏藏刀",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q341999",
+      "term": "化膿性汗腺炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5758064",
+      "term": "1965年高等教育法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q711447",
+      "term": "華研國際音樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1031957",
+      "term": "HITS算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q182005",
+      "term": "Holt-Oram症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q81058",
+      "term": "順勢療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q994859",
+      "term": "高胱胺酸尿症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q97158846",
+      "term": "香港自治法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q8421679",
+      "term": "香港特別行政區基本法第二十三條",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29656435",
+      "term": "香港人權與民主法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193003",
+      "term": "脑积水",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q162297",
+      "term": "卫生学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16499",
+      "term": "甲状腺功能亢进症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q540",
+      "term": "自由网",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q184260",
+      "term": "抵押權",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q193794",
+      "term": "單位矩陣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q79448",
+      "term": "免疫球蛋白G",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q101929",
+      "term": "免疫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q21562092",
+      "term": "命令式编程语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q284378",
+      "term": "現行犯",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q27732636",
+      "term": "茵陳蒿湯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1516888",
+      "term": "I-細胞疾病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1259145",
+      "term": "独立成分分析",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q754348",
+      "term": "新生儿呼吸窘迫综合征",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4118322",
+      "term": "感染控制",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q96623327",
+      "term": "根据坐标位置推断",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q105771502",
+      "term": "从标识符数据库查找推断得出",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q113468254",
+      "term": "降低通膨法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q359180",
+      "term": "通貨膨脹率連結債券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2840",
+      "term": "流行性感冒",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q383260",
+      "term": "季節性流感疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3522823",
+      "term": "信息技术法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134260478",
+      "term": "基础设施智能",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q373494",
+      "term": "預防受傷",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1663799",
+      "term": "内联展开",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q613332",
+      "term": "指令表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q50265665",
+      "term": "胰岛素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6042444",
+      "term": "法暴亂案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134530002",
+      "term": "综合基础设施生态系统",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q273328",
+      "term": "分部積分法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131257",
+      "term": "知识产权",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1665857",
+      "term": "互動式數據語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q205258",
+      "term": "利率掉期交易",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q64802234",
+      "term": "间歇性能量限制饮食",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q523582",
+      "term": "海上人命安全公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1473305",
+      "term": "国际船舶载重线公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1545599",
+      "term": "航海人員訓練、發證及航行當值標準國際公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q743306",
+      "term": "消除一切形式种族歧视国际公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q392119",
+      "term": "公民权利及政治权利国际公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q457862",
+      "term": "经济、社会及文化权利国际公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3799604",
+      "term": "国际紧急状态经济权力法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1993334",
+      "term": "直譯語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q231694",
+      "term": "新视镜唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17004012",
+      "term": "性別指定手術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q24885926",
+      "term": "输液",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q640448",
+      "term": "靜脈注射",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q666438",
+      "term": "控制反轉",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q242188",
+      "term": "非奇异方阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q694381",
+      "term": "预防性拘留",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1052516",
+      "term": "对合矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q183472",
+      "term": "痛痛病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q415178",
+      "term": "伊維菌素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q685567",
+      "term": "賈法里派",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q66240948",
+      "term": "查谟和克什米尔邦重组法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1059474",
+      "term": "日本战后经济奇迹",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1000106",
+      "term": "仁丹",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q26329975",
+      "term": "JPEG文件交换格式",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q30050792",
+      "term": "司法院釋字第748號解釋",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3093648",
+      "term": "棗子",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3251025",
+      "term": "杜松子",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q155076",
+      "term": "法人",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q483238",
+      "term": "JYP娱乐",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3608019",
+      "term": "多叉树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q309949",
+      "term": "K-d树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q476415",
+      "term": "Kastle–Meyer 檢驗法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1737034",
+      "term": "考夫曼兒童智力測驗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6140753",
+      "term": "肯塔基及弗吉尼亚决议案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q580506",
+      "term": "毛囊角化病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3496793",
+      "term": "密钥派生函数",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27811382",
+      "term": "桔梗湯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1328605",
+      "term": "國王唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q74253442",
+      "term": "知識蒸餾",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q664925",
+      "term": "酒鬼薔薇聖斗事件",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2655281",
+      "term": "Kosaraju算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q410346",
+      "term": "拉莫三嗪",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q6484062",
+      "term": "土地經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18837695",
+      "term": "中华人民共和国土地管理法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q847796",
+      "term": "雷射手術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q898739",
+      "term": "鴉片酊",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q295354",
+      "term": "法律经济学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1378386",
+      "term": "漏桶算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1262161",
+      "term": "雷伯氏遺傳性視神經萎縮症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q56274769",
+      "term": "仑卡奈单抗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154882",
+      "term": "军团病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207637",
+      "term": "租借法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q36956",
+      "term": "麻風病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q727436",
+      "term": "萊希－尼亨氏症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q837725",
+      "term": "反間計",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1144334",
+      "term": "白帶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q5037862",
+      "term": "卡比多巴/L-多巴",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q91677786",
+      "term": "连花清瘟胶囊",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q606795",
+      "term": "梁友栋—柏世奇算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q925246",
+      "term": "湖底噴發",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q88376242",
+      "term": "文本行",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q10861030",
+      "term": "線性回歸",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554218",
+      "term": "动态树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554356",
+      "term": "線性資料結構",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7003418",
+      "term": "链表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2314345",
+      "term": "液体创可贴",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q29053744",
+      "term": "液态水",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132874",
+      "term": "Lisp语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6613355",
+      "term": "撒丁尼亚君主配偶列表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1368191",
+      "term": "肝臟移植",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q207684",
+      "term": "前脑叶白质切除术",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2480675",
+      "term": "地方自治法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3072516",
+      "term": "地方财政",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q6672123",
+      "term": "長期照護",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1069130",
+      "term": "龙井茶",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4921320",
+      "term": "趁火打劫",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q719444",
+      "term": "腰椎穿刺",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1425554",
+      "term": "淋巴造影",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q837890",
+      "term": "中華人民共和國澳門特別行政區基本法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q79798",
+      "term": "机器翻译",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q39680",
+      "term": "宏觀經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q161238",
+      "term": "核磁共振成像",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q630717",
+      "term": "馬格尼茨基法治問責法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q505852",
+      "term": "麦诺森法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12156",
+      "term": "疟疾",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q48221",
+      "term": "马立克派",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q11002196",
+      "term": "乳房成形術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1427967",
+      "term": "操作治療學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1404943",
+      "term": "制造执行系统",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q110614231",
+      "term": "Mapbox樣式規範",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q133818614",
+      "term": "MapLibre樣式規範",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q208562",
+      "term": "馬凡氏症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1361092",
+      "term": "支配",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4576",
+      "term": "马歇尔计划",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7458532",
+      "term": "女跨男性别肯定手术",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q318367",
+      "term": "洋乳香",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q747534",
+      "term": "数理经济学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q44337",
+      "term": "矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2916484",
+      "term": "一矩陣",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1707206",
+      "term": "Max (軟體)",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6800168",
+      "term": "麦卡伦国内安全法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q727008",
+      "term": "麦丘恩-奥尔布赖特综合征",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q741247",
+      "term": "消息摘要算法2",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1144542",
+      "term": "消息摘要算法4",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6554101",
+      "term": "醫療器材",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q624029",
+      "term": "中世纪伊斯兰世界医学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q162171",
+      "term": "苦楝",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q639203",
+      "term": "緬克斯症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q111955925",
+      "term": "古羅馬的精神疾病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1757463",
+      "term": "墨克-達姆加德結構",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q903778",
+      "term": "元基因組學",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1385229",
+      "term": "元启发算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q48563715",
+      "term": "吡格列酮/二甲双胍",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q39072",
+      "term": "微觀經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18344624",
+      "term": "微服務",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q16654806",
+      "term": "中東呼吸綜合症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q980224",
+      "term": "米勒-拉宾检验",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6868446",
+      "term": "明尼苏达饥饿实验",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q495605",
+      "term": "漢江奇蹟",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1936265",
+      "term": "禊祓",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1941439",
+      "term": "行動銀行",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q496647",
+      "term": "現代貨幣理論",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q580018",
+      "term": "貨幣經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q13576850",
+      "term": "货币扩张",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q232207",
+      "term": "蒙地卡羅方法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q6906262",
+      "term": "蒙特利尔认知评估量表",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q326303",
+      "term": "蒙特利尔公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q281140",
+      "term": "月球协定",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q111699874",
+      "term": "抵押",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q545906",
+      "term": "住房抵押貸款證券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q157307",
+      "term": "白桑",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q43327",
+      "term": "摩城",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q937737",
+      "term": "艾灸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q83196494",
+      "term": "木兰",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q12772052",
+      "term": "多重编程范式语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q60455577",
+      "term": "美國音樂現代化法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4263507",
+      "term": "音樂家唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2779095",
+      "term": "共同防衛援助法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6944182",
+      "term": "共同安全法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q130318104",
+      "term": "港澳通關互用二維碼服務",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q897939",
+      "term": "邁爾斯-布里格斯性格分類法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1423683",
+      "term": "洁癖",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q848532",
+      "term": "餐巾",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2670506",
+      "term": "拿破崙問題",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1495961",
+      "term": "2012年度美国国防授权法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q56097188",
+      "term": "2019年度美國國防授權法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97628142",
+      "term": "2021年度美国国防授权法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q108821985",
+      "term": "2022年度美國國防授權法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q120681668",
+      "term": "2024年度美國國防授權法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3141633",
+      "term": "國家產業復興法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1967718",
+      "term": "1947年國家安全法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q154954",
+      "term": "自然人",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48818118",
+      "term": "接地氣療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q211897",
+      "term": "1938年海軍法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6982708",
+      "term": "海军淋浴法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q181843",
+      "term": "戀屍癖",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q160070",
+      "term": "過失",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1935806",
+      "term": "邻接法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q215948",
+      "term": "神經語言學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3872",
+      "term": "神经心理学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1079392",
+      "term": "二刻尺作圖",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q60238",
+      "term": "新兴古典经济学派",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7013400",
+      "term": "紐約州憲法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q374195",
+      "term": "牛顿法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q773717",
+      "term": "日本古倫美亞",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q110442458",
+      "term": "奈玛特韦/利托那韦",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1329394",
+      "term": "有教無類法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q188724",
+      "term": "非甾体抗炎药",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1543446",
+      "term": "努南氏症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q20708386",
+      "term": "惡名市場",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2179394",
+      "term": "裸泳",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q820183",
+      "term": "倫敦憲章",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q899523",
+      "term": "面向对象程序语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q131012",
+      "term": "奥卡姆剃刀",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q66062123",
+      "term": "中度弱視的遮蓋與藥物治療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q629029",
+      "term": "職業安全健康",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q380141",
+      "term": "職能治療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7090364",
+      "term": "綜合外國貿易與競爭法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q97350126",
+      "term": "俄羅斯聯邦與台灣關係條例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q134500668",
+      "term": "大而美法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7092316",
+      "term": "OMAC消息认证码",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q150474",
+      "term": "一次性密碼本",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q104176807",
+      "term": "洋葱汁",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2851545",
+      "term": "卵巢炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4921808",
+      "term": "暗渡陈仓",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q46452",
+      "term": "鸦片",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q167555",
+      "term": "光学字符识别",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q187860",
+      "term": "期權",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q18835393",
+      "term": "中华人民共和国全国人民代表大会组织法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q10871935",
+      "term": "中华人民共和国人民法院组织法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q619261",
+      "term": "恐懼鳥類症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1571081",
+      "term": "角膜塑形術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1241279",
+      "term": "视轴校正医师",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q325253",
+      "term": "整骨療法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q18556140",
+      "term": "奥斯特线虫病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q256608",
+      "term": "外层空间条约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q838115",
+      "term": "牛津能力分析",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q576379",
+      "term": "氧化酶测试",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q907730",
+      "term": "调酸素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1197154",
+      "term": "页面描述语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q533945",
+      "term": "舊石器時期的飲食",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3359556",
+      "term": "Panama加密算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1527888",
+      "term": "胰腺炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q420405",
+      "term": "泛配子酸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q15964758",
+      "term": "論文產生器",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1151042",
+      "term": "厨房纸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q594433",
+      "term": "破窗謬論",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11085",
+      "term": "帕金森病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208909",
+      "term": "帕洛风",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q614361",
+      "term": "分区表",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1686000",
+      "term": "当事人",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q81571",
+      "term": "Pascal编程语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1193328",
+      "term": "傳球",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q17148557",
+      "term": "印度護照法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q959710",
+      "term": "密码认证协议",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q119806353",
+      "term": "前世回溯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1414593",
+      "term": "患者保护与平价医疗法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q221689",
+      "term": "美國愛國者法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q378859",
+      "term": "圖型識別",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1161133",
+      "term": "修脚",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q161410",
+      "term": "點對點技術",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1770529",
+      "term": "流放",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1939224",
+      "term": "細價股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q27650141",
+      "term": "芍藥",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2427787",
+      "term": "可持久化資料結構",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q64836845",
+      "term": "個人活動智能和體重",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1000371",
+      "term": "个性化",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3221044",
+      "term": "三硝酸甘油脂",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q194041",
+      "term": "苯丙酮尿症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2285767",
+      "term": "银海枣",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1872556",
+      "term": "低階雷射治療",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q835153",
+      "term": "体格检查",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q16643870",
+      "term": "物理疗法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q18576",
+      "term": "皮克氏病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10405662",
+      "term": "片仔癀",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650240",
+      "term": "半夏",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q269829",
+      "term": "安慰劑",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8328350",
+      "term": "植物營養學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q161105",
+      "term": "法桐",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q51367",
+      "term": "合理否認",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q45282",
+      "term": "PLEDIS娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q55998",
+      "term": "胸膜炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12192",
+      "term": "肺炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q12195",
+      "term": "脊髓灰質炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7278",
+      "term": "政黨",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q371520",
+      "term": "多指畸形",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q155152",
+      "term": "宝丽多唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q700359",
+      "term": "宝丽金",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q176996",
+      "term": "聚合酶链式反应",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q513712",
+      "term": "波麗佳音",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q653122",
+      "term": "馬尾",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q147064",
+      "term": "黑杨",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q208376",
+      "term": "正子斷層照影",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q28453504",
+      "term": "過錳酸鉀",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q594013",
+      "term": "普瑞德威利症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3909890",
+      "term": "般尼克疗愈法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q7239230",
+      "term": "暴露前预防",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q622588",
+      "term": "優先股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2108857",
+      "term": "總統記錄法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48998239",
+      "term": "精神障碍的预防",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134281458",
+      "term": "价格预测",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q213098",
+      "term": "早年衰老症候群",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q9143",
+      "term": "编程语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q70666159",
+      "term": "香港禁止蒙面規例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q66590068",
+      "term": "催乳素",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q190122",
+      "term": "本票",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7250220",
+      "term": "中華人民共和國物權法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1151839",
+      "term": "展望理论",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q646522",
+      "term": "前列腺按摩",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2001931",
+      "term": "義肢唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60468",
+      "term": "关于难民地位的议定书",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q39918",
+      "term": "八担杏",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q41630",
+      "term": "精神分析学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q366886",
+      "term": "心理病态",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q19652",
+      "term": "公有领域",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q274490",
+      "term": "公共財政",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1549152",
+      "term": "公共机构",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q29627",
+      "term": "公益",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q857667",
+      "term": "肺水腫",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q13046587",
+      "term": "肺結核",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1140495",
+      "term": "脉搏氧饱和度法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4363942",
+      "term": "畢達哥拉斯",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q204368",
+      "term": "氣功",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q86656575",
+      "term": "清肺排毒汤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q218155",
+      "term": "冬青櫟",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3565069",
+      "term": "阿勒颇栎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q165145",
+      "term": "夏栎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q486598",
+      "term": "快速排序",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q39222",
+      "term": "狂犬病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4007169",
+      "term": "狂犬病疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1384131",
+      "term": "拉宾-卡普算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q245341",
+      "term": "X光線照相術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q170170",
+      "term": "湿地公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q94361709",
+      "term": "恢复试验",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q182270",
+      "term": "位图",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7276210",
+      "term": "羅恩的代碼算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q846955",
+      "term": "李維斯特密码4",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q202585",
+      "term": "RCA唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q6138701",
+      "term": "資源描述框架查詢語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134267434",
+      "term": "实时优化",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1195672",
+      "term": "接收訊號強度指示",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7302459",
+      "term": "互惠稅則法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1457734",
+      "term": "循環神經網絡",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q7307654",
+      "term": "難民救濟法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1061415",
+      "term": "再生醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q104940063",
+      "term": "深圳经济特区个人破产条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106443593",
+      "term": "宁夏回族自治区农村集体经济承包合同管理条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106444036",
+      "term": "宁夏回族自治区非物质文化遗产保护条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q106430732",
+      "term": "云南省文山壮族苗族自治州水工程管理条例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q830687",
+      "term": "强化学习",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q115570683",
+      "term": "基于人类反馈的强化学习",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q4922218",
+      "term": "釜底抽薪",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q260447",
+      "term": "地產抵押馬克",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q3427718",
+      "term": "住宅地产抵押贷款支持证券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q740504",
+      "term": "危害性物質限制指令",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q120468350",
+      "term": "瑞他鲁肽",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q500695",
+      "term": "视网膜母细胞瘤",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q114085",
+      "term": "鼻炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3149137",
+      "term": "抗RH因子球蛋白",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650430",
+      "term": "大黃",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2124306",
+      "term": "RACE原始完整性校驗訊息摘要",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2154708",
+      "term": "Rise唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7277102",
+      "term": "鐵達尼號海事紀念法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q170978",
+      "term": "機器人學",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1194456",
+      "term": "搖滾國度",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q697466",
+      "term": "滾石唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q488532",
+      "term": "羅夏克墨漬測驗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q133617",
+      "term": "薔薇",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1004415",
+      "term": "執行期函式庫",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1583213",
+      "term": "俄羅斯帝國基本法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q210868",
+      "term": "采样",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q32098",
+      "term": "刑罚",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q60050195",
+      "term": "薩瓦納法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7428376",
+      "term": "沙威隆",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q27650332",
+      "term": "豬苓",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q187432",
+      "term": "脚本语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q27650611",
+      "term": "黃芩",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1132965",
+      "term": "海水浴",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1999032",
+      "term": "1934年证券交易法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q852175",
+      "term": "资产证券化",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q169489",
+      "term": "證券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q847705",
+      "term": "鎮靜劑",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2377385",
+      "term": "线段树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q8189667",
+      "term": "正露丸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3954727",
+      "term": "1917年美国义务征兵法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q245955",
+      "term": "自平衡二叉搜索树",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1136838",
+      "term": "自组织映射",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1045785",
+      "term": "語義網絡",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3539534",
+      "term": "语义三元组",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q54837",
+      "term": "语义网",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1041418",
+      "term": "半監督學習",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q41589189",
+      "term": "Seq2Seq模型",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q103177",
+      "term": "嚴重急性呼吸系統綜合症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q24962748",
+      "term": "性別特徵",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3496485",
+      "term": "着色器语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q11692",
+      "term": "股份",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q848955",
+      "term": "希尔排序",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1425088",
+      "term": "休曼法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q27868361",
+      "term": "四君子湯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4922304",
+      "term": "關門捉賊",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3273355",
+      "term": "悉達醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1542201",
+      "term": "阿特金的筛子",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q863783",
+      "term": "模拟退火",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q849737",
+      "term": "單光子電腦斷層掃描",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q483938",
+      "term": "SM娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q12214",
+      "term": "天花",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1585491",
+      "term": "斯姆特-霍利关税法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q281928",
+      "term": "社交恐懼症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q205398",
+      "term": "社會工作",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q279014",
+      "term": "欧洲股份公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q80993",
+      "term": "软件工程",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q847971",
+      "term": "Soma唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q330629",
+      "term": "索尼音樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q732503",
+      "term": "日本索尼音樂娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7392495",
+      "term": "SPDR基金",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q189436",
+      "term": "语音识别",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1434575",
+      "term": "睾丸扭轉",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q551840",
+      "term": "裂腦",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2902363",
+      "term": "SPQR 樹",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q177929",
+      "term": "堆栈",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1550393",
+      "term": "吻合器痔上黏膜環切術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q216227",
+      "term": "紧急状态",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1196314",
+      "term": "股票",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q674827",
+      "term": "德國刑法典",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7632064",
+      "term": "藥物濫用預防",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q748364",
+      "term": "S盒",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3298118",
+      "term": "自殺防制",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q632323",
+      "term": "顶峰娱乐",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1566000",
+      "term": "超级智能",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q112217556",
+      "term": "古羅馬的外科手術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q10898482",
+      "term": "刷手",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1136583",
+      "term": "掉期交易",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q2446723",
+      "term": "蜂群機器人學",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q41083",
+      "term": "梅毒",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1485",
+      "term": "紅斑性狼瘡",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q72093828",
+      "term": "台北法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q105252811",
+      "term": "清冠一號",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q476667",
+      "term": "臺灣關係法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q30949931",
+      "term": "台灣旅行法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4922314",
+      "term": "顺手牵羊",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1195751",
+      "term": "唐律",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q48832",
+      "term": "茶樹油",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3142419",
+      "term": "得勒克唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q612851",
+      "term": "電話恐懼症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q47790",
+      "term": "破傷風",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2406697",
+      "term": "先天性四肢切斷症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q374832",
+      "term": "铊中毒",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q8071124",
+      "term": "朱令铊中毒事件",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q85844345",
+      "term": "流程恢复中心",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1935697",
+      "term": "Tiger散列算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q166066",
+      "term": "基于时间的一次性密码算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5840",
+      "term": "卫生纸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1372258",
+      "term": "德間書店",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q93935",
+      "term": "刷牙",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q191779",
+      "term": "妥瑞症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1350203",
+      "term": "旅游地理学",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q17149605",
+      "term": "1974年美國貿易法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7831944",
+      "term": "貿易擴張法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q136450764",
+      "term": "職工會條例",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2329068",
+      "term": "傳統非洲醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3439913",
+      "term": "东洋医学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q200253",
+      "term": "中医学",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q710679",
+      "term": "韓醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2572867",
+      "term": "蒙醫學",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3045034",
+      "term": "经肛门痔动脉结扎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q263962",
+      "term": "穿顱磁刺激",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1482183",
+      "term": "变换矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q5903802",
+      "term": "跨性别荷尔蒙疗法",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q703961",
+      "term": "傳染性海綿狀腦病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q105196",
+      "term": "器官移植",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q660564",
+      "term": "運輸經濟學",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q833293",
+      "term": "梯形公式",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1516464",
+      "term": "库藏股",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q181902",
+      "term": "特里亞農條約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q223655",
+      "term": "樹",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q40745",
+      "term": "神明裁判",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q608259",
+      "term": "拔毛症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q491998",
+      "term": "TS娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1420011",
+      "term": "塔斯基吉梅毒試驗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q303469",
+      "term": "兩洋海軍法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3245302",
+      "term": "泰诺",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q160649",
+      "term": "斑疹傷寒",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q948562",
+      "term": "尺骨附屬韌帶重建術",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q1465791",
+      "term": "UCITS基金",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q850712",
+      "term": "表达式语言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q16920636",
+      "term": "联合银行",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q216996",
+      "term": "聯合國海洋法公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q331520",
+      "term": "联合国关于在发生严重干旱和/或荒漠化的国家特别是在非洲防治荒漠化的公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q208645",
+      "term": "联合国气候变化框架公约",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1561771",
+      "term": "美國財政部證券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q7863496",
+      "term": "H.R.4444号法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7893553",
+      "term": "美國-香港政策法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q3258610",
+      "term": "非法活動防治法",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16984194",
+      "term": "尿胸",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q966551",
+      "term": "乌拉圭回合协议法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q67936634",
+      "term": "維吾爾人權政策法案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q192995",
+      "term": "疫苗接種",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q134808",
+      "term": "疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q676191",
+      "term": "陰道炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2721987",
+      "term": "水痘疫苗",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4052630",
+      "term": "鵝絨音樂唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q178074",
+      "term": "否决权",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1202628",
+      "term": "勝利娛樂",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7927914",
+      "term": "電子遊戲圖形",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q700855",
+      "term": "維也納領事關係公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q659717",
+      "term": "維也納外交關係公約",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q699366",
+      "term": "關於道路標示及燈號的維也納會議",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2603200",
+      "term": "病毒性肺炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q203059",
+      "term": "維京唱片",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q861170",
+      "term": "虛擬鍵盤",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q24321",
+      "term": "歐洲聯盟簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16920442",
+      "term": "阿富汗签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935347",
+      "term": "阿根廷簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4818189",
+      "term": "阿塞拜疆簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15621614",
+      "term": "巴哈馬簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935349",
+      "term": "貝里斯簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935353",
+      "term": "不丹签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935355",
+      "term": "波斯尼亞和黑塞哥維那簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17080673",
+      "term": "巴西簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17031453",
+      "term": "布吉納法索簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16990887",
+      "term": "蒲隆地簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17037669",
+      "term": "佛得角签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17080764",
+      "term": "中非共和國簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110896",
+      "term": "哥斯達黎加簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q16920448",
+      "term": "吉布地簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110905",
+      "term": "厄瓜多尔签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17071280",
+      "term": "埃及簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110892",
+      "term": "喬治亞簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935364",
+      "term": "海地簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q5930665",
+      "term": "香港签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110894",
+      "term": "印度签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110893",
+      "term": "印度尼西亚签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1105736",
+      "term": "日本簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935370",
+      "term": "吉爾吉斯簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15008052",
+      "term": "黎巴嫩簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q114899",
+      "term": "澳門簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935374",
+      "term": "马尔代夫签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935376",
+      "term": "摩爾多瓦簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935377",
+      "term": "蒙古签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q93623",
+      "term": "新西兰签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935400",
+      "term": "馬其頓簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935380",
+      "term": "巴基斯坦簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17071315",
+      "term": "卡達簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110900",
+      "term": "俄罗斯签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q15971076",
+      "term": "沙特阿拉伯簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110901",
+      "term": "新加坡签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17049515",
+      "term": "索馬利亞簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110906",
+      "term": "南非簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110904",
+      "term": "斯里兰卡签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110902",
+      "term": "泰国签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q17087072",
+      "term": "英國海外領土簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q7935398",
+      "term": "荷兰加勒比区签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1105702",
+      "term": "中华人民共和国签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q1107204",
+      "term": "中華民國簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q213013",
+      "term": "阿联酋签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q2918599",
+      "term": "美國簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110903",
+      "term": "土庫曼斯坦簽證政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q4110890",
+      "term": "越南签证政策",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q45177",
+      "term": "免簽證計劃",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q215486",
+      "term": "维特鲁威人",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q48204",
+      "term": "協會",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q14130",
+      "term": "长发",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q617663",
+      "term": "戰爭債券",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q1419202",
+      "term": "戰爭權決議案",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q843402",
+      "term": "华纳兄弟唱片公司",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q21077",
+      "term": "華納音樂集團",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q637156",
+      "term": "权证",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q108770579",
+      "term": "文言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q1893324",
+      "term": "Whirlpool散列算法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q134547086",
+      "term": "水平律動",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q91493633",
+      "term": "维基媒体对2019冠状病毒病疫情的反应",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3568034",
+      "term": "维基百科文件系统",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q192869",
+      "term": "Windows位图",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q3115198",
+      "term": "茯苓",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4994367",
+      "term": "高收入經濟體",
+      "aliases": [],
+      "category": "Finance"
+    },
+    {
+      "id": "Q107028193",
+      "term": "武漢肺炎",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q3281380",
+      "term": "X连锁淋巴细胞增生性疾病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q297868",
+      "term": "AT&T組語語法",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q2451397",
+      "term": "氙-133",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q612693",
+      "term": "著色性乾皮症",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q132533381",
+      "term": "小柴胡湯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q2115",
+      "term": "可擴展標記語言",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q88454408",
+      "term": "血必净",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q957751",
+      "term": "XY性腺發育不全",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q76973",
+      "term": "熱帶肉芽腫",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q154874",
+      "term": "黄热病",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q117068",
+      "term": "巴拉圭冬青",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q50595",
+      "term": "YG娱乐",
+      "aliases": [],
+      "category": "Legal"
+    },
+    {
+      "id": "Q8061329",
+      "term": "云南白药",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q11533980",
+      "term": "柚子湯",
+      "aliases": [],
+      "category": "Medical"
+    },
+    {
+      "id": "Q4053513",
+      "term": "Z-矩阵",
+      "aliases": [],
+      "category": "Software Engineering"
+    },
+    {
+      "id": "Q10921015",
+      "term": "周蟒",
+      "aliases": [],
+      "category": "Software Engineering"
+    }
+  ]
+}

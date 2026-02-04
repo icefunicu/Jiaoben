@@ -1,3 +1,9 @@
+/*
+ * 外部请求清单：
+ * - 书签 URL（任意域名）: 目的=元数据抓取(title/description)与死链检测; 触发=启用“使用元数据”或点击“开始检测”; 失败策略=忽略元数据/判定不可达; 开关=useMetadata 选项/手动触发
+ * - AI API（可选域名=https://api.openai.com/v1, https://api.anthropic.com/v1, https://generativelanguage.googleapis.com/v1beta/openai, https://api.groq.com/openai/v1, https://api.together.xyz/v1, https://openrouter.ai/api/v1, https://api.deepseek.com/v1, https://open.bigmodel.cn/api/paas/v4, https://api.moonshot.cn/v1, https://dashscope.aliyuncs.com/compatible-mode/v1, https://api.baichuan-ai.com/v1, https://api.minimax.chat/v1, https://api.lingyiwanwu.com/v1, https://ark.cn-beijing.volces.com/api/v3, https://spark-api-open.xf-yun.com/v1, http://localhost:11434/v1, http://localhost:1234/v1）: 目的=AI 分类; 触发=AI/混合模式; 失败策略=重试后记录错误并跳过该批次; 开关=分类模式与 AI 配置
+ * - https://fonts.googleapis.com, https://fonts.gstatic.com: 目的=加载 Plus Jakarta Sans; 触发=扩展 UI 加载; 失败策略=字体回退; 开关=无
+ */
 import {
   DEFAULT_RULES,
   DEFAULT_ROOT_FOLDER,

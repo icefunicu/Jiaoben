@@ -1,0 +1,65 @@
+[
+  {
+    "term": "Arbitrage",
+    "zh": "套利",
+    "category": "Finance",
+    "definition_en": "The simultaneous purchase and sale of the same asset in different markets in order to profit from tiny differences in the asset's listed price.",
+    "definition_zh": "同时在不同市场买入和卖出同一资产，以利用资产标价的微小差异获利的行为。",
+    "examples_en": ["Traders used arbitrage to profit from the price difference between the London and New York exchanges."],
+    "examples_zh": ["交易员利用套利从伦敦和纽约交易所之间的价格差异中获利。"]
+  },
+  {
+    "term": "Bull Market",
+    "zh": "牛市",
+    "category": "Finance",
+    "definition_en": "A market condition in which prices are rising or are expected to rise.",
+    "definition_zh": "价格上涨或预期会上涨的市场状况。",
+    "examples_en": ["The technology sector led the bull market of the late 1990s."],
+    "examples_zh": ["科技板块引领了 90 年代末的牛市。"]
+  },
+  {
+    "term": "Bear Market",
+    "zh": "熊市",
+    "category": "Finance",
+    "definition_en": "A market condition in which prices of securities are falling, and widespread pessimism causes the negative sentiment to be self-sustaining.",
+    "definition_zh": "证券价格下跌，且普遍的悲观情绪导致负面情绪自我持续的市场状况。",
+    "examples_en": ["Investors are cautious about entering the market during a bear market."],
+    "examples_zh": ["投资者在熊市期间对进入市场持谨慎态度。"]
+  },
+  {
+    "term": "Hedge Fund",
+    "zh": "对冲基金",
+    "category": "Finance",
+    "definition_en": "A limited partnership of investors that uses high risk methods, such as investing with borrowed money, in hopes of realizing large capital gains.",
+    "definition_zh": "一种投资者有限合伙企业，使用高风险方法（如用借来的钱投资），希望能实现巨额资本收益。",
+    "examples_en": ["The hedge fund manager bet against the housing market."],
+    "examples_zh": ["该对冲基金经理做空了房地产市场。"]
+  },
+  {
+    "term": "Liquidity",
+    "zh": "流动性",
+    "category": "Finance",
+    "definition_en": "The efficiency or ease with which an asset or security can be converted into ready cash without affecting its market price.",
+    "definition_zh": "资产或证券在不影响其市场价格的情况下转换为现金的效率或难易程度。",
+    "examples_en": ["Real estate is considered to have low liquidity compared to stocks."],
+    "examples_zh": ["与股票相比，房地产通常被认为流动性较低。"]
+  },
+  {
+    "term": "IPO",
+    "zh": "首次公开募股",
+    "category": "Finance",
+    "definition_en": "Initial Public Offering, the process of offering shares of a private corporation to the public in a new stock issuance.",
+    "definition_zh": "首次公开募股，即私营公司通过发行新股向公众发售股份的过程。",
+    "examples_en": ["The company raised millions in its IPO."],
+    "examples_zh": ["该公司在 IPO 中筹集了数百万美元。"]
+  },
+  {
+    "term": "Derivative",
+    "zh": "衍生品",
+    "category": "Finance",
+    "definition_en": "A financial security with a value that is reliant upon or derived from an underlying asset or group of assets.",
+    "definition_zh": "一种金融证券，其价值依赖于或衍生自标的资产或资产组。",
+    "examples_en": ["Futures and options are common types of derivatives."],
+    "examples_zh": ["期货和期权是常见的衍生品类型。"]
+  }
+]

@@ -1,0 +1,74 @@
+[
+  {
+    "term": "Closure",
+    "zh": "闭包",
+    "category": "Programming",
+    "definition_en": "In programming languages, a closure, also known as a lexical closure or function closure, is a technique for implementing lexically scoped name binding in a language with first-class functions.",
+    "definition_zh": "在编程语言中，闭包（也称为词法闭包或函数闭包）是在支持头等函数的语言中实现词法作用域名称绑定的一种技术。它允许函数访问其定义时所在的词法作用域中的变量，即使该函数在其作用域之外被调用。",
+    "examples_en": ["Closures are frequently used in JavaScript for data privacy and event handlers."],
+    "examples_zh": ["闭包常用于 JavaScript 中以实现数据私有化和事件处理程序。"]
+  },
+  {
+    "term": "Idempotent",
+    "zh": "幂等",
+    "category": "Backend",
+    "definition_en": "Idempotence is the property of certain operations in mathematics and computer science whereby they can be applied multiple times without changing the result beyond the initial application.",
+    "definition_zh": "幂等性是数学和计算机科学中某些操作的属性，意味着这些操作可以被多次应用，而不会产生超出初始应用之外的结果。在 API 设计中，意味着多次请求产生的副作用与一次请求相同。",
+    "examples_en": ["HTTP PUT and DELETE methods are designed to be idempotent."],
+    "examples_zh": ["HTTP PUT 和 DELETE 方法被设计为幂等的。"]
+  },
+  {
+    "term": "CAP Theorem",
+    "zh": "CAP 定理",
+    "category": "Distributed Systems",
+    "definition_en": "The CAP theorem states that a distributed data store can only provide two of the following three guarantees: Consistency, Availability, and Partition Tolerance.",
+    "definition_zh": "CAP 定理指出，分布式数据存储最多只能同时满足以下三个保证中的两个：一致性（Consistency）、可用性（Availability）和分区容错性（Partition Tolerance）。",
+    "examples_en": ["In the event of a network partition, a system must choose between consistency and availability."],
+    "examples_zh": ["在发生网络分区的情况下，系统必须在一致性和可用性之间做出选择。"]
+  },
+  {
+    "term": "Microservices",
+    "zh": "微服务",
+    "category": "Architecture",
+    "definition_en": "Microservices is an architectural style that structures an application as a collection of services that are highly maintainable and testable, loosely coupled, independently deployable, and organized around business capabilities.",
+    "definition_zh": "微服务是一种架构风格，它将应用程序构建为一组服务，这些服务具有高度可维护性和可测试性，松散耦合，可独立部署，并围绕业务能力进行组织。",
+    "examples_en": ["Netflix is a famous example of a company that migrated from a monolith to microservices."],
+    "examples_zh": ["Netflix 是从单体架构迁移到微服务架构的著名案例。"]
+  },
+  {
+    "term": "CI/CD",
+    "zh": "持续集成/持续交付",
+    "category": "DevOps",
+    "definition_en": "CI/CD is a method to frequently deliver apps to customers by introducing automation into the stages of app development. The main concepts attributed to CI/CD are continuous integration, continuous delivery, and continuous deployment.",
+    "definition_zh": "CI/CD 是一种通过在应用开发阶段引入自动化来频繁向客户交付应用的方法。CI/CD 的核心概念是持续集成、持续交付和持续部署。",
+    "examples_en": ["Jenkins and GitLab CI are popular tools for implementing CI/CD pipelines."],
+    "examples_zh": ["Jenkins 和 GitLab CI 是实现 CI/CD 流水线的流行工具。"]
+  },
+  {
+    "term": "Kubernetes",
+    "zh": "Kubernetes",
+    "category": "Infrastructure",
+    "definition_en": "Kubernetes, also known as K8s, is an open-source system for automating deployment, scaling, and management of containerized applications.",
+    "definition_zh": "Kubernetes（也称为 K8s）是一个开源系统，用于自动化容器化应用程序的部署、扩展和管理。",
+    "examples_en": ["Kubernetes orchestrates containers across a cluster of machines."],
+    "examples_zh": ["Kubernetes 在机器集群中编排容器。"]
+  },
+  {
+    "term": "SQL Injection",
+    "zh": "SQL 注入",
+    "category": "Security",
+    "definition_en": "SQL injection is a code injection technique, used to attack data-driven applications, in which malicious SQL statements are inserted into an entry field for execution.",
+    "definition_zh": "SQL 注入是一种代码注入技术，用于攻击数据驱动的应用程序，其中恶意的 SQL 语句被插入到输入字段中以供执行。",
+    "examples_en": ["Using prepared statements is the most effective way to prevent SQL injection."],
+    "examples_zh": ["使用预处理语句是防止 SQL 注入的最有效方法。"]
+  },
+  {
+    "term": "Zero Knowledge Proof",
+    "zh": "零知识证明",
+    "category": "Cryptography",
+    "definition_en": "In cryptography, a zero-knowledge proof or zero-knowledge protocol is a method by which one party (the prover) can prove to another party (the verifier) that they know a value x, without conveying any information apart from the fact that they know the value x.",
+    "definition_zh": "在密码学中，零知识证明或零知识协议是一种方法，通过该方法，一方（证明者）可以向另一方（验证者）证明他们知道值 x，而无需传达除他们知道值 x 这一事实之外的任何信息。",
+    "examples_en": ["Zk-SNARKs are a form of zero-knowledge proof used in blockchain privacy."],
+    "examples_zh": ["Zk-SNARKs 是区块链隐私中使用的一种零知识证明形式。"]
+  }
+]

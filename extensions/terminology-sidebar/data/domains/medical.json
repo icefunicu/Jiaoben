@@ -1,0 +1,56 @@
+[
+  {
+    "term": "Placebo",
+    "zh": "安慰剂",
+    "category": "Medical",
+    "definition_en": "A harmless pill, medicine, or procedure prescribed more for the psychological benefit to the patient than for any physiological effect.",
+    "definition_zh": "一种无害的药丸、药物或程序，其处方更多是为了给患者带来心理上的好处，而不是任何生理上的效果。",
+    "examples_en": ["The control group in the study was given a placebo."],
+    "examples_zh": ["研究中的对照组被给予了安慰剂。"]
+  },
+  {
+    "term": "Hypertension",
+    "zh": "高血压",
+    "category": "Medical",
+    "definition_en": "Abnormally high blood pressure.",
+    "definition_zh": "异常高的血压。",
+    "examples_en": ["Lifestyle changes can help manage hypertension."],
+    "examples_zh": ["生活方式的改变有助于控制高血压。"]
+  },
+  {
+    "term": "Antibiotic",
+    "zh": "抗生素",
+    "category": "Medical",
+    "definition_en": "A medicine (such as penicillin or its derivatives) that inhibits the growth of or destroys microorganisms.",
+    "definition_zh": "一种抑制微生物生长或破坏微生物的药物（如青霉素或其衍生物）。",
+    "examples_en": ["Antibiotics are not effective against viral infections."],
+    "examples_zh": ["抗生素对病毒感染无效。"]
+  },
+  {
+    "term": "Vaccine",
+    "zh": "疫苗",
+    "category": "Medical",
+    "definition_en": "A substance used to stimulate the production of antibodies and provide immunity against one or several diseases.",
+    "definition_zh": "一种用于刺激抗体产生并提供针对一种或多种疾病的免疫力的物质。",
+    "examples_en": ["The flu vaccine is recommended annually."],
+    "examples_zh": ["建议每年接种流感疫苗。"]
+  },
+  {
+    "term": "Biopsy",
+    "zh": "活检",
+    "category": "Medical",
+    "definition_en": "An examination of tissue removed from a living body to discover the presence, cause, or extent of a disease.",
+    "definition_zh": "对从活体中取出的组织进行检查，以发现疾病的存在、原因或程度。",
+    "examples_en": ["The doctor ordered a biopsy to check for cancer cells."],
+    "examples_zh": ["医生安排了活检以检查癌细胞。"]
+  },
+  {
+    "term": "Chronic",
+    "zh": "慢性的",
+    "category": "Medical",
+    "definition_en": "(of an illness) persisting for a long time or constantly recurring.",
+    "definition_zh": "（指疾病）持续时间长或经常复发的。",
+    "examples_en": ["Chronic back pain can significantly affect quality of life."],
+    "examples_zh": ["慢性背痛会严重影响生活质量。"]
+  }
+]

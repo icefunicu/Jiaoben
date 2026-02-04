@@ -21,6 +21,9 @@
 // @license      MIT
 // ==/UserScript==
 
+// 外部请求清单：
+// - https://open.bigmodel.cn/api/paas/v4/chat/completions: 目的=AI 判别广告邮件; 触发=开启 AI 模式并配置 API Key 或点击“测试连接”; 失败策略=返回 null 并回退到规则引擎/提示失败; 开关=设置中的 AI 开关
+
 (function () {
     'use strict';
 

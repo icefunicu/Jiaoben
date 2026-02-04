@@ -1,0 +1,148 @@
+<div class="ts-container">
+  <div class="ts-resize-handle" title="Drag to resize"></div>
+  <button class="ts-float-toggle" aria-label="Toggle">T</button>
+  <aside class="ts-sidebar">
+    <header class="ts-header">
+      <div class="ts-title" data-i18n="title"></div>
+      <div class="ts-controls">
+        <select class="ts-language">
+          <option value="auto" data-i18n="languageAuto"></option>
+          <option value="en" data-i18n="languageEn"></option>
+          <option value="zh_CN" data-i18n="languageZh"></option>
+        </select>
+        <button class="ts-btn ts-rescan" data-i18n="rescan"></button>
+        <button class="ts-btn ts-settings" data-i18n="settings"></button>
+      </div>
+      <div class="ts-search-row">
+        <input class="ts-search" type="search" data-i18n-placeholder="searchPlaceholder" />
+        <button class="ts-btn ts-clear-search" data-i18n="clearSearch"></button>
+      </div>
+      <div class="ts-summary"></div>
+    </header>
+    <section class="ts-list"></section>
+    <div class="ts-empty"></div>
+    <section class="ts-detail-drawer" aria-hidden="true">
+      <div class="ts-detail-backdrop" data-action="close"></div>
+      <div class="ts-detail-panel" role="dialog" aria-modal="true">
+        <header class="ts-detail-top">
+          <div class="ts-detail-title">
+            <div class="ts-detail-title-zh"></div>
+            <div class="ts-detail-title-en"></div>
+          </div>
+          <div class="ts-detail-top-actions">
+            <button class="ts-btn ts-detail-copy" data-i18n="detailCopyFull" data-i18n-aria="detailCopyFull" aria-label=""></button>
+            <button class="ts-btn ts-detail-close" data-i18n="detailClose" data-i18n-aria="detailClose" aria-label=""></button>
+          </div>
+        </header>
+        <div class="ts-detail-meta"></div>
+        <div class="ts-detail-body">
+          <div class="ts-detail-state ts-detail-loading">
+            <div class="ts-skeleton ts-skeleton-text" style="width: 70%;"></div>
+            <div class="ts-skeleton ts-skeleton-text" style="width: 90%;"></div>
+            <div class="ts-skeleton ts-skeleton-text" style="width: 85%;"></div>
+          </div>
+          <div class="ts-detail-state ts-detail-empty" data-i18n="detailEmpty"></div>
+          <div class="ts-detail-state ts-detail-error" data-i18n="detailError"></div>
+          <div class="ts-detail-content">
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailDefinition"></div>
+              <div class="ts-detail-definition"></div>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailExplanation"></div>
+              <div class="ts-detail-explanation"></div>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailScenarios"></div>
+              <div class="ts-detail-scenarios">
+                <div class="ts-detail-scenario">
+                  <div class="ts-detail-scenario-title" data-i18n="detailUse"></div>
+                  <ul class="ts-detail-use-list"></ul>
+                </div>
+                <div class="ts-detail-scenario">
+                  <div class="ts-detail-scenario-title" data-i18n="detailAvoid"></div>
+                  <ul class="ts-detail-avoid-list"></ul>
+                </div>
+              </div>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailExamples"></div>
+              <div class="ts-detail-examples"></div>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailPitfalls"></div>
+              <ul class="ts-detail-pitfalls"></ul>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailRelated"></div>
+              <div class="ts-detail-related"></div>
+            </section>
+            <section class="ts-detail-section">
+              <div class="ts-detail-section-title" data-i18n="detailSources"></div>
+              <div class="ts-detail-sources"></div>
+            </section>
+          </div>
+        </div>
+        <div class="ts-detail-actions">
+          <button class="ts-btn ts-highlight" data-i18n="highlight"></button>
+          <button class="ts-btn ts-online" data-i18n="onlineResolve"></button>
+          <button class="ts-btn ts-online-refresh" data-i18n="onlineRefresh"></button>
+        </div>
+      </div>
+    </section>
+    <section class="ts-settings-panel">
+      <div class="ts-settings-title" data-i18n="settingsTitle"></div>
+      <label class="ts-setting">
+        <span data-i18n="listLimit"></span>
+        <select class="ts-setting-limit">
+          <option value="20">20</option>
+          <option value="30">30</option>
+          <option value="40">40</option>
+        </select>
+      </label>
+      <label class="ts-setting">
+        <span data-i18n="theme"></span>
+        <select class="ts-setting-theme">
+          <option value="auto" data-i18n="themeAuto"></option>
+          <option value="light" data-i18n="themeLight"></option>
+          <option value="dark" data-i18n="themeDark"></option>
+        </select>
+      </label>
+      <label class="ts-setting">
+        <input class="ts-setting-include-code" type="checkbox" />
+        <span data-i18n="includeCode"></span>
+      </label>
+      <label class="ts-setting">
+        <input class="ts-setting-online" type="checkbox" />
+        <span data-i18n="onlineEnable"></span>
+      </label>
+      <button class="ts-btn ts-clear-cache" data-i18n="clearCache"></button>
+      <div class="ts-about" data-i18n="cedictAbout"></div>
+    </section>
+    <footer class="ts-footer">
+      <div class="ts-status"></div>
+    </footer>
+    <div class="ts-toast"></div>
+    <div class="ts-tutorial" aria-hidden="true">
+      <div class="ts-tutorial-backdrop"></div>
+      <div class="ts-tutorial-card" role="dialog" aria-modal="true">
+        <div class="ts-tutorial-header">
+          <div class="ts-tutorial-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="24" height="24" fill="none">
+              <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.5"></circle>
+              <path d="M12 7.2a1.2 1.2 0 1 0 0 2.4a1.2 1.2 0 0 0 0-2.4Z" fill="currentColor"></path>
+              <path d="M11 11.2h2V16h-2z" fill="currentColor"></path>
+            </svg>
+          </div>
+          <div class="ts-tutorial-title" data-i18n="tutorialTitle"></div>
+        </div>
+        <div class="ts-tutorial-body">
+          <div class="ts-tutorial-item" data-i18n="tutorialStep1"></div>
+          <div class="ts-tutorial-item" data-i18n="tutorialStep2"></div>
+          <div class="ts-tutorial-item" data-i18n="tutorialStep3"></div>
+        </div>
+        <button class="ts-btn ts-tutorial-close" data-i18n="tutorialStart"></button>
+      </div>
+    </div>
+  </aside>
+</div>

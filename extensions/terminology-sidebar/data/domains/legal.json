@@ -1,0 +1,65 @@
+[
+  {
+    "term": "Affidavit",
+    "zh": "宣誓书",
+    "category": "Legal",
+    "definition_en": "A written statement confirmed by oath or affirmation, for use as evidence in court.",
+    "definition_zh": "经宣誓或确认的书面陈述，用作法庭证据。",
+    "examples_en": ["The witness signed an affidavit regarding the events of that night."],
+    "examples_zh": ["证人签署了一份关于当晚事件的宣誓书。"]
+  },
+  {
+    "term": "Tort",
+    "zh": "侵权行为",
+    "category": "Legal",
+    "definition_en": "A wrongful act or an infringement of a right (other than under contract) leading to civil legal liability.",
+    "definition_zh": "一种错误行为或权利侵犯（合同下的除外），导致民事法律责任。",
+    "examples_en": ["Negligence is a common type of tort."],
+    "examples_zh": ["过失是一种常见的侵权行为。"]
+  },
+  {
+    "term": "Habeas Corpus",
+    "zh": "人身保护令",
+    "category": "Legal",
+    "definition_en": "A writ requiring a person under arrest to be brought before a judge or into court, especially to secure the person's release unless lawful grounds are shown for their detention.",
+    "definition_zh": "一种令状，要求将被逮捕的人带到法官或法庭面前，特别是为了确保该人获释，除非能出示其被拘留的合法理由。",
+    "examples_en": ["The lawyer filed a writ of habeas corpus to challenge the unlawful detention."],
+    "examples_zh": ["律师申请了人身保护令，以质疑非法拘留。"]
+  },
+  {
+    "term": "Plaintiff",
+    "zh": "原告",
+    "category": "Legal",
+    "definition_en": "A person who brings a case against another in a court of law.",
+    "definition_zh": "在法庭上对他人提起诉讼的人。",
+    "examples_en": ["The plaintiff sued the company for damages."],
+    "examples_zh": ["原告起诉该公司要求赔偿损失。"]
+  },
+  {
+    "term": "Defendant",
+    "zh": "被告",
+    "category": "Legal",
+    "definition_en": "An individual, company, or institution sued or accused in a court of law.",
+    "definition_zh": "在法庭上被起诉或被指控的个人、公司或机构。",
+    "examples_en": ["The defendant pleaded not guilty to the charges."],
+    "examples_zh": ["被告对指控表示不认罪。"]
+  },
+  {
+    "term": "Subpoena",
+    "zh": "传票",
+    "category": "Legal",
+    "definition_en": "A writ ordering a person to attend a court.",
+    "definition_zh": "命令某人出庭的令状。",
+    "examples_en": ["She received a subpoena to testify in the trial."],
+    "examples_zh": ["她收到传票，要求在审判中作证。"]
+  },
+  {
+    "term": "Jurisdiction",
+    "zh": "管辖权",
+    "category": "Legal",
+    "definition_en": "The official power to make legal decisions and judgments.",
+    "definition_zh": "做出法律决定和判决的官方权力。",
+    "examples_en": ["The court does not have jurisdiction over this matter."],
+    "examples_zh": ["法院对此事没有管辖权。"]
+  }
+]

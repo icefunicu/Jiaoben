@@ -20,6 +20,13 @@
 // @noframes
 // ==/UserScript==
 
+// 外部请求清单：
+// - https://raw.githubusercontent.com/: 目的=读取 package.json; 触发=build size / deps 功能开启; 失败策略=跳过展示; 开关=功能开关（buildSize/dependencyGraph）
+// - https://bundlephobia.com/api/size: 目的=构建体积查询; 触发=build size 功能开启; 失败策略=跳过展示; 开关=功能开关（buildSize）
+// - https://api.github.com/repos: 目的=仓库大小查询; 触发=repo size 功能开启; 失败策略=跳过展示/使用缓存; 开关=功能开关（repoSize）
+// - https://github.com/: 目的=提交详情预览; 触发=悬停提交链接; 失败策略=提示加载失败; 开关=功能开关（commitPreview）
+// - https://gitee.com/: 目的=提交详情预览/仓库信息; 触发=悬停提交链接或相关功能开启; 失败策略=跳过展示; 开关=功能开关
+
 (function () {
     'use strict';
 

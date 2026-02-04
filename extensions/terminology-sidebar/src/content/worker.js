@@ -1,0 +1,147 @@
+// Web Worker for Aho-Corasick matching
+// This runs in a separate thread to avoid blocking the UI
+
+const isWordChar = (ch) => /[A-Za-z0-9_]/.test(ch);
+
+// Automaton state
+let automatonEn = null;
+let automatonZh = null;
+
+// --- Matcher Logic (Optimized with TypedArrays for larger dictionaries) ---
+
+const buildAutomaton = (patterns) => {
+    const root = { next: new Map(), fail: null, outputs: [] };
+    const addPattern = (pattern, meta) => {
+      let node = root;
+      for (const ch of pattern) {
+        if (!node.next.has(ch)) node.next.set(ch, { next: new Map(), fail: null, outputs: [] });
+        node = node.next.get(ch);
+      }
+      node.outputs.push(meta);
+    };
+  
+    patterns.forEach((item) => {
+      // item: { p: pattern, i: index, l: termLength }
+      addPattern(item.p, { i: item.i, l: item.l });
+    });
+  
+    const queue = [];
+    for (const child of root.next.values()) {
+      child.fail = root;
+      queue.push(child);
+    }
+  
+    while (queue.length) {
+      const current = queue.shift();
+      for (const [ch, nextNode] of current.next.entries()) {
+        let fail = current.fail;
+        while (fail && !fail.next.has(ch)) {
+          fail = fail.fail;
+        }
+        nextNode.fail = fail ? fail.next.get(ch) : root;
+        if (nextNode.fail.outputs.length > 0) {
+          nextNode.outputs = nextNode.outputs.concat(nextNode.fail.outputs);
+        }
+        queue.push(nextNode);
+      }
+    }
+    return { root };
+  };
+  
+  const findMatches = (automaton, textChunks, options = {}) => {
+    const matches = [];
+    const caseInsensitive = Boolean(options.caseInsensitive);
+    
+    for (let c = 0; c < textChunks.length; c++) {
+      const chunk = textChunks[c];
+      const text = caseInsensitive ? chunk.text.toLowerCase() : chunk.text;
+      let node = automaton.root;
+      
+      for (let i = 0; i < text.length; i++) {
+        const ch = text[i];
+        while (node && !node.next.has(ch)) {
+          node = node.fail;
+        }
+        node = node ? node.next.get(ch) : automaton.root;
+        
+        if (!node) {
+          node = automaton.root;
+          continue;
+        }
+        
+        if (node.outputs.length > 0) {
+          for (let o = 0; o < node.outputs.length; o++) {
+            const output = node.outputs[o];
+            const length = output.l; // patternLength or termLength
+            const start = i - length + 1;
+            const end = i + 1;
+            if (start < 0) continue;
+            
+            matches.push({
+              i: output.i, // entryIndex
+              start,
+              end,
+              chunkId: chunk.id
+            });
+          }
+        }
+      }
+    }
+    return matches;
+  };
+
+const enforceEnglishBoundary = (match, text) => {
+  const before = match.start > 0 ? text[match.start - 1] : "";
+  const after = match.end < text.length ? text[match.end] : "";
+  if (before && isWordChar(before)) return false;
+  if (after && isWordChar(after)) return false;
+  return true;
+};
+
+// --- Message Handler ---
+
+self.onmessage = (e) => {
+  const { type, payload } = e.data;
+
+  if (type === 'INIT') {
+    const { enPatterns, zhPatterns } = payload;
+    if (enPatterns) automatonEn = buildAutomaton(enPatterns);
+    if (zhPatterns) automatonZh = buildAutomaton(zhPatterns);
+    self.postMessage({ type: 'INIT_COMPLETE' });
+  }
+
+  if (type === 'SCAN') {
+    const { chunks, scanModes, id } = payload;
+    const matchesEn = [];
+    const matchesZh = [];
+
+    if (scanModes.includes('en') && automatonEn) {
+      const raw = findMatches(automatonEn, chunks, { caseInsensitive: true });
+      raw.forEach(match => {
+        // Find the chunk text to check boundary
+        const chunk = chunks.find(c => c.id === match.chunkId);
+        if (chunk && enforceEnglishBoundary(match, chunk.text.toLowerCase())) {
+           matchesEn.push(match);
+        }
+      });
+    }
+
+    if (scanModes.includes('zh') && automatonZh) {
+      const raw = findMatches(automatonZh, chunks);
+      matchesZh.push(...raw);
+    }
+
+    // Optimization: Don't send back the text in matches?
+    // We didn't include text in matches in findMatches anymore, only chunkId.
+    // So payload is already minimal.
+    
+    self.postMessage({
+      type: 'SCAN_RESULT',
+      payload: {
+        id,
+        matchesEn,
+        matchesZh
+      }
+    });
+  }
+};
